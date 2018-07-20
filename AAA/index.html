@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+	<link rel="shortcut icon" href="img/AAA.ico" />
+	<link rel="bookmark" href="img/AAA.ico" />
+	<link rel="stylesheet" href="navbar.css">
+	<style>
+		body {
+			margin: 0;
+			background-color: #CCCCFF;
+			background-color: white;
+			/* background-image: url('img/BG2.jpg'); */
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		.swiper-container {
+			width: 100%;
+			/* height: 700px; */
+			padding-top: 50px;
+			padding-bottom: 100px;
+
+
+		}
+
+		.swiper-slide {
+			background-position: center;
+			background-size: cover;
+			width: 65%;
+			height: 660px;
+			font-family: Microsoft JhengHei;
+		}
+
+		.swiper-pagination {
+			margin-bottom: 40px
+		}
+
+		.nav {
+			/* background-color: #9F88FF; */
+			background-color:white
+
+		}
+
+		.menu {
+			z-index: 2;
+		}
+
+		.all {
+			width: 80%;
+			/* height: 100vh; */
+			margin-right: auto;
+			margin-left: auto;
+			/* background-color: #CCCCFF; */
+			/* margin-bottom: 10px; */
+		}
+
+		.banner {
+			height: 650px;
+			/* background-color: gray; */
+			/* margin-bottom: 10px; */
+			background-image: url('https://pic.pimg.tw/itokeita/1474133015-3146189213_l.png?v=1474133023');
+			/* background-image: url(https://i.ytimg.com/vi/AY9U759J5Xo/maxresdefault.jpg); */
+			background-size: cover;
+			/* background-attachment: fixed; */
+			background-position: 0 -70px;
+			background-repeat: no-repeat;
+		}
+
+		.bg {
+			height: 650px;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat
+		}
+
+		.main {
+			/* height: 610px; */
+			/* background-color: #CCCCFF; */
+			margin-bottom: 10px;
+			margin-top: 50px
+		}
+
+		.box {
+			width: calc((100% - 20px) / 3);
+			/* width: 33%; */
+			height: 400px;
+			background-color: #9F88FF;
+			float: left;
+			margin-right: 10px;
+			font-family: Microsoft JhengHei;
+		}
+
+		.box1 {
+			margin-bottom: 10px;
+		}
+
+		.boxR {
+			margin: 0;
+		}
+
+		.cover {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(50, 50, 50, 0.3);
+			display: none;
+			color: white;
+			font-size: 25px;
+			text-align: center;
+			line-height: 400px;
+		}
+
+		.box:hover .cover {
+			display: block;
+		}
+
+		.main2 {
+			height: 300px;
+			/* background-color: #CCCCFF; */
+			margin-bottom: 10px
+		}
+
+		.main2-R {
+			width: calc(40% - 5px);
+			height: 100%;
+			background-color: #99BBFF;
+			float: left;
+			margin-right: 10px;
+			background-image: url(https://pbs.twimg.com/media/CsPyXrGVYAAJK63.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+
+		.main2-L {
+			width: calc(60% - 5px);
+			height: 100%;
+			background-color: #99BBFF;
+			float: right;
+			background-image: url(https://aramajapan.com/wp-content/uploads/2017/02/aramajapan_aaa-cocoa.png);
+			background-position: top;
+			background-size: cover;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		.footer {
+			height: 50px;
+			background-color: #333;
+		}
+
+		.pic1 {
+			background-image: url(http://static-maquia.hpplus.jp/upload/image/manager/168/MSIkSWU-1200.jpg);
+			background-size: cover;
+		}
+
+		.pic2 {
+			background-image: url(http://www.aliveonlinestore.com/img_item/the-classics/the-classics-708-7.jpg);
+			background-size: cover;
+		}
+
+		.pic3 {
+			background-image: url(http://images.warchina.com/src/201609/439308c192.jpg);
+			background-size: cover;
+
+		}
+
+		.pic4 {
+			background-image: url(https://pbs.twimg.com/media/DCrJ1TUV0AEcGaP.jpg);
+			background-size: cover;
+			background-position: right;
+
+		}
+
+		.pic5 {
+			background-image: url(https://www.vogue.co.jp/uploads/media/2016/11/08/AAAnissy.jpg);
+			background-size: cover;
+			background-position: center;
+
+		}
+
+		.pic6 {
+			background-image: url(https://pbs.twimg.com/media/Bxk0oYfCYAABbyQ.jpg);
+			background-size: cover;
+			/* background-position: right; */
+		}
+
+		.bg {
+			height: 600px;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+		}
+
+		.bg1 {
+			background-image: url('https://kabekin.com/uploads/converted/15/05/14/3928681930-aaa-W6Ro-1920x1080-MM-100.jpg')
+		}
+
+		.bg2 {
+			background-image: url('http://blog-imgs-42.fc2.com/g/o/r/gorelaxemore/T_AAA.jpg')
+		}
+
+		.bg3 {
+			background-image: url('https://pic.pimg.tw/itokeita/1474133015-3146189213_l.png')
+		}
+
+		.bg4 {
+			background-image: url('https://i.ytimg.com/vi/0gSLap3gDUU/maxresdefault.jpg')
+		}
+
+		.info-1 {
+			width: 100%;
+			height: 100%;
+			color: white;
+			/* font-size: 26px; */
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		/* 團員介紹 */
+
+		.profile-box {
+			width: 100%;
+			height: 600px;
+			/* background-color: #333; */
+			margin-top: 100px;
+			margin-bottom: 80px
+		}
+
+		.profile-img {
+			width: 25%;
+			height: 100%;
+			/* background-color: aqua; */
+			float: left;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 50%
+		}
+
+		.profile-text {
+			width: calc(70% - 60px);
+			height: calc(100% - 60px);
+			/* background-color: #99BBFF; */
+			float: left;
+			padding: 30px;
+			padding-left: 80px;
+			font-size: 24px;
+			font-family: Microsoft JhengHei;
+			letter-spacing: 3px;
+			color:#696969
+		}
+
+		.border{
+			border-bottom: 1px solid #333;
+		}
+
+		.img-1 {
+			background-image: url(img/浦田直也.jpg);
+			transition-duration:0.5s
+		}
+
+		.img-1:hover{
+			background-image: url(img/浦田直也-2.jpg);
+			background-position: 70% 0;
+
+		}
+
+		.img-2 {
+			background-image: url(img/西島隆弘.jpg)
+		}
+
+		.img-2:hover{
+			background-image: url(img/西島隆弘-2.jpg);
+			background-position: 40% 0;
+		}
+
+		.img-3 {
+			background-image: url(img/宇野實彩子.jpg)
+		}
+
+		.img-3:hover{
+			background-image: url(img/宇野實彩子-3.jpg);
+			background-position: 50% 20%;
+		}
+
+		.img-4 {
+			background-image: url(img/日高光啓.jpg)
+		}
+
+		.img-5 {
+			background-image: url(img/伊藤千晃.jpg)
+		}
+
+		.img-5:hover{
+			background-image: url(img/伊藤千晃-2.jpg);
+
+		}
+
+		.img-6 {
+			background-image: url(img/末吉秀太.jpg)
+		}
+
+		.img-7 {
+			background-image: url(img/與真司郎.jpg)
+		}
+
+		.videobox {
+			width: 100%;
+			height: 675px;
+			background-color: #222;
+			margin-top: 50px;
+			box-sizing: border-box;
+			border:50px solid #222;
+			color: white;
+			text-align: center;
+			font-family: Microsoft JhengHei;
+			letter-spacing: 3px;
+			font-size: 34px
+		}
+
+		.video{
+			width: calc(33% - 20px);
+			background-color: green;
+			height: 300px;
+			margin-right: 20px;
+			float: left;
+			/* padding: 50px */
+
+
+		}
+
+		.section2 {
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+
+		.news {
+			width: 50%;
+			height: 400px;
+			float: left;
+			background-color: aquamarine
+		}
+
+		.schedule {
+			width: 50%;
+			height: 400px;
+			float: left;
+			background-color: aqua
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		footer {
+			height: 50px;
+			background-color: #222
+		}
+
+		.deco{
+			text-align: center;
+			color:#696969
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="all">
+		<!-- <div class="banner"></div> -->
+
+		<div class="nav">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/AAA_LOGO_2.svg/2000px-AAA_LOGO_2.svg.png" style="height: 60px;
+			padding-left: 80px; float:left;" alt="">
+			<ul class="menu">
+				<li class="relative">
+					<a href="">ABOUT</a>
+					<ul class="dropdown">
+						<li>
+							<a href="">AAA</a>
+						</li>
+						<li>
+							<a href="">BBB</a>
+						</li>
+						<li>
+							<a href="">CCC</a>
+						</li>
+					</ul>
+				</li>
+				<li class="relative">
+					<a href="">PROFILE</a>
+					<ul class="dropdown">
+						<li>
+							<a href="">AAA</a>
+						</li>
+						<li>
+							<a href="">BBB</a>
+						</li>
+						<li>
+							<a href="">CCC</a>
+						</li>
+					</ul>
+				</li>
+				<li class="relative">
+					<a href="">Drei</a>
+				</li>
+				<li class="relative">
+					<a href="">Vier</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image:url(https://kabekin.com/uploads/converted/15/05/14/3928681930-aaa-W6Ro-1920x1080-MM-100.jpg)">
+				</div>
+				<div class="swiper-slide" style="background-image:url(http://blog-imgs-42.fc2.com/g/o/r/gorelaxemore/T_AAA.jpg)"></div>
+				<div class="swiper-slide" style="background-image:url(https://pic.pimg.tw/itokeita/1474133015-3146189213_l.png)"></div>
+				<div class="swiper-slide" style="background-image:url(https://i.ytimg.com/vi/0gSLap3gDUU/maxresdefault.jpg)"></div>
+				<div class="swiper-slide" style="background-image:url(http://www.syncmusic.jp/wordpress/wp-content/uploads/2013/06/AAA.jpg)"></div>
+				<div class="swiper-slide" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/f/f8/AAA_%28band%29.jpg)"></div>
+				<div class="swiper-slide" style="background-image:url()"></div>
+				<div class="swiper-slide" style="background-image:url()"></div>
+				<div class="swiper-slide" style="background-image:url()"></div>
+				<div class="swiper-slide" style="background-image:url()"></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<div class="deco">
+			<h3>.</h3>
+			<h3>.</h3>
+			<h3>.</h3>
+		</div>
+		<!-- 團員介紹 -->
+		<div class="profile">
+			<div class="profile-box">
+				<div class="profile-img img-1" data-aos="flip-right" data-aos-duration="2000" ></div>
+				<div class="profile-text" data-aos="fade-down" data-aos-duration="2000">
+					<span class="border"><span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10</span>
+					<p>團長兼主唱。
+						<br>
+						<br> 有過50次參加甄選會而落選的經驗。
+						<br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+						<br> 亦在ASAYAN舉辦的『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+						<br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。</p>
+
+				</div>
+			</div>
+			<div class="profile-box">
+				<div class="profile-text">
+					<span style="font-size: 34px; font-weight: bolder">TAKAHIRO NISHIJIMA</span>　西島 隆弘　1986/9/30
+					<p>擔任男主唱。
+						<br>
+						<br> 6歲已經開始跳舞及唱歌。
+
+						<br> 會彈吉他，單曲夢ノカケラ的音樂錄影帶和巡迴演唱會均有展現。
+						<br> 在電視劇與舞台劇中活躍後，進而在2009年於電影『愛的曝光』中演出。
+						<br> 2014年以Nissy的名義單飛出道，亦交出亮眼成績單。
+						<br> 西島隆弘沒有在任何SNS社交網站開設個人主頁。AAA的隊友日高光啟表示：
+						<br>「因為西島是機械盲。例如發送訊息到他電腦，他卻不懂打開的方法，最後還是我到西島家幫他打開。」</p>
+				</div>
+				<div class="profile-img img-2" data-aos="flip-left" data-aos-duration="1000"></div>
+
+			</div>
+			<div class="profile-box">
+				<div class="profile-img img-3" data-aos="flip-right" data-aos-duration="2000"></div>
+				<div class="profile-text">
+					<span style="font-size: 34px">MISAKO UNO</span>　宇野 實彩子　1986/7/16
+					<p>擔任女主唱，第一個加入AAA的女團員。<br>
+							歷經數次甄選落榜，實彩子放棄了偶像夢想轉向學院派路線，學習系統化的表演藝術，繼續藝人志願。<br>
+							在朋友「留下一份值得回憶的夏天」的慫恿下，實彩子簡歷面試了愛貝克思娛樂第二屆全國甄選會。不報期望的實彩子通過初審，闖入現場評審的二審、三審及最終審查。
+							2008年，實彩子回絕了公司單飛出道與AAA解散的提議，並表示「不管怎樣，我想加強成員關系，取得一些成績」。</p>
+				</div>
+			</div>
+			<div class="profile-box">
+				<div class="profile-text">
+					<span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10
+					<p>團長兼主唱。
+						<br>
+						<br> 有過50次參加甄選會而落選的經驗。
+						<br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+						<br> 亦在ASAYAN舉辦的『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+						<br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。</p>
+				</div>
+				<div class="profile-img img-4"></div>
+
+			</div>
+			<div class="profile-box">
+				<div class="profile-img img-5"></div>
+				<div class="profile-text">
+					<span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10
+					<p>團長兼主唱。
+						<br>
+						<br> 有過50次參加甄選會而落選的經驗。
+						<br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+						<br> 亦在ASAYAN舉辦的『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+						<br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。</p>
+				</div>
+			</div>
+			<div class="profile-box">
+				<div class="profile-text">
+					<span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10
+					<p>團長兼主唱。
+						<br>
+						<br> 有過50次參加甄選會而落選的經驗。
+						<br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+						<br> 亦在ASAYAN舉辦的『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+						<br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。</p>
+				</div>
+				<div class="profile-img img-6"></div>
+
+			</div>
+			<div class="profile-box">
+				<div class="profile-img img-7"></div>
+				<div class="profile-text">
+					<span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10
+					<p>團長兼主唱。
+						<br>
+						<br> 有過50次參加甄選會而落選的經驗。
+						<br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+						<br> 亦在ASAYAN舉辦的『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+						<br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。</p>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+		<!-- 卡片練習 -->
+		<!-- <div class="main">
+			<div class="box box1 pic1">
+				<div class="cover">
+					<a href="">伊藤千晃</a>
+				</div>
+			</div>
+			<div class="box box1 pic2">
+				<div class="cover">
+					浦田直也
+				</div>
+			</div>
+			<div class="box boxR pic3">
+				<div class="cover">宇野實彩子</div>
+			</div>
+			<div class="box pic4">
+				<div class="cover">日高光啓</div>
+			</div>
+			<div class="box pic5">
+				<div class="cover">西島隆弘</div>
+			</div>
+			<div class="box boxR pic6">
+				<div class="cover">與真司郎</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="main2">
+			<div class="main2-R">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0" frameborder="0" allow="autoplay; encrypted-media"
+				    allowfullscreen></iframe>
+			</div>
+			<div class="main2-L"></div>
+		</div> -->
+
+
+
+		<!-- <div class="footer"></div> -->
+
+
+	</div>
+
+	<div class="videobox">
+		<p>MOVIE</p>
+		<div class="video">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="video">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/qFREEPLDTVA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/7Ahnp2-synU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+
+	<div class="section2">
+		<div class="news"></div>
+		<div class="schedule"></div>
+		<div class="clear"></div>
+	</div>
+
+	<footer></footer>
+
+
+
+
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- <script>
+		 var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+    });
+	</script> -->
+
+	<!-- Initialize Swiper -->
+	<!-- <script>
+		var swiper = new Swiper('.swiper-container', {
+		  effect: 'flip',
+		  grabCursor: true,
+		  pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		  },
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		});
+	  </script> -->
+
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			effect: 'coverflow',
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			coverflowEffect: {
+				rotate: 50,
+				stretch: 0,
+				depth: 100,
+				modifier: 1,
+				slideShadows: true,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+
+</html>
