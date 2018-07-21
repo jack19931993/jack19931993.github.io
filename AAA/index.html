@@ -377,7 +377,8 @@
 			background-color: #333;
 			background-image: url(img/BG5.jpg);
 			background-position: center;
-			background-size: cover
+			background-size: cover;
+			color: white
 		}
 
 		.schedule{
@@ -387,6 +388,13 @@
 			background-image: url(img/BG6.jpg);
 			background-position: center;
 			background-size: cover
+		}
+
+		.toptittle{
+			height: 50px;
+			text-align: center;
+			font-size: 34px;
+			padding: 30px
 		}
 
 		.tittle{
@@ -403,6 +411,49 @@
 			float: left;
 			background-color: rgba(223, 223, 223, 0.3)
 		}
+
+		.tab_btn {
+            /* display: inline-block; */
+            
+            padding: 20px 30px;
+            width: 80%;
+            /* float: left; */
+			margin: 0 auto;
+			font-size: 24px;
+			text-align: center;
+			margin-bottom: 30px;
+			animation-name: fade;
+			/* animation-duration: 1s; */
+			transition-duration: 0.1s;
+        }
+        .tab_btn:hover{
+            background-color:rgba(46, 145, 202, 0.5)
+        }
+
+        .tab_content {
+            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+            display: none;
+            float: left;
+            transition-duration: 1s;
+            animation-name: fade;
+            animation-duration: 1s
+
+        }
+
+        .tab_content.active {
+            display: block;
+        }
+
+        .tab_btn.active{
+            background-color:rgba(23, 133, 197, 0.5)
+        }
+
+        @keyframes fade{
+            from {opacity: 0;}
+    to {opacity: 1;}
+        }
 
 		.clear {
 			clear: both;
@@ -640,12 +691,28 @@
 
 	<div class="section2">
 		<div class="news">
-			<div class="tittle"></div>
-			<div class="info"></div>
+			
+			<div class="tittle">
+					<div class="toptittle">NEWS</div>
+					<div class="tab_btn" id="tab_btn_1">tab1</div>
+					<div class="tab_btn" id="tab_btn_2">tab2</div>
+					<div class="tab_btn" id="tab_btn_3">tab3</div>
+			</div>
+			<div class="info">
+					<div class="tab_content active" id="tab_content_1">123</div>
+					<div class="tab_content" id="tab_content_2">456</div>
+					<div class="tab_content" id="tab_content_3">789</div>
+			</div>
 		</div>
 		<div class="schedule">
 				<div class="info"></div>
-			<div class="tittle"></div>
+			<div class="tittle">
+					<div class="toptittle">NEWS</div>
+					<div class="tab_btn" id="tab_btn_4">tab1</div>
+					<div class="tab_btn" id="tab_btn_5">tab2</div>
+					<div class="tab_btn" id="tab_btn_6">tab3</div>
+					
+			</div>
 			
 			
 		</div>
@@ -659,6 +726,7 @@
 
 
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -706,8 +774,36 @@
 		});
 	</script>
 
+
 	<script>
 		AOS.init();
+
+		$("#tab_btn_1").click(function () {
+            $("#tab_content_1").addClass("active");
+            $("#tab_content_2").removeClass("active");
+            $("#tab_content_3").removeClass("active");
+            $("#tab_btn_1").addClass("active")
+			$("#tab_btn_2").removeClass("active")
+			$("#tab_btn_3").removeClass("active")
+        });
+
+        $("#tab_btn_2").click(function () {
+            $("#tab_content_1").removeClass("active");
+            $("#tab_content_2").addClass("active");
+            $("#tab_content_3").removeClass("active");
+			$("#tab_btn_1").removeClass("active")
+			$("#tab_btn_2").addClass("active")
+			$("#tab_btn_3").removeClass("active")
+        });
+
+        $("#tab_btn_3").click(function () {
+            $("#tab_content_1").removeClass("active");
+            $("#tab_content_2").removeClass("active");
+            $("#tab_content_3").addClass("active");
+			$("#tab_btn_1").removeClass("active")
+			$("#tab_btn_2").removeClass("active")
+			$("#tab_btn_3").addClass("active")
+        });
 	</script>
 
 </body>
