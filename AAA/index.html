@@ -16,7 +16,7 @@
 			margin: 0;
 			background-color: #CCCCFF;
 			background-color: white;
-			/* background-image: url('img/BG2.jpg'); */
+			background-image: url('img/BG-2.jpg');
 			background-size: cover;
 			background-position: center;
 			background-attachment: fixed;
@@ -34,9 +34,10 @@
 		.swiper-slide {
 			background-position: center;
 			background-size: cover;
-			width: 65%;
-			height: 660px;
+			width: 85%;
+			height: 760px;
 			font-family: Microsoft JhengHei;
+			color
 		}
 
 		.swiper-pagination {
@@ -73,12 +74,7 @@
 			background-repeat: no-repeat;
 		}
 
-		.bg {
-			height: 650px;
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat
-		}
+
 
 		.main {
 			/* height: 610px; */
@@ -192,38 +188,15 @@
 			/* background-position: right; */
 		}
 
-		.bg {
-			height: 600px;
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
 
-		}
-
-		.bg1 {
-			background-image: url('https://kabekin.com/uploads/converted/15/05/14/3928681930-aaa-W6Ro-1920x1080-MM-100.jpg')
-		}
-
-		.bg2 {
-			background-image: url('http://blog-imgs-42.fc2.com/g/o/r/gorelaxemore/T_AAA.jpg')
-		}
-
-		.bg3 {
-			background-image: url('https://pic.pimg.tw/itokeita/1474133015-3146189213_l.png')
-		}
-
-		.bg4 {
-			background-image: url('https://i.ytimg.com/vi/0gSLap3gDUU/maxresdefault.jpg')
-		}
-
-		.info-1 {
+		/* .info-1 {
 			width: 100%;
 			height: 100%;
 			color: white;
-			/* font-size: 26px; */
+			font-size: 26px;
 			text-align: center;
 			background-color: rgba(0, 0, 0, 0.5);
-		}
+		} */
 
 		/* 團員介紹 */
 
@@ -232,7 +205,11 @@
 			height: 600px;
 			/* background-color: #333; */
 			margin-top: 100px;
-			margin-bottom: 80px
+			margin-bottom: 80px;
+			
+			background-position: center;
+			background-size: cover;
+			/* background-attachment: fixed; */
 		}
 
 		.profile-img {
@@ -256,7 +233,10 @@
 			font-size: 24px;
 			font-family: Microsoft JhengHei;
 			letter-spacing: 3px;
-			color: #696969
+			color: #595147;
+			/* background-image: url(img/BG8.jpg); */
+			background-position: center;
+			background-size: cover;
 		}
 
 		.border {
@@ -340,12 +320,16 @@
 			background-color: #222;
 			margin-top: 50px;
 			box-sizing: border-box;
-			border: 50px solid #222;
+			/* border: 50px solid #222; */
+			padding: 50px;
 			color: white;
 			text-align: center;
 			font-family: Microsoft JhengHei;
 			letter-spacing: 3px;
-			font-size: 34px
+			font-size: 34px;
+			/* background-image: url(img/BG2.jpg); */
+			background-position: center;
+			background-size: cover;
 		}
 
 		.video {
@@ -361,6 +345,9 @@
 			width: 100%;
 			height: 100%;
 			overflow: hidden;
+			padding-right: 51px;
+			padding-left: 51px;
+			box-sizing: border-box
 
 		}
 
@@ -372,25 +359,49 @@
 			font-family: Microsoft JhengHei;
 		}
 
+		.button-next2, .button-prev2 {
+    position: absolute;
+    top: 30%;}
+
 
 		.section2 {
 			width: 80%;
 			margin: 0 auto;
 			margin-top: 50px;
+			font-family: Microsoft JhengHei;
 		}
 
-		.news {
-			width: 50%;
-			height: 400px;
-			float: left;
-			background-color: aquamarine
+		.news{
+			width: 100%;
+			height: 500px;
+			background-color: #333;
+			background-image: url(img/BG5.jpg);
+			background-position: center;
+			background-size: cover
 		}
 
-		.schedule {
+		.schedule{
+			width: 100%;
+			height: 500px;
+			background-color: #666;
+			background-image: url(img/BG6.jpg);
+			background-position: center;
+			background-size: cover
+		}
+
+		.tittle{
 			width: 50%;
-			height: 400px;
+			height: 100%;
+			/* background-color: blue; */
 			float: left;
-			background-color: aqua
+		}
+
+		.info{
+			width: 50%;
+			height: 100%;
+			/* background-color: yellow; */
+			float: left;
+			background-color: rgba(223, 223, 223, 0.3)
 		}
 
 		.clear {
@@ -503,7 +514,7 @@
 				</div>
 			</div>
 			<div class="profile-box">
-				<div class="profile-text">
+				<div class="profile-text" data-aos="fade-down" data-aos-duration="2000">
 					<span class="border">
 						<span style="font-size: 34px; font-weight: bolder">TAKAHIRO NISHIJIMA</span>　西島 隆弘　1986/9/30</span>
 					<p>擔任男主唱。6歲已經開始跳舞及唱歌。
@@ -587,7 +598,7 @@
 	<div class="videobox">
 		<p>MOVIE</p>
 
-		<div class="swiper-container2">
+		<div class="swiper-container2" style="position: relative;">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide swiper-slide2">
 					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0?rel=0" frameborder="0" allow="autoplay; encrypted-media"
@@ -610,8 +621,8 @@
 			</div>
 
 			<!-- Add Arrows -->
-			<div class="swiper-button-next2 button-next2 "></div>
-			<div class="swiper-button-prev2 button-prev2"></div>
+			<div class="swiper-button-next button-next2" style="background-image: none"><i class="fas fa-chevron-right fa-1x"></i></div>
+			<div class="swiper-button-prev button-prev2" style="background-image: none" ><i class="fas fa-chevron-left fa-1x"></i></div>
 		</div>
 
 
@@ -628,9 +639,16 @@
 
 
 	<div class="section2">
-		<div class="news"></div>
-		<div class="schedule"></div>
-		<div class="clear"></div>
+		<div class="news">
+			<div class="tittle"></div>
+			<div class="info"></div>
+		</div>
+		<div class="schedule">
+				<div class="info"></div>
+			<div class="tittle"></div>
+			
+			
+		</div>
 	</div>
 
 	<footer></footer>
@@ -673,7 +691,7 @@
 	<script>
 		var swiper = new Swiper('.swiper-container2', {
 			slidesPerView: 3,
-			spaceBetween: 30,
+			spaceBetween: 40,
 			slidesPerGroup: 1,
 			loop: true,
 			loopFillGroupWithBlank: true,
@@ -682,8 +700,8 @@
 			// 	clickable: true,
 			// },
 			navigation: {
-				nextEl: '.swiper-button-next2',
-				prevEl: '.swiper-button-prev2',
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
 			},
 		});
 	</script>
