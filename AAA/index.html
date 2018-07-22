@@ -37,11 +37,25 @@
 			width: 85%;
 			height: 760px;
 			font-family: Microsoft JhengHei;
-			color
+			text-shadow: -1px -1px 0 rgb(87, 165, 168),
+			1px -1px 0 rgb(87, 165, 168),
+			-1px 1px 0 rgb(87, 165, 168),
+			1px 1px 0 rgb(87, 165, 168),
+			2px 2px 2px rgb(87, 165, 168);
+			font-size: 24px
+			
 		}
+		
 
 		.swiper-pagination {
 			margin-bottom: 40px
+		}
+
+		.teaminfo {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.6);
+			color: white
 		}
 
 		.nav {
@@ -206,7 +220,7 @@
 			/* background-color: #333; */
 			margin-top: 100px;
 			margin-bottom: 80px;
-			
+
 			background-position: center;
 			background-size: cover;
 			/* background-attachment: fixed; */
@@ -318,7 +332,7 @@
 			width: 100%;
 			height: 675px;
 			background-color: #222;
-			margin-top: 50px;
+			margin-top: 100px;
 			box-sizing: border-box;
 			/* border: 50px solid #222; */
 			padding: 50px;
@@ -348,7 +362,6 @@
 			padding-right: 51px;
 			padding-left: 51px;
 			box-sizing: border-box
-
 		}
 
 		.swiper-slide2 {
@@ -359,9 +372,11 @@
 			font-family: Microsoft JhengHei;
 		}
 
-		.button-next2, .button-prev2 {
-    position: absolute;
-    top: 30%;}
+		.button-next2,
+		.button-prev2 {
+			position: absolute;
+			top: 30%;
+		}
 
 
 		.section2 {
@@ -371,7 +386,7 @@
 			font-family: Microsoft JhengHei;
 		}
 
-		.news{
+		.news {
 			width: 100%;
 			height: 500px;
 			background-color: #333;
@@ -381,43 +396,61 @@
 			color: white
 		}
 
-		.schedule{
+		.schedule {
 			width: 100%;
 			height: 500px;
 			background-color: #666;
 			background-image: url(img/BG6.jpg);
 			background-position: center;
-			background-size: cover
+			background-size: cover;
+			color: whitesmoke
 		}
 
-		.toptittle{
+		.date {
+			width: 30%;
+			height: 100%;
+			float: left;
+		}
+
+		.date_info {
+			width: 70%;
+			height: 100%;
+			float: left;
+		}
+
+		.toptittle {
 			height: 50px;
 			text-align: center;
 			font-size: 34px;
 			padding: 30px
 		}
 
-		.tittle{
+		.tittle {
 			width: 50%;
 			height: 100%;
 			/* background-color: blue; */
 			float: left;
 		}
 
-		.info{
+		.info {
 			width: 50%;
 			height: 100%;
 			/* background-color: yellow; */
 			float: left;
-			background-color: rgba(223, 223, 223, 0.3)
+			/* background-color: rgba(223, 223, 223, 0.3); */
+			background-color: rgba(46, 145, 202, 0.5)
+		}
+
+		.info-yellow {
+			background-color: rgba(214, 105, 32, 0.3)
 		}
 
 		.tab_btn {
-            /* display: inline-block; */
-            
-            padding: 20px 30px;
-            width: 80%;
-            /* float: left; */
+			/* display: inline-block; */
+			padding: 20px 30px;
+			width: 80%;
+			height: 40px;
+			/* float: left; */
 			margin: 0 auto;
 			font-size: 24px;
 			text-align: center;
@@ -425,35 +458,51 @@
 			animation-name: fade;
 			/* animation-duration: 1s; */
 			transition-duration: 0.1s;
-        }
-        .tab_btn:hover{
-            background-color:rgba(46, 145, 202, 0.5)
-        }
+		}
 
-        .tab_content {
-            height: 100%;
-            width: 80%;
-            margin: 0 auto;
-            display: none;
-            float: left;
-            transition-duration: 1s;
-            animation-name: fade;
-            animation-duration: 1s
+		.tab_btn:hover {
+			background-color: rgba(46, 145, 202, 0.5)
+		}
 
-        }
+		.tab_btn-2:hover {
+			background-color: rgba(214, 105, 32, 0.3)
+		}
 
-        .tab_content.active {
-            display: block;
-        }
+		.tab_content {
+			height: 100%;
+			width: 80%;
+			margin: 0 auto;
+			display: none;
+			/* background-color: yellow */
+			/* float: left; */
+			transition-duration: 1s;
+			animation-name: fade;
+			animation-duration: 1s;
+			font-size: 24px;
+			padding: 50px;
+			letter-spacing: 3px
+		}
 
-        .tab_btn.active{
-            background-color:rgba(23, 133, 197, 0.5)
-        }
+		.tab_content.active {
+			display: block;
+		}
 
-        @keyframes fade{
-            from {opacity: 0;}
-    to {opacity: 1;}
-        }
+		.tab_btn.active {
+			background-color: rgba(23, 133, 197, 0.5)
+		}
+
+		.tab_btn-2.active {
+			background-color: rgba(172, 84, 26, 0.3)
+		}
+
+		@keyframes fade {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
 
 		.clear {
 			clear: both;
@@ -521,11 +570,12 @@
 		<!-- Swiper -->
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-image:url(https://kabekin.com/uploads/converted/15/05/14/3928681930-aaa-W6Ro-1920x1080-MM-100.jpg)">
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus tempore exercitationem unde saepe veritatis deserunt
-						molestiae non quibusdam consectetur adipisci nam dolorum sequi amet laudantium doloribus, nesciunt assumenda odio nemo.</p>
+				<div class="swiper-slide" style="background-image:url(http://blog-imgs-42.fc2.com/g/o/r/gorelaxemore/T_AAA.jpg)">
+					<div class="teaminfo" style="font-size: 60px; text-align: center;line-height: 760px">ABOUT</div>
 				</div>
-				<div class="swiper-slide" style="background-image:url(http://blog-imgs-42.fc2.com/g/o/r/gorelaxemore/T_AAA.jpg)"></div>
+				<div class="swiper-slide" style="background-image:url(http://blog-imgs-42.fc2.com/g/o/r/gorelaxemore/T_AAA.jpg)">
+					<div class="teaminfo">AAA（日語：トリプル・エー，英語：Triple A）是日本男女6人組的舞蹈流行音樂及表演藝術團體，團名取自英文「ATTACK ALL AROUND」的三個頭文字母，意指「全方位出擊」，團員全部經由愛貝克思甄選會發掘，愛貝克思藝術學院培養，也是唱片公司愛貝克思集團轉型綜合娛樂公司的第一組唱片、舞台、雜誌、電臺、電視、電影、公益等全面發展的直系藝人。</div>
+				</div>
 				<div class="swiper-slide" style="background-image:url(https://pic.pimg.tw/itokeita/1474133015-3146189213_l.png)"></div>
 				<div class="swiper-slide" style="background-image:url(https://i.ytimg.com/vi/0gSLap3gDUU/maxresdefault.jpg)"></div>
 				<div class="swiper-slide" style="background-image:url(http://www.syncmusic.jp/wordpress/wp-content/uploads/2013/06/AAA.jpg)"></div>
@@ -555,11 +605,10 @@
 						<span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10</span>
 					<p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
 						<br> 有過50次參加甄選會而落選的經驗。
-						
+
 						<br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
 						<br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
-						<br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。
-						 手非常巧，曾幫兩位女團員製作指甲彩繪。
+						<br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。 手非常巧，曾幫兩位女團員製作指甲彩繪。
 					</p>
 
 				</div>
@@ -617,12 +666,13 @@
 			</div>
 			<div class="profile-box">
 				<div class="profile-text">
-						<span class="border">
-					<span style="font-size: 34px">SHUTA SUEYOSHI</span>　末吉 秀太　1986/12/11</span>
-					<p>擅長跳舞，與隊長蒲田、真司郎擔任編舞。<br>
-							出道前從生活18年的家鄉長崎搬到東京，曾因改不掉長崎口音而苦惱。<br>
-							伊藤千晃說他是個「九州男兒」，隊長評價「少年，犬。對於自己喜歡的事，會擺動尾巴咬住不鬆口，而對於討厭的事情則看都不會看上一眼。這就是九州男兒。」<br>
-							2012年開始每年連續與隊友宇野實彩子擔任日本青少年舞蹈大賽評委。</p>
+					<span class="border">
+						<span style="font-size: 34px">SHUTA SUEYOSHI</span>　末吉 秀太　1986/12/11</span>
+					<p>擅長跳舞，與隊長蒲田、真司郎擔任編舞。
+						<br> 出道前從生活18年的家鄉長崎搬到東京，曾因改不掉長崎口音而苦惱。
+						<br> 伊藤千晃說他是個「九州男兒」，隊長評價「少年，犬。對於自己喜歡的事，會擺動尾巴咬住不鬆口，而對於討厭的事情則看都不會看上一眼。這就是九州男兒。」
+						<br> 2012年開始每年連續與隊友宇野實彩子擔任日本青少年舞蹈大賽評委。
+					</p>
 				</div>
 				<div class="profile-img img-6" data-aos="flip-left" data-aos-duration="1000"></div>
 
@@ -630,12 +680,12 @@
 			<div class="profile-box">
 				<div class="profile-img img-7" data-aos="flip-right" data-aos-duration="2000"></div>
 				<div class="profile-text">
-						<span class="border">
-					<span style="font-size: 34px">SHINJIRO ATAE</span>　與 真司郎　1988/11/26</span>
-					<p>最年輕的成員，擅長跳舞。自嘲雖是唯一的關西人，但沒有搞笑天賦。<br>
-							因為憧憬DA PUMP，從小學開始跳舞，在中學時以團體出道。<br>
-							在AAA結成之前，隸屬京都和大阪的跳舞隊。<br>
-							喜歡英語、學生時代曾請日高光啓及宇野實彩子擔當家教。 </p>
+					<span class="border">
+						<span style="font-size: 34px">SHINJIRO ATAE</span>　與 真司郎　1988/11/26</span>
+					<p>最年輕的成員，擅長跳舞。自嘲雖是唯一的關西人，但沒有搞笑天賦。
+						<br> 因為憧憬DA PUMP，從小學開始跳舞，在中學時以團體出道。
+						<br> 在AAA結成之前，隸屬京都和大阪的跳舞隊。
+						<br> 喜歡英語、學生時代曾請日高光啓及宇野實彩子擔當家教。 </p>
 				</div>
 			</div>
 
@@ -672,8 +722,12 @@
 			</div>
 
 			<!-- Add Arrows -->
-			<div class="swiper-button-next button-next2" style="background-image: none"><i class="fas fa-chevron-right fa-1x"></i></div>
-			<div class="swiper-button-prev button-prev2" style="background-image: none" ><i class="fas fa-chevron-left fa-1x"></i></div>
+			<div class="swiper-button-next button-next2" style="background-image: none">
+				<i class="fas fa-chevron-right fa-1x"></i>
+			</div>
+			<div class="swiper-button-prev button-prev2" style="background-image: none">
+				<i class="fas fa-chevron-left fa-1x"></i>
+			</div>
 		</div>
 
 
@@ -691,30 +745,64 @@
 
 	<div class="section2">
 		<div class="news">
-			
+
 			<div class="tittle">
-					<div class="toptittle">NEWS</div>
-					<div class="tab_btn" id="tab_btn_1">tab1</div>
-					<div class="tab_btn" id="tab_btn_2">tab2</div>
-					<div class="tab_btn" id="tab_btn_3">tab3</div>
+				<div class="toptittle">NEWS</div>
+				<div class="tab_btn" id="tab_btn_1">
+					<div class="date">
+						2018-05-04
+					</div>
+					<div class="date_info">
+						AAA NEW YEAR PARTY 2018
+					</div>
+				</div>
+				<div class="tab_btn" id="tab_btn_2">tab2</div>
+				<div class="tab_btn" id="tab_btn_3">tab3</div>
 			</div>
 			<div class="info">
-					<div class="tab_content active" id="tab_content_1">123</div>
-					<div class="tab_content" id="tab_content_2">456</div>
-					<div class="tab_content" id="tab_content_3">789</div>
+				<div class="tab_content active" id="tab_content_1">從2017年最後一天到2018年元旦舉辦的AAA跨年活動終於影像化！AAA首次與粉絲一同跨年，COUNTDOWN活動的超HIGH內容與爆笑MC盡收其中。與師弟團Da-iCE的特別合作之〈One Night Animal〉也完整收錄，更顯跨年活動的熱鬧光景。
+					特典影像：後台幕後花絮（共收錄9分鐘）。 台壓發行特殊外盒式樣，附贈團員明信片乙張（共6款，隨機贈送1款）。 全程附可隱藏式中文字幕。
+					<br>
+					<a href="https://l-tike.com/">MORE INFO ＞</a>
+				</div>
+
+				<div class="tab_content" id="tab_content_2">456</div>
+				<div class="tab_content" id="tab_content_3">789</div>
 			</div>
 		</div>
 		<div class="schedule">
-				<div class="info"></div>
-			<div class="tittle">
-					<div class="toptittle">NEWS</div>
-					<div class="tab_btn" id="tab_btn_4">tab1</div>
-					<div class="tab_btn" id="tab_btn_5">tab2</div>
-					<div class="tab_btn" id="tab_btn_6">tab3</div>
-					
+			<div class="info info-yellow">
+				<div class="tab_content active" id="tab_content_4">
+					【時間】
+					<br> 一部）12：00入場／13：00開演
+					<br> 二部）16：00入場／17：00開演
+					<br> 【会場】
+
+					<br> ホテル椿山荘東京　5Ｆオリオン
+					<br> 〒112-8680 東京都 文京区関口２丁目１０−８
+					<br> 【チケット料金】
+
+					<br> 全席指定 お一人様 6,000円(税金・サービス料含む) ※3歳未満のお子様はひざ上鑑賞の場合のみ入場無料。 （ただし、お席が必要な場合は有料となります。） ※グッズ購入の方を対象に特典会を実施します。
+				</div>
+				<div class="tab_content" id="tab_content_5">456</div>
+				<div class="tab_content" id="tab_content_6">789</div>
 			</div>
-			
-			
+			<div class="tittle">
+				<div class="toptittle">SCHEDULE</div>
+				<div class="tab_btn tab_btn-2" id="tab_btn_4">
+					<div class="date">
+						2018-08-11
+					</div>
+					<div class="date_info">
+						與真司郎 大阪談話會 決定!
+					</div>
+				</div>
+				<div class="tab_btn tab_btn-2" id="tab_btn_5">tab2</div>
+				<div class="tab_btn tab_btn-2" id="tab_btn_6">tab3</div>
+
+			</div>
+
+
 		</div>
 	</div>
 
@@ -779,31 +867,58 @@
 		AOS.init();
 
 		$("#tab_btn_1").click(function () {
-            $("#tab_content_1").addClass("active");
-            $("#tab_content_2").removeClass("active");
-            $("#tab_content_3").removeClass("active");
-            $("#tab_btn_1").addClass("active")
+			$("#tab_content_1").addClass("active");
+			$("#tab_content_2").removeClass("active");
+			$("#tab_content_3").removeClass("active");
+			$("#tab_btn_1").addClass("active")
 			$("#tab_btn_2").removeClass("active")
 			$("#tab_btn_3").removeClass("active")
-        });
+		});
 
-        $("#tab_btn_2").click(function () {
-            $("#tab_content_1").removeClass("active");
-            $("#tab_content_2").addClass("active");
-            $("#tab_content_3").removeClass("active");
+		$("#tab_btn_2").click(function () {
+			$("#tab_content_1").removeClass("active");
+			$("#tab_content_2").addClass("active");
+			$("#tab_content_3").removeClass("active");
 			$("#tab_btn_1").removeClass("active")
 			$("#tab_btn_2").addClass("active")
 			$("#tab_btn_3").removeClass("active")
-        });
+		});
 
-        $("#tab_btn_3").click(function () {
-            $("#tab_content_1").removeClass("active");
-            $("#tab_content_2").removeClass("active");
-            $("#tab_content_3").addClass("active");
+		$("#tab_btn_3").click(function () {
+			$("#tab_content_1").removeClass("active");
+			$("#tab_content_2").removeClass("active");
+			$("#tab_content_3").addClass("active");
 			$("#tab_btn_1").removeClass("active")
 			$("#tab_btn_2").removeClass("active")
 			$("#tab_btn_3").addClass("active")
-        });
+		});
+
+		$("#tab_btn_4").click(function () {
+			$("#tab_content_4").addClass("active");
+			$("#tab_content_5").removeClass("active");
+			$("#tab_content_6").removeClass("active");
+			$("#tab_btn_4").addClass("active")
+			$("#tab_btn_5").removeClass("active")
+			$("#tab_btn_6").removeClass("active")
+		});
+
+		$("#tab_btn_5").click(function () {
+			$("#tab_content_4").removeClass("active");
+			$("#tab_content_5").addClass("active");
+			$("#tab_content_6").removeClass("active");
+			$("#tab_btn_4").removeClass("active")
+			$("#tab_btn_5").addClass("active")
+			$("#tab_btn_6").removeClass("active")
+		});
+
+		$("#tab_btn_6").click(function () {
+			$("#tab_content_4").removeClass("active");
+			$("#tab_content_5").removeClass("active");
+			$("#tab_content_6").addClass("active");
+			$("#tab_btn_4").removeClass("active")
+			$("#tab_btn_5").removeClass("active")
+			$("#tab_btn_6").addClass("active")
+		});
 	</script>
 
 </body>
