@@ -137,72 +137,6 @@ line-height: 48px
 
 
 
-.main {
-    /* height: 610px; */
-    /* background-color: #CCCCFF; */
-    margin-bottom: 10px;
-    margin-top: 50px
-}
-
-.box {
-    width: calc((100% - 20px) / 3);
-    /* width: 33%; */
-    height: 400px;
-    background-color: #9F88FF;
-    float: left;
-    margin-right: 10px;
-    font-family: Microsoft JhengHei;
-}
-
-.box1 {
-    margin-bottom: 10px;
-}
-
-.boxR {
-    margin: 0;
-}
-
-.cover {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(50, 50, 50, 0.3);
-    display: none;
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    line-height: 400px;
-}
-
-.box:hover .cover {
-    display: block;
-}
-
-.main2 {
-    height: 300px;
-    /* background-color: #CCCCFF; */
-    margin-bottom: 10px
-}
-
-.main2-R {
-    width: calc(40% - 5px);
-    height: 100%;
-    background-color: #99BBFF;
-    float: left;
-    margin-right: 10px;
-    background-image: url(https://pbs.twimg.com/media/CsPyXrGVYAAJK63.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.main2-L {
-    width: calc(60% - 5px);
-    height: 100%;
-    background-color: #99BBFF;
-    float: right;
-    background-image: url(https://aramajapan.com/wp-content/uploads/2017/02/aramajapan_aaa-cocoa.png);
-    background-position: top;
-    background-size: cover;
-}
 
 .clear {
     clear: both;
@@ -396,7 +330,7 @@ line-height: 48px
 .video {
     width: calc(33% - 20px);
     background-color: green;
-    height: 300px;
+    height: 270px;
     margin-right: 20px;
     float: left;
     /* padding: 50px */
@@ -406,6 +340,7 @@ line-height: 48px
     width: 100%;
     height: 100%;
     overflow: hidden;
+    padding-top: 20px;
     padding-right: 51px;
     padding-left: 51px;
     box-sizing: border-box;
@@ -425,6 +360,7 @@ line-height: 48px
     top: 30%;
 }
 
+/* 新聞與行程 */
 
 .section2 {
     width: 80%;
@@ -563,4 +499,28 @@ footer {
 .deco {
     text-align: center;
     color: #696969
+}
+
+@media screen and (max-width : 800px){
+
+    .profile-box {
+        width: 100%;
+        /* height: 1000px; */
+    }
+    .profile-img {
+        width: 90%;
+        height: 500px;
+        /* background-color: aqua; */
+        float: left;
+        border-radius: 0%;
+        background-size: cover;
+        margin:0 auto;
+    }
+    .profile-text{
+        float: none;
+        width: 100%;
+        padding: 0;
+        float: left;
+        /* background-color: #222 */
+    }
 }

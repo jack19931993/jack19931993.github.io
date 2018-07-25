@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>index</title>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
@@ -13,6 +14,7 @@
 	<link rel="bookmark" href="img/AAA.ico">
 	<link rel="stylesheet" href="navbar.css">
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -32,34 +34,14 @@
 				<ul class="menu">
 					<li class="relative">
 						<a href="">ABOUT</a>
-						<ul class="dropdown">
-							<li>
-								<a href="">AAA</a>
-							</li>
-							<li>
-								<a href="">BBB</a>
-							</li>
-							<li>
-								<a href="">CCC</a>
-							</li>
-						</ul>
+
 					</li>
 					<li class="relative">
 						<a href="">PROFILE</a>
-						<ul class="dropdown">
-							<li>
-								<a href="">AAA</a>
-							</li>
-							<li>
-								<a href="">BBB</a>
-							</li>
-							<li>
-								<a href="">CCC</a>
-							</li>
-						</ul>
+
 					</li>
-					<li class="relative">
-						<a href="">MOVIE</a>
+					<li id= class="relative">
+						<a href="" id="movie">MOVIE</a>
 					</li>
 					<li class="relative">
 						<a href="">NEWS</a>
@@ -398,6 +380,10 @@
 
 			$("#gotop").click(function(){
 				$('html, body').animate({scrollTop:0}, 600);
+			})
+
+			$("#movie").click(function(){
+				$('html, body').animate({scroll:800}, 600);
 			})
 
 		</script>
