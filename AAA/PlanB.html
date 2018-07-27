@@ -9,212 +9,371 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
 
     <style>
-
-        body{
+        body {
             padding: 0;
             margin: 0;
+            background-image: url(img/BG-3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat
         }
 
         .logobox {
 
-/* width: 100px; */
-margin: 0 auto;
-width: 356px;
-/* height: 100px; */
-}
+            /* width: 100px; */
+            margin: 0 auto;
+            width: 356px;
+            /* height: 100px; */
+        }
 
-.logo {
-height: 85px;
-margin: 30px auto;
-}
-        .tab_btn{
+        .logo {
+            height: 75px;
+            margin: 30px auto;
+        }
+
+        .tab_box {
+            width: 650px;
+            margin: 0 auto;
+
+        }
+
+        .tab_btn {
             display: inline-block;
             /* border: 1px solid; */
             padding: 2px 30px;
             font-family: Microsoft JhengHei;
+            color: white;
         }
 
-        .tab_content{
+        .tab_content {
             /* height: 800px; */
             width: 95%;
-            border: 1px solid;
+            /* border: 1px solid; */
             display: none;
             margin: 0 auto
         }
 
-        .tab_content.active{
+        .tab_content.active {
             display: block;
         }
-
+        
+        /* ABOUT輪播 */
         .swiper-container {
-    width: 100%;
-    /* height: 700px; */
-    padding-top: 10px;
-    padding-bottom: 10px;
+            max-height: 100%;
+            max-width: 100%;
+            width: 100%;
+            height: calc(100vh - 200px);
+            /* height: 700px; */
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
 
-}
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 85%;
-    height: 700px;
-    font-family: Microsoft JhengHei;
-    text-shadow: -0.5px -0.5px 0 rgb(87, 165, 168),
-    0.5px -0.5px 0 rgb(87, 165, 168),
-    -0.5px 0.5px 0 rgb(87, 165, 168),
-    0.5px 0.5px 0 rgb(87, 165, 168),
-    0.5px 0.5px 0.5px rgb(87, 165, 168);
-    font-size: 24px;
-    /* font-weight: bold */
-    /* padding: 30px */
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 85%;
+            height: 100%;
+            font-family: Microsoft JhengHei;
+            text-shadow: -0.5px -0.5px 0 rgb(87, 165, 168),
+            0.5px -0.5px 0 rgb(87, 165, 168),
+            -0.5px 0.5px 0 rgb(87, 165, 168),
+            0.5px 0.5px 0 rgb(87, 165, 168),
+            0.5px 0.5px 0.5px rgb(87, 165, 168);
+            font-size: 24px;
+            /* font-weight: bold */
+            /* padding: 30px */
+        }
 
-}
+        /* PROFILE輪播 */
 
-.swiper-pagination {
-    margin-bottom: 40px
-}
+        
 
-.teamcover {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white
-}
+        .swiper-container2 {
+            max-height: 100%;
+            max-width: 100%;
+            width: 100%;
+            height: calc(100vh - 200px);
+            /* height: 700px; */
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
-.teaminfo{
-padding: 150px;
-letter-spacing: 5px;
-line-height: 48px
-}
+        .swiper-slide2 {
+            background-position: center;
+            background-size: cover;
+            width: 85%;
+            height: 100%;
+            font-family: Microsoft JhengHei;
+            text-shadow: -0.5px -0.5px 0 rgb(87, 165, 168),
+            0.5px -0.5px 0 rgb(87, 165, 168),
+            -0.5px 0.5px 0 rgb(87, 165, 168),
+            0.5px 0.5px 0 rgb(87, 165, 168),
+            0.5px 0.5px 0.5px rgb(87, 165, 168);
+            font-size: 24px;
+            /* font-weight: bold */
+            /* padding: 30px */
+        }
 
-.teaminfo-5{
-    text-shadow: -0.5px -0.5px 0 rgb(165, 93, 12),
-    0.5px -0.5px 0 rgb(165, 93, 12),
-    -0.5px 0.5px 0 rgb(165, 93, 12),
-    0.5px 0.5px 0 rgb(165, 93, 12),
-    0.5px 0.5px 0.5px rgb(165, 93, 12);
-}
+        .swiper-pagination {
+            margin-bottom: 40px
+        }
 
-.team-bg-1{
-    background-image: url('../img/team-bg-1.jpg');
-}
 
-.team-bg-2{
-    background-image: url('../img/team-bg-2.jpg')
-}
 
-.team-bg-3{
-    background-image: url('../img/team-bg-3.png')
-}
+        .teamcover {
+            width: 100%;
+            height: 100%;
+            /* background-color: rgba(0, 0, 0, 0.6); */
+            color: white;
 
-.team-bg-4{
-    background-image: url('../img/team-bg-4.jpg')
-}
+        }
 
-.team-bg-5{
-    background-image: url('../img/team-bg-5.jpg')
-}
+        .box {
+            margin: 0 auto;
+            height: 100%;
+        }
+
+
+        .teaminfo {
+            padding: 150px;
+            letter-spacing: 5px;
+            line-height: 48px
+        }
+
+        .teaminfo-5 {
+            text-shadow: -0.5px -0.5px 0 rgb(165, 93, 12),
+            0.5px -0.5px 0 rgb(165, 93, 12),
+            -0.5px 0.5px 0 rgb(165, 93, 12),
+            0.5px 0.5px 0 rgb(165, 93, 12),
+            0.5px 0.5px 0.5px rgb(165, 93, 12);
+        }
+
+        .team-bg-1 {
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            background-size: cover;
+            background-position: center;
+            /* margin: 0 auto; */
+        }
+
+        .team-bg-2 {
+            background-image: url('../img/team-bg-2.jpg')
+        }
+
+        .team-bg-3 {
+            background-image: url('../img/team-bg-3.png')
+        }
+
+        .team-bg-4 {
+            background-image: url('../img/team-bg-4.jpg')
+        }
+
+        .team-bg-5 {
+            background-image: url('../img/team-bg-5.jpg')
+        }
     </style>
 </head>
 
 <body>
 
-        <div class="logobox">
-                <img class="logo" src="../img/LOGO.png" alt="">
-            </div>
-
-    <div class="tab_btn" id="tab_btn_1">ABOUT</div>
-    <div class="tab_btn" id="tab_btn_2">PROFILE</div>
-    <div class="tab_btn" id="tab_btn_3">NEWS</div>
-
+    <div class="logobox">
+        <img class="logo" src="img/LOGO-2.png" alt="">
+    </div>
+    <div class="tab_box">
+        <div class="tab_btn" id="tab_btn_1">ABOUT</div>
+        <div class="tab_btn" id="tab_btn_2">PROFILE</div>
+        <div class="tab_btn" id="tab_btn_3">MOVIE</div>
+        <div class="tab_btn" id="tab_btn_4">NEWS</div>
+        <div class="tab_btn" id="tab_btn_5">SCHEDULE</div>
+    </div>
     <div class="tab_content active" id="tab_content_1">
-            <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide team-bg-1">
-                            <div class="teamcover" style="font-size: 60px; text-align: center;line-height: 650px">ABOUT</div>
-                        </div>
-                        <div class="swiper-slide team-bg-2">
-                            <div class="teamcover">
-                                <div class="teaminfo">AAA（日語：トリプル・エー，英語：Triple A）
-                                    <br> 是日本男女6人組的舞蹈流行音樂及表演藝術團體，團名取自英文「ATTACK ALL AROUND」的三個頭文字母，意指「全方位出擊」，團員全部經由avex甄選、培養，也是唱片公司avex集團轉型綜合娛樂公司的第一組唱片、舞台、雜誌、電臺、電視、電影、公益等全面發展的直系藝人。</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide team-bg-3">
-                            <div class="teamcover">
-                                <div class="teaminfo">AAA誕生於avex招牌的音樂事業本部第4製作部，該部擁有提出製作企劃的自主權，屬於社長松浦勝人的直系藝人，與TRF、濱崎步、大無限樂團、大塚愛、矢島美容室等藝人同門。AAA在出道不滿4個月時獲得2005年日本唱片大獎最佳新人獎，成為與冰川清志、w-inds.、中島美嘉、一青窈、大塚愛、絢香、傑洛、℃-ute、BIGBANG並列的2000年代十位最佳新人</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide team-bg-4">
-                            <div class="teamcover">
-                                <div class="teaminfo">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide team-bg-5">
-                            <div class="teamcover">
-                                <div class="teaminfo teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
-                            </div>
-                        </div>
+        <div class="swiper-container about">
+            <div class="swiper-wrapper">
 
+                <div class="swiper-slide ">
+                    <div class="teamcover">
+                        <div class="box">
+                            <img class="team-bg-1" src="img/about.jpg" alt="">
+                        </div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
 
+                <div class="swiper-slide team-bg-2">
+                    <div class="teamcover">
+                        <div class="teaminfo">AAA（日語：トリプル・エー，英語：Triple A）
+                            <br> 是日本男女6人組的舞蹈流行音樂及表演藝術團體，團名取自英文「ATTACK ALL AROUND」的三個頭文字母，意指「全方位出擊」，團員全部經由avex甄選、培養，也是唱片公司avex集團轉型綜合娛樂公司的第一組唱片、舞台、雜誌、電臺、電視、電影、公益等全面發展的直系藝人。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide team-bg-3">
+                    <div class="teamcover">
+                        <div class="teaminfo">AAA誕生於avex招牌的音樂事業本部第4製作部，該部擁有提出製作企劃的自主權，屬於社長松浦勝人的直系藝人，與TRF、濱崎步、大無限樂團、大塚愛、矢島美容室等藝人同門。AAA在出道不滿4個月時獲得2005年日本唱片大獎最佳新人獎，成為與冰川清志、w-inds.、中島美嘉、一青窈、大塚愛、絢香、傑洛、℃-ute、BIGBANG並列的2000年代十位最佳新人</div>
+                    </div>
+                </div>
+                <div class="swiper-slide team-bg-4">
+                    <div class="teamcover">
+                        <div class="teaminfo">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide team-bg-5">
+                    <div class="teamcover">
+                        <div class="teaminfo teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
     </div>
-    <div class="tab_content" id="tab_content_2">456</div>
+
+    <!-- PROFILE -->
+
+    <div class="tab_content" id="tab_content_2">
+        <div class="swiper-container profile">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide swiper-slide-2 ">
+                    <div class="teamcover">
+                        <div class="box">
+                            <img class="team-bg-1" src="img/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide swiper-slide-2 team-bg-2">
+                    <div class="teamcover">
+                        <div class="teaminfo">AAA（日語：トリプル・エー，英語：Triple A）
+                            <br> 是日本男女6人組的舞蹈流行音樂及表演藝術團體，團名取自英文「ATTACK ALL AROUND」的三個頭文字母，意指「全方位出擊」，團員全部經由avex甄選、培養，也是唱片公司avex集團轉型綜合娛樂公司的第一組唱片、舞台、雜誌、電臺、電視、電影、公益等全面發展的直系藝人。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-2 team-bg-3">
+                    <div class="teamcover">
+                        <div class="teaminfo">AAA誕生於avex招牌的音樂事業本部第4製作部，該部擁有提出製作企劃的自主權，屬於社長松浦勝人的直系藝人，與TRF、濱崎步、大無限樂團、大塚愛、矢島美容室等藝人同門。AAA在出道不滿4個月時獲得2005年日本唱片大獎最佳新人獎，成為與冰川清志、w-inds.、中島美嘉、一青窈、大塚愛、絢香、傑洛、℃-ute、BIGBANG並列的2000年代十位最佳新人</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-2 team-bg-4">
+                    <div class="teamcover">
+                        <div class="teaminfo">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-2 team-bg-5">
+                    <div class="teamcover">
+                        <div class="teaminfo teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination2"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev swiper-button-prev2"></div>
+            <div class="swiper-button-next swiper-button-next2"></div>
+        </div>
+    </div>
     <div class="tab_content" id="tab_content_3">789</div>
+    <div class="tab_content" id="tab_content_4">888</div>
+    <div class="tab_content" id="tab_content_5">999</div>
+
+    <footer></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-    <script>
 
-        $("#tab_btn_1").click(function(){
+    <!-- 分頁按鈕 -->
+    <script>
+        $("#tab_btn_1").click(function () {
             $("#tab_content_1").addClass("active");
             $("#tab_content_2").removeClass("active");
             $("#tab_content_3").removeClass("active");
+            $("#tab_content_4").removeClass("active");
+            $("#tab_content_5").removeClass("active");
         });
 
-        $("#tab_btn_2").click(function(){
+        $("#tab_btn_2").click(function () {
             $("#tab_content_1").removeClass("active");
             $("#tab_content_2").addClass("active");
             $("#tab_content_3").removeClass("active");
+            $("#tab_content_4").removeClass("active");
+            $("#tab_content_5").removeClass("active");
         });
 
-        $("#tab_btn_3").click(function(){
+        $("#tab_btn_3").click(function () {
             $("#tab_content_1").removeClass("active");
             $("#tab_content_2").removeClass("active");
             $("#tab_content_3").addClass("active");
+            $("#tab_content_4").removeClass("active");
+            $("#tab_content_5").removeClass("active");
+        });
+        $("#tab_btn_4").click(function () {
+            $("#tab_content_1").removeClass("active");
+            $("#tab_content_2").removeClass("active");
+            $("#tab_content_3").removeClass("active");
+            $("#tab_content_4").addClass("active");
+            $("#tab_content_5").removeClass("active");
+        });
+        $("#tab_btn_5").click(function () {
+            $("#tab_content_1").removeClass("active");
+            $("#tab_content_2").removeClass("active");
+            $("#tab_content_3").removeClass("active");
+            $("#tab_content_4").removeClass("active");
+            $("#tab_content_5").addClass("active");
         });
     </script>
 
-    	<!-- Banner Swiper -->
-	<script>
-            var swiper = new Swiper('.swiper-container', {
-                effect: 'coverflow',
-                grabCursor: true,
-                centeredSlides: true,
-                slidesPerView: 'auto',
-                coverflowEffect: {
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        </script>
+    <!-- ABOUT輪播 -->
+    <script>
+        var swiper = new Swiper('.swiper-container.about', {
+            effect: 'coverflow',
+            // grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- PROFILE輪播 -->
+    <script>
+        var swiper = new Swiper('.swiper-container.profile', {
+            effect: 'coverflow',
+            // grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
