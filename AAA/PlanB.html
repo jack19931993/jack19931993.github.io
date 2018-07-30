@@ -93,15 +93,6 @@
 
 
 
-        /* #swiper-container2 {
-            max-height: 100%;
-            max-width: 100%;
-            width: 100%;
-            height: calc(100vh - 200px);
-
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
 
         .swiper-slide2 {
             background-position: center;
@@ -301,6 +292,7 @@
             $("#tab_content_4").removeClass("active");
             $("#tab_content_5").removeClass("active");
             // $("#swiper-container2").toggleClass("display");
+            swiper.update();
         });
 
         $("#tab_btn_2").click(function () {
@@ -310,6 +302,7 @@
             $("#tab_content_4").removeClass("active");
             $("#tab_content_5").removeClass("active");
             // $("#swiper-container").toggleClass("display");
+            swiper1.update();
         });
 
         $("#tab_btn_3").click(function () {
@@ -360,7 +353,7 @@
     </script>
     <!-- PROFILE輪播 -->
     <script>
-        var swiper1 = new Swiper('#swiper-container2', {
+        var swiper1 = new Swiper('.profile', {
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
