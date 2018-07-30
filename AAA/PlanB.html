@@ -43,6 +43,7 @@
             padding: 2px 30px;
             font-family: Microsoft JhengHei;
             color: white;
+            cursor: pointer;
         }
 
         .tab_content {
@@ -59,6 +60,7 @@
         }
 
         /* ABOUT輪播 */
+
         .swiper-container {
             max-height: 100%;
             max-width: 100%;
@@ -86,13 +88,12 @@
             /* font-weight: bold */
             /* padding: 30px */
         }
-        .display{
+
+        .display {
             display: none;
         }
+
         /* PROFILE輪播 */
-
-
-
 
         .swiper-slide2 {
             background-position: center;
@@ -107,9 +108,9 @@
             0.5px 0.5px 0.5px rgb(87, 165, 168);
             font-size: 24px;
 
-        } */
+        }
 
-        .swiper-pagination {
+        */ .swiper-pagination {
             margin-bottom: 40px
         }
 
@@ -187,13 +188,13 @@
     <!-- ABOUT輪播 -->
 
     <div class="tab_content active " id="tab_content_1">
-        <div class="swiper-container about" id="swiper-container" >
+        <div class="swiper-container about" id="swiper-container">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide ">
                     <div class="teamcover">
                         <div class="box">
-                            <img class="team-bg-1" src="img/about.jpg" alt="">
+                            <img class="team-bg-1" src="img/about-02.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -233,13 +234,13 @@
     <!-- PROFILE -->
 
     <div class="tab_content" id="tab_content_2">
-        <div class="swiper-container profile" id="swiper-container2" >
+        <div class="swiper-container profile" id="swiper-container2">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide ">
                     <div class="teamcover">
                         <div class="box">
-                            <img class="team-bg-1" src="img/about-01.jpg" alt="">
+                            <img class="team-bg-1" src="img/profile-01.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -274,7 +275,51 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
-    <div class="tab_content" id="tab_content_3">789</div>
+    <div class="tab_content" id="tab_content_3">
+        
+            <div class="swiper-container movie" id="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide ">
+                        <div class="teamcover">
+                            <div class="box">
+                                <img class="team-bg-1" src="img/movie-01.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide team-bg-2">
+                        <div class="teamcover">
+                            <div class="teaminfo">AAA（日語：トリプル・エー，英語：Triple A）
+                                <br> 是日本男女6人組的舞蹈流行音樂及表演藝術團體，團名取自英文「ATTACK ALL AROUND」的三個頭文字母，意指「全方位出擊」，團員全部經由avex甄選、培養，也是唱片公司avex集團轉型綜合娛樂公司的第一組唱片、舞台、雜誌、電臺、電視、電影、公益等全面發展的直系藝人。</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide team-bg-3">
+                        <div class="teamcover">
+                            <div class="teaminfo">AAA誕生於avex招牌的音樂事業本部第4製作部，該部擁有提出製作企劃的自主權，屬於社長松浦勝人的直系藝人，與TRF、濱崎步、大無限樂團、大塚愛、矢島美容室等藝人同門。AAA在出道不滿4個月時獲得2005年日本唱片大獎最佳新人獎，成為與冰川清志、w-inds.、中島美嘉、一青窈、大塚愛、絢香、傑洛、℃-ute、BIGBANG並列的2000年代十位最佳新人</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide team-bg-4">
+                        <div class="teamcover">
+                            <div class="teaminfo">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide team-bg-5">
+                        <div class="teamcover">
+                            <div class="teaminfo teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        
+    </div>
     <div class="tab_content" id="tab_content_4">888</div>
     <div class="tab_content" id="tab_content_5">999</div>
 
@@ -311,6 +356,7 @@
             $("#tab_content_3").addClass("active");
             $("#tab_content_4").removeClass("active");
             $("#tab_content_5").removeClass("active");
+            swiper2.update();
         });
         $("#tab_btn_4").click(function () {
             $("#tab_content_1").removeClass("active");
@@ -356,6 +402,29 @@
         var swiper1 = new Swiper('.profile', {
             effect: 'coverflow',
             grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- Movie輪播 -->
+    <script>
+        var swiper2 = new Swiper('.movie', {
+            effect: 'coverflow',
+            // grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
             coverflowEffect: {
