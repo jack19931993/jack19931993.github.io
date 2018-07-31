@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link href="css/lightbox.css" rel="stylesheet">
 
     <style>
         body {
@@ -17,6 +18,7 @@
             background-size: cover;
             background-repeat: no-repeat
         }
+
 
         .logobox {
 
@@ -35,6 +37,7 @@
             width: 650px;
             margin: 0 auto;
 
+
         }
 
         .tab_btn {
@@ -44,6 +47,16 @@
             font-family: Microsoft JhengHei;
             color: white;
             cursor: pointer;
+            font-weight: bold;
+            /* font-size: 16px */
+        }
+
+        .tab_btn:hover {
+            text-shadow: -0.5px -0.5px 0 rgb(87, 165, 168),
+            0.5px -0.5px 0 rgb(87, 165, 168),
+            -0.5px 0.5px 0 rgb(87, 165, 168),
+            0.5px 0.5px 0 rgb(87, 165, 168),
+            0.5px 0.5px 0.5px rgb(87, 165, 168);
         }
 
         .tab_content {
@@ -74,6 +87,7 @@
 
 
         .swiper-slide {
+
             background-position: center;
             background-size: cover;
             width: 85%;
@@ -116,10 +130,10 @@
 
 
 
-        .teamcover {
+        .cover {
             width: 100%;
             height: 100%;
-            /* background-color: rgba(0, 0, 0, 0.6); */
+            background-color: rgba(161, 161, 161, 0.048);
             color: white;
 
         }
@@ -130,10 +144,12 @@
         }
 
 
-        .teaminfo {
+        .info {
             padding: 150px;
-            letter-spacing: 5px;
-            line-height: 48px
+            padding-top: 10%;
+            letter-spacing: 6px;
+            line-height: 48px;
+            font-size: 24px
         }
 
         .teaminfo-5 {
@@ -154,25 +170,140 @@
             /* margin: 0 auto; */
         }
 
-        .team-bg-2 {
-            background-image: url('../img/team-bg-2.jpg')
+        .profile-infobox {
+            width: 100%;
+            height: 90%;
+            /* background-color: red; */
+            padding-top: 3%;
         }
 
-        .team-bg-3 {
-            background-image: url('../img/team-bg-3.png')
+        /* .profile-infobox-L {
+            width: 50%;
+            height: 100%;
+            background-color: aqua;
+            float: left;
         }
 
-        .team-bg-4 {
-            background-image: url('../img/team-bg-4.jpg')
+        .profile-infobox-R {
+            width: 50%;
+            height: 100%;
+            background-color: aquamarine;
+            float: left;
+        } */
+
+        .profile-img {
+            width: 25%;
+            height: 100%;
+            /* background-color: blue; */
+            float: left;
+            /* border-radius: 50% */
         }
 
-        .team-bg-5 {
-            background-image: url('../img/team-bg-5.jpg')
+        .profile-text {
+            /* position: relative; */
+            width: 70%;
+            height: 100%;
+            /* background-color: rgba(192, 192, 192, 0.7); */
+            float: left;
+            padding: 10px 50px;
+            box-sizing: border-box;
+            /* display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space : nowrap; */
+            letter-spacing: 3px;
+            line-height: 48px;
+        }
+
+        .border {
+            text-decoration: underline;
+        }
+
+
+        /* .button{
+            height: 50px;
+            width: 80px;
+            position: absolute;
+            top: 70%;
+            right: 50px;
+            font-size: 24px;
+            background-color: aqua
+        } */
+
+        .more1 {
+            position: absolute;
+            top: 70%;
+            right: 50px;
+            padding: 2px 30px;
+            background-color: white
+        }
+
+        .more1:hover {
+            color: red
+        }
+
+        .img-1 {
+            background-image: url(img/浦田直也.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+
+        .img-2 {
+            background-image: url(img/西島隆弘.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+
+        .img-3 {
+            background-image: url(img/宇野實彩子.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+
+        .img-4 {
+            background-image: url(img/日高光啓.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+
+        .img-5 {
+            background-image: url(img/伊藤千晃.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+
+        .img-6 {
+            background-image: url(img/末吉秀太.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+
+        .img-7 {
+            background-image: url(img/與真司郎.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+
+        .movie-box{
+            width: 100%;
+            height: 50%;
+            background-color: green;
+            box-sizing: border-box;
+
+        }
+
+        .video{
+            width: calc((100% - 50px)/3);
+            height: 100%;
+            background-color: red;
+            float: left;
+            padding: 15px;
         }
     </style>
 </head>
 
 <body>
+
 
     <div class="logobox">
         <img class="logo" src="img/LOGO-2.png" alt="">
@@ -200,24 +331,24 @@
                 </div>
 
                 <div class="swiper-slide team-bg-2">
-                    <div class="teamcover">
-                        <div class="teaminfo">AAA（日語：トリプル・エー，英語：Triple A）
+                    <div class="cover">
+                        <div class="info">AAA（日語：トリプル・エー，英語：Triple A）
                             <br> 是日本男女6人組的舞蹈流行音樂及表演藝術團體，團名取自英文「ATTACK ALL AROUND」的三個頭文字母，意指「全方位出擊」，團員全部經由avex甄選、培養，也是唱片公司avex集團轉型綜合娛樂公司的第一組唱片、舞台、雜誌、電臺、電視、電影、公益等全面發展的直系藝人。</div>
                     </div>
                 </div>
                 <div class="swiper-slide team-bg-3">
-                    <div class="teamcover">
-                        <div class="teaminfo">AAA誕生於avex招牌的音樂事業本部第4製作部，該部擁有提出製作企劃的自主權，屬於社長松浦勝人的直系藝人，與TRF、濱崎步、大無限樂團、大塚愛、矢島美容室等藝人同門。AAA在出道不滿4個月時獲得2005年日本唱片大獎最佳新人獎，成為與冰川清志、w-inds.、中島美嘉、一青窈、大塚愛、絢香、傑洛、℃-ute、BIGBANG並列的2000年代十位最佳新人</div>
+                    <div class="cover">
+                        <div class="info">AAA誕生於avex招牌的音樂事業本部第4製作部，該部擁有提出製作企劃的自主權，屬於社長松浦勝人的直系藝人，與TRF、濱崎步、大無限樂團、大塚愛、矢島美容室等藝人同門。AAA在出道不滿4個月時獲得2005年日本唱片大獎最佳新人獎，成為與冰川清志、w-inds.、中島美嘉、一青窈、大塚愛、絢香、傑洛、℃-ute、BIGBANG並列的2000年代十位最佳新人</div>
                     </div>
                 </div>
                 <div class="swiper-slide team-bg-4">
-                    <div class="teamcover">
-                        <div class="teaminfo">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
+                    <div class="cover">
+                        <div class="info">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
                     </div>
                 </div>
                 <div class="swiper-slide team-bg-5">
-                    <div class="teamcover">
-                        <div class="teaminfo teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
+                    <div class="cover">
+                        <div class="info teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
                     </div>
                 </div>
 
@@ -245,10 +376,94 @@
                     </div>
                 </div>
 
+                <div class="swiper-slide ">
+                    <!-- <div class="cover"> -->
+                        <div class="profile-infobox">
+
+                            <div class="profile-img img-1 ">
+
+                            </div>
+                            <div class="profile-text">
+                                <span class="border">
+                                    <span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10</span>
+                                <p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
+                                    <br> 有過50次參加甄選會而落選的經驗。
+
+                                    <br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+                                    <br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+                                    <br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。 手非常巧，曾幫兩位女團員製作指甲彩繪。
+                                </p>
+
+                            </div>
+                        </div>
+
+                    <!-- </div> -->
+                </div>
+                <div class="swiper-slide ">
+                    <div class="cover">
+                        <div class="profile-infobox">
+
+                            <div class="profile-img img-1 ">
+
+                            </div>
+                            <div class="profile-text">
+                                <span class="border">
+                                    <span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10</span>
+                                <p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
+                                    <br> 有過50次參加甄選會而落選的經驗。
+
+                                    <br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+                                    <br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+                                    <br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。 手非常巧，曾幫兩位女團員製作指甲彩繪。
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide team-bg-4">
+                    <div class="cover">
+                        <div class="info">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide team-bg-5">
+                    <div class="cover">
+                        <div class="info teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <!-- Movie輪播 -->
+    <div class="tab_content" id="tab_content_3">
+
+        <div class="swiper-container movie" id="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide ">
+                    <div class="cover">
+                        <div class="box">
+                            <img class="team-bg-1" src="img/movie-01.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="swiper-slide team-bg-2">
-                    <div class="teamcover">
-                        <div class="teaminfo">AAA（日語：トリプル・エー，英語：Triple A）
-                            <br> 是日本男女6人組的舞蹈流行音樂及表演藝術團體，團名取自英文「ATTACK ALL AROUND」的三個頭文字母，意指「全方位出擊」，團員全部經由avex甄選、培養，也是唱片公司avex集團轉型綜合娛樂公司的第一組唱片、舞台、雜誌、電臺、電視、電影、公益等全面發展的直系藝人。</div>
+                    <div class="cover">
+                       <div class="movie-box">
+                           <div class="video"></div>
+                           <div class="video"></div>
+                           <div class="video"></div>
+                       </div>
+
                     </div>
                 </div>
                 <div class="swiper-slide team-bg-3">
@@ -274,51 +489,8 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-    </div>
-    <div class="tab_content" id="tab_content_3">
-        
-            <div class="swiper-container movie" id="swiper-container">
-                <div class="swiper-wrapper">
 
-                    <div class="swiper-slide ">
-                        <div class="teamcover">
-                            <div class="box">
-                                <img class="team-bg-1" src="img/movie-01.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="swiper-slide team-bg-2">
-                        <div class="teamcover">
-                            <div class="teaminfo">AAA（日語：トリプル・エー，英語：Triple A）
-                                <br> 是日本男女6人組的舞蹈流行音樂及表演藝術團體，團名取自英文「ATTACK ALL AROUND」的三個頭文字母，意指「全方位出擊」，團員全部經由avex甄選、培養，也是唱片公司avex集團轉型綜合娛樂公司的第一組唱片、舞台、雜誌、電臺、電視、電影、公益等全面發展的直系藝人。</div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide team-bg-3">
-                        <div class="teamcover">
-                            <div class="teaminfo">AAA誕生於avex招牌的音樂事業本部第4製作部，該部擁有提出製作企劃的自主權，屬於社長松浦勝人的直系藝人，與TRF、濱崎步、大無限樂團、大塚愛、矢島美容室等藝人同門。AAA在出道不滿4個月時獲得2005年日本唱片大獎最佳新人獎，成為與冰川清志、w-inds.、中島美嘉、一青窈、大塚愛、絢香、傑洛、℃-ute、BIGBANG並列的2000年代十位最佳新人</div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide team-bg-4">
-                        <div class="teamcover">
-                            <div class="teaminfo">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide team-bg-5">
-                        <div class="teamcover">
-                            <div class="teaminfo teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-
-        
     </div>
     <div class="tab_content" id="tab_content_4">888</div>
     <div class="tab_content" id="tab_content_5">999</div>
@@ -327,6 +499,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="js/lightbox.js"></script>
 
     <!-- 分頁按鈕 -->
     <script>
@@ -401,7 +574,7 @@
     <script>
         var swiper1 = new Swiper('.profile', {
             effect: 'coverflow',
-            grabCursor: true,
+            // grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
             coverflowEffect: {
@@ -443,6 +616,11 @@
             },
         });
     </script>
+
+    <!-- News輪播 -->
+
+
+    <!-- Schedule輪播 -->
 </body>
 
 </html>
