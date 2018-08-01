@@ -320,7 +320,7 @@
             background-color: rgba(0, 0, 0, 0.7);
         }
 
-        .news-date {}
+        
 
         @media (max-width:1080px) {
             .logo {
@@ -418,11 +418,28 @@ overflow: scroll;
         }
 
         .overlay-landscape.active {
-  opacity: 0.85;
+  /* opacity: 0.85;
   background-color: rgba(0,0,0,1);
+  background-color: red;
   z-index: 9000;
   display: block;
   position: fixed;
+  width: 70%;
+  height: 20%;
+  margin-right: 500px;
+  float: left; */
+  height: 100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  position: fixed;
+  z-index: 9000;
+  text-align: center
+  
+}
+
+.overlay-landscape{
+    opacity: 0;
 }
 
 .overlay-landscape-modal-mobile {
@@ -439,19 +456,8 @@ overflow: scroll;
 
 <body>
 
-        <div class="modal-dialog overlay-landscape-modal-mobile" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">請旋轉您的螢幕</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p class="">
-                            為確保功能正常，且讓您有最好的使用體驗，請將您的螢幕旋轉為直向，謝謝！
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay-landscape"></div>
+        
+            <div class="overlay-landscape ">請旋轉您的螢幕</div>
 
 
     <div class="logobox">
@@ -1081,16 +1087,7 @@ overflow: scroll;
         $('.overlay-landscape-modal-mobile').addClass('active');
     }
         
-    $(window).on("deviceorientation resize", function( event ) {
-    if (window.matchMedia("(orientation: landscape)").matches) {
-        $('.overlay-landscape').removeClass('active');
-        $('.overlay-landscape-modal-mobile').removeClass('active');
-    }
-    if (window.matchMedia("(orientation: portrait)").matches) {
-        $('.overlay-landscape').addClass('active');
-        $('.overlay-landscape-modal-mobile').addClass('active');
-    }
-});
+   
     </script>
 
     <!-- <script>
