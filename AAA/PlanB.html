@@ -34,7 +34,7 @@
         }
 
         .tab_box {
-            width: 650px;
+            width: 750px;
             margin: 0 auto;
 
 
@@ -77,7 +77,7 @@
         .swiper-container {
             max-height: 100%;
             max-width: 100%;
-            width: 100%;
+            /* width: 100%; */
             height: calc(100vh - 200px);
             /* height: 700px; */
             padding-top: 10px;
@@ -93,12 +93,12 @@
             width: 85%;
             height: 100%;
             font-family: Microsoft JhengHei;
-            text-shadow: -0.5px -0.5px 0 rgb(87, 165, 168),
-            0.5px -0.5px 0 rgb(87, 165, 168),
-            -0.5px 0.5px 0 rgb(87, 165, 168),
-            0.5px 0.5px 0 rgb(87, 165, 168),
-            0.5px 0.5px 0.5px rgb(87, 165, 168);
-            font-size: 24px;
+            text-shadow: -0.2px -0.2px 0 rgb(87, 165, 168),
+            0.2px -0.2px 0 rgb(87, 165, 168),
+            -0.2px 0.2px 0 rgb(87, 165, 168),
+            0.2px 0.2px 0 rgb(87, 165, 168),
+            0.2px 0.2px 0.2px rgb(87, 165, 168);
+            font-size: 21px;
             /* font-weight: bold */
             /* padding: 30px */
         }
@@ -133,7 +133,7 @@
         .cover {
             width: 100%;
             height: 100%;
-            background-color: rgba(161, 161, 161, 0.048);
+            background-color: rgba(95, 95, 95, 0.05);
             color: white;
 
         }
@@ -200,24 +200,22 @@
         }
 
         .profile-text {
-            /* position: relative; */
             width: 70%;
             height: 100%;
-            /* background-color: rgba(192, 192, 192, 0.7); */
             float: left;
             padding: 10px 50px;
             box-sizing: border-box;
-            /* display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space : nowrap; */
             letter-spacing: 3px;
             line-height: 48px;
         }
 
-        .border {
-            text-decoration: underline;
+        .profile-tittle{
+            font-size: 34px;
         }
+
+        /* .border {
+            text-decoration: underline;
+        } */
 
 
         /* .button{
@@ -284,20 +282,118 @@
             background-size: cover;
         }
 
-        .movie-box{
+        .movie-box {
             width: 100%;
             height: 50%;
-            background-color: green;
+            /* background-color: green; */
             box-sizing: border-box;
-
+            /* border: 1px solid white; */
         }
 
-        .video{
-            width: calc((100% - 50px)/3);
+        .video {
+            width: 33%;
             height: 100%;
-            background-color: red;
+            /* background-color: red; */
             float: left;
+            /* margin-right: 15px; */
             padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .news-box {
+            width: 100%;
+            height: 33%;
+            /* background-color: white */
+            letter-spacing: 3px;
+            /* padding: 1px */
+        }
+
+        .news-L {
+            width: 30%;
+            height: 100%;
+            /* background-color: aqua; */
+            float: left;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 4px solid rgba(182, 182, 182, 0.3);
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .news-text {
+            width: 70%;
+            height: 100%;
+            /* background-color: blueviolet; */
+            float: left;
+            box-sizing: border-box;
+            padding: 15px;
+            border: 4px solid rgba(182, 182, 182, 0.3);
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .news-date {}
+
+        @media (max-width:1080px) {
+            .logo {
+                height: 20px;
+                margin: 10px auto;
+            }
+
+            .logobox {
+
+
+                margin: 0 auto;
+                width: 84px;
+
+            }
+
+            .tab_box{
+                width: 80%;
+            }
+
+            .tab_btn{
+                padding: 2px 10px
+            }
+
+            .info {
+            padding: 50px;
+            padding-top: 1%;
+            letter-spacing: 6px;
+            line-height: 28px;
+            font-size: 18px
+        }
+
+        .swiper-container {
+            max-height: 100%;
+            max-width: 100%;
+            /* width: 100%; */
+            height: calc(100vh - 100px);
+            /* height: 700px; */
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .profile-img {
+            width: 20%;
+            height: 100%;
+            /* background-color: blue; */
+            float: left;
+            /* border-radius: 50% */
+        }
+
+        .profile-text{
+            width: 80%;
+            padding: 20px;
+            padding-top: 1%;
+            letter-spacing: px;
+            line-height: 20px;
+            font-size: 16px
+
+        }
+        .profile-tittle{
+            font-size: 18px;
+        }
+
+
         }
     </style>
 </head>
@@ -371,34 +467,11 @@
                 <div class="swiper-slide ">
                     <div class="teamcover">
                         <div class="box">
-                            <img class="team-bg-1" src="img/profile-01.jpg" alt="">
+                            <img class="team-bg-1" src="../img/profile-01.jpg" alt="">
                         </div>
                     </div>
                 </div>
 
-                <div class="swiper-slide ">
-                    <!-- <div class="cover"> -->
-                        <div class="profile-infobox">
-
-                            <div class="profile-img img-1 ">
-
-                            </div>
-                            <div class="profile-text">
-                                <span class="border">
-                                    <span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10</span>
-                                <p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
-                                    <br> 有過50次參加甄選會而落選的經驗。
-
-                                    <br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
-                                    <br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
-                                    <br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。 手非常巧，曾幫兩位女團員製作指甲彩繪。
-                                </p>
-
-                            </div>
-                        </div>
-
-                    <!-- </div> -->
-                </div>
                 <div class="swiper-slide ">
                     <div class="cover">
                         <div class="profile-infobox">
@@ -408,7 +481,7 @@
                             </div>
                             <div class="profile-text">
                                 <span class="border">
-                                    <span style="font-size: 34px">NAOYA URATA</span>　浦田 直也　1982/11/10</span>
+                                    <span class="profile-tittle" >NAOYA URATA</span>　浦田 直也　1982/11/10</span>
                                 <p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
                                     <br> 有過50次參加甄選會而落選的經驗。
 
@@ -422,14 +495,140 @@
 
                     </div>
                 </div>
-                <div class="swiper-slide team-bg-4">
+                <div class="swiper-slide ">
                     <div class="cover">
-                        <div class="info">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
+                        <div class="profile-infobox">
+
+                            <div class="profile-img img-2 ">
+
+                            </div>
+                            <div class="profile-text">
+                                <span class="border">
+                                    <span class="profile-tittle" >TAKAHIRO NISHIJIMA</span>　西島 隆弘　1986/9/30</span>
+                                <p>擔任男主唱。6歲已經開始跳舞及唱歌。
+
+                                    <br> 會彈吉他，單曲夢ノカケラ的音樂錄影帶和巡迴演唱會均有展現。
+                                    <br> 在電視劇與舞台劇中活躍後，進而在2009年於電影『愛的曝光』中演出。
+                                    <br> 2014年以Nissy的名義單飛出道，亦交出亮眼成績單。
+                                    <br> 西島隆弘沒有在任何SNS社交網站開設個人主頁。AAA的隊友日高光啟表示：
+                                    <br>「因為西島是機械盲。例如發送訊息到他電腦，他卻不懂打開的方法，最後還是我到西島家幫他打開。」</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide ">
+                    <div class="cover">
+                        <div class="profile-infobox">
+
+                            <div class="profile-img img-3 ">
+
+                            </div>
+                            <div class="profile-text">
+                                <span class="border">
+                                    <span class="profile-tittle" >MISAKO UNO</span>　宇野 實彩子　1986/7/16</span>
+                                <p>擔任女主唱，第一個加入AAA的女團員。
+                                    <br> 歷經數次甄選落榜，實彩子放棄了偶像夢想轉向學院派路線，學習系統化的表演藝術，繼續藝人志願。
+                                    <br> 在朋友「留下一份值得回憶的夏天」的慫恿下，實彩子簡歷面試了avex第二屆全國甄選會。不報期望的實彩子通過初審，闖入現場評審的二審、三審及最終審查。 2008年，實彩子回絕了公司單飛出道與AAA解散的提議，並表示「不管怎樣，我想加強成員關系，取得一些成績」。
+                                </p>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="swiper-slide team-bg-5">
+                <div class="swiper-slide ">
                     <div class="cover">
-                        <div class="info teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
+                        <div class="profile-infobox">
+
+                            <div class="profile-img img-4 ">
+
+                            </div>
+                            <div class="profile-text">
+                                <span class="border">
+                                    <span  class="profile-tittle" >NAOYA URATA</span>　浦田 直也　1982/11/10</span>
+                                <p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
+                                    <br> 有過50次參加甄選會而落選的經驗。
+
+                                    <br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+                                    <br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+                                    <br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。 手非常巧，曾幫兩位女團員製作指甲彩繪。
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="cover">
+                        <div class="profile-infobox">
+
+                            <div class="profile-img img-5 ">
+
+                            </div>
+                            <div class="profile-text">
+                                <span class="border">
+                                    <span class="profile-tittle" >NAOYA URATA</span>　浦田 直也　1982/11/10</span>
+                                <p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
+                                    <br> 有過50次參加甄選會而落選的經驗。
+
+                                    <br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+                                    <br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+                                    <br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。 手非常巧，曾幫兩位女團員製作指甲彩繪。
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="cover">
+                        <div class="profile-infobox">
+
+                            <div class="profile-img img-6 ">
+
+                            </div>
+                            <div class="profile-text">
+                                <span class="border">
+                                    <span class="profile-tittle" >NAOYA URATA</span>　浦田 直也　1982/11/10</span>
+                                <p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
+                                    <br> 有過50次參加甄選會而落選的經驗。
+
+                                    <br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+                                    <br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+                                    <br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。 手非常巧，曾幫兩位女團員製作指甲彩繪。
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div class="cover">
+                        <div class="profile-infobox">
+
+                            <div class="profile-img img-7 ">
+
+                            </div>
+                            <div class="profile-text">
+                                <span class="border">
+                                    <span class="profile-tittle" >NAOYA URATA</span>　浦田 直也　1982/11/10</span>
+                                <p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
+                                    <br> 有過50次參加甄選會而落選的經驗。
+
+                                    <br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
+                                    <br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
+                                    <br> 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。 手非常巧，曾幫兩位女團員製作指甲彩繪。
+                                </p>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -458,11 +657,102 @@
 
                 <div class="swiper-slide team-bg-2">
                     <div class="cover">
-                       <div class="movie-box">
-                           <div class="video"></div>
-                           <div class="video"></div>
-                           <div class="video"></div>
-                       </div>
+                        <div class="movie-box">
+                            <div class="video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="movie-box">
+                            <div class="video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+
+    </div>
+
+    <!-- News輪播 -->
+    <div class="tab_content" id="tab_content_4">
+
+        <div class="swiper-container news" id="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide ">
+                    <div class="cover">
+                        <div class="box">
+                            <img class="team-bg-1" src="img/news-01.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide team-bg-2">
+                    <div class="cover">
+                        <div class="news-box">
+                            <div class="news-L">
+                                <div class="news-date">2018-07-23</div>
+                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
+                            </div>
+                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
+                                <br> 日拋6色、月拋6色，即將開始販售
+                                <br> 即日起開始預約
+                                <br> 商品將於7/30開始陸續寄出
+                                <br>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <div class="news-L">
+                                <div class="news-date">2018-07-23</div>
+                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
+                            </div>
+                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
+                                <br> 日拋6色、月拋6色，即將開始販售
+                                <br> 即日起開始預約
+                                <br> 商品將於7/30開始陸續寄出
+                                <br>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <div class="news-L">
+                                <div class="news-date">2018-07-23</div>
+                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
+                            </div>
+                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
+                                <br> 日拋6色、月拋6色，即將開始販售
+                                <br> 即日起開始預約
+                                <br> 商品將於7/30開始陸續寄出
+                                <br>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -492,8 +782,83 @@
 
 
     </div>
-    <div class="tab_content" id="tab_content_4">888</div>
-    <div class="tab_content" id="tab_content_5">999</div>
+    <div class="tab_content" id="tab_content_5">
+        <div class="swiper-container schedule" id="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide ">
+                    <div class="cover">
+                        <div class="box">
+                            <img class="team-bg-1" src="img/news-01.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide team-bg-2">
+                    <div class="cover">
+                        <div class="news-box">
+                            <div class="news-L">
+                                <div class="news-date">2018-07-23</div>
+                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
+                            </div>
+                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
+                                <br> 日拋6色、月拋6色，即將開始販售
+                                <br> 即日起開始預約
+                                <br> 商品將於7/30開始陸續寄出
+                                <br>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <div class="news-L">
+                                <div class="news-date">2018-07-23</div>
+                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
+                            </div>
+                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
+                                <br> 日拋6色、月拋6色，即將開始販售
+                                <br> 即日起開始預約
+                                <br> 商品將於7/30開始陸續寄出
+                                <br>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <div class="news-L">
+                                <div class="news-date">2018-07-23</div>
+                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
+                            </div>
+                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
+                                <br> 日拋6色、月拋6色，即將開始販售
+                                <br> 即日起開始預約
+                                <br> 商品將於7/30開始陸續寄出
+                                <br>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide team-bg-3">
+                    <div class="teamcover">
+                        <div class="teaminfo">AAA誕生於avex招牌的音樂事業本部第4製作部，該部擁有提出製作企劃的自主權，屬於社長松浦勝人的直系藝人，與TRF、濱崎步、大無限樂團、大塚愛、矢島美容室等藝人同門。AAA在出道不滿4個月時獲得2005年日本唱片大獎最佳新人獎，成為與冰川清志、w-inds.、中島美嘉、一青窈、大塚愛、絢香、傑洛、℃-ute、BIGBANG並列的2000年代十位最佳新人</div>
+                    </div>
+                </div>
+                <div class="swiper-slide team-bg-4">
+                    <div class="teamcover">
+                        <div class="teaminfo">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide team-bg-5">
+                    <div class="teamcover">
+                        <div class="teaminfo teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
 
     <footer></footer>
 
@@ -537,6 +902,7 @@
             $("#tab_content_3").removeClass("active");
             $("#tab_content_4").addClass("active");
             $("#tab_content_5").removeClass("active");
+            swiper3.update();
         });
         $("#tab_btn_5").click(function () {
             $("#tab_content_1").removeClass("active");
@@ -544,6 +910,7 @@
             $("#tab_content_3").removeClass("active");
             $("#tab_content_4").removeClass("active");
             $("#tab_content_5").addClass("active");
+            swiper4.update();
         });
     </script>
 
@@ -551,7 +918,7 @@
     <script>
         var swiper = new Swiper('.about', {
             effect: 'coverflow',
-            // grabCursor: true,
+            grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
             coverflowEffect: {
@@ -560,6 +927,9 @@
                 depth: 100,
                 modifier: 1,
                 slideShadows: true,
+            },
+            keyboard: {
+                enabled: true,
             },
             pagination: {
                 el: '.swiper-pagination',
@@ -584,6 +954,9 @@
                 modifier: 1,
                 slideShadows: true,
             },
+            keyboard: {
+                enabled: true,
+            },
             pagination: {
                 el: '.swiper-pagination',
             },
@@ -607,6 +980,9 @@
                 modifier: 1,
                 slideShadows: true,
             },
+            keyboard: {
+                enabled: true,
+            },
             pagination: {
                 el: '.swiper-pagination',
             },
@@ -618,9 +994,60 @@
     </script>
 
     <!-- News輪播 -->
+    <script>
+        var swiper3 = new Swiper('.news', {
+            effect: 'coverflow',
+            // grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            keyboard: {
+                enabled: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
 
     <!-- Schedule輪播 -->
+
+    <script>
+        var swiper4 = new Swiper('.schedule', {
+            effect: 'coverflow',
+            // grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            keyboard: {
+                enabled: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
