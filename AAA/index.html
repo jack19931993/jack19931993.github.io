@@ -36,7 +36,7 @@
         }
 
         .tab_box {
-            width: 750px;
+            width: 700px;
             margin: 0 auto;
 
 
@@ -324,7 +324,7 @@
 
         @media (max-width:1080px) {
             .logo {
-                height: 18px;
+                height: 20px;
                 margin: 0px auto;
                 margin-top: 10px
             }
@@ -338,13 +338,15 @@
             }
 
             .tab_box{
-                width: 80%;
+                width: 450px;
                 /* border:1px solid white */
             }
 
             .tab_btn{
 
-                padding: 0px 10px
+                padding: 0px 10px;
+                /* border: 1px bold rgba(182, 182, 182, 0.3); */
+                background-color: rgba(182, 182, 182, 0.1);
             }
 
             .info {
@@ -417,47 +419,16 @@ overflow: scroll;
 
         }
 
-        .overlay-landscape.active {
-  /* opacity: 0.85;
-  background-color: rgba(0,0,0,1);
-  background-color: red;
-  z-index: 9000;
-  display: block;
-  position: fixed;
-  width: 70%;
-  height: 20%;
-  margin-right: 500px;
-  float: left; */
-  height: 100px;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  margin: 0 auto;
-  position: fixed;
-  z-index: 9000;
-  text-align: center
-  
-}
 
-.overlay-landscape{
-    opacity: 0;
-}
 
-.overlay-landscape-modal-mobile {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: -1;
-}
+
     </style>
 </head>
 
 <body>
 
         
-            <div class="overlay-landscape ">請旋轉您的螢幕</div>
+          
 
 
     <div class="logobox">
@@ -1080,7 +1051,7 @@ overflow: scroll;
         });
     </script>
 
-    <script>
+    <!-- <script>
 
         if (window.matchMedia("(orientation: portrait)").matches) {
         $('.overlay-landscape').addClass('active');
@@ -1088,13 +1059,13 @@ overflow: scroll;
     }
         
    
-    </script>
-
-    <!-- <script>
-   if(window.innerHeight > window.innerWidth){
-    alert("Please use Landscape!");
-}
     </script> -->
+
+    <script>
+   if(window.innerHeight > window.innerWidth){
+    alert("為確保功能正常，且讓您有最好的使用體驗，請將您的螢幕旋轉為橫向，謝謝！");
+}
+    </script>
 </body>
 
 </html>
