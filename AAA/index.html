@@ -416,10 +416,42 @@ overflow: scroll;
         }
 
         }
+
+        .overlay-landscape.active {
+  opacity: 0.85;
+  background-color: rgba(0,0,0,1);
+  z-index: 9000;
+  display: block;
+  position: fixed;
+}
+
+.overlay-landscape-modal-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+}
     </style>
 </head>
 
 <body>
+
+        <div class="modal-dialog overlay-landscape-modal-mobile" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">請旋轉您的螢幕</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="">
+                            為確保功能正常，且讓您有最好的使用體驗，請將您的螢幕旋轉為直向，謝謝！
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-landscape"></div>
 
 
     <div class="logobox">
@@ -1043,10 +1075,23 @@ overflow: scroll;
     </script>
 
     <script>
+    $(window).on("deviceorientation resize", function( event ) {
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        $('.overlay-landscape').removeClass('active');
+        $('.overlay-landscape-modal-mobile').removeClass('active');
+    }
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        $('.overlay-landscape').addClass('active');
+        $('.overlay-landscape-modal-mobile').addClass('active');
+    }
+});
+    </script>
+
+    <!-- <script>
    if(window.innerHeight > window.innerWidth){
     alert("Please use Landscape!");
 }
-    </script>
+    </script> -->
 </body>
 
 </html>
