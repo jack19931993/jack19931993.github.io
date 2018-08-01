@@ -1075,6 +1075,12 @@ overflow: scroll;
     </script>
 
     <script>
+
+        if (window.matchMedia("(orientation: portrait)").matches) {
+        $('.overlay-landscape').addClass('active');
+        $('.overlay-landscape-modal-mobile').addClass('active');
+    }
+        
     $(window).on("deviceorientation resize", function( event ) {
     if (window.matchMedia("(orientation: landscape)").matches) {
         $('.overlay-landscape').removeClass('active');
