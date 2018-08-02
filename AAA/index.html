@@ -320,7 +320,7 @@
             background-color: rgba(0, 0, 0, 0.7);
         }
 
-        
+
 
         @media (max-width:1080px) {
             .logo {
@@ -427,8 +427,8 @@ overflow: scroll;
 
 <body>
 
-        
-          
+
+
 
 
     <div class="logobox">
@@ -1057,14 +1057,16 @@ overflow: scroll;
         $('.overlay-landscape').addClass('active');
         $('.overlay-landscape-modal-mobile').addClass('active');
     }
-        
-   
+
+
     </script> -->
 
     <script>
+        $(window).resize(function( event ){
    if(window.innerHeight > window.innerWidth){
     alert("為確保功能正常，且讓您有最好的使用體驗，請將您的螢幕旋轉為橫向，謝謝！");
-}
+}})
+
     </script>
 </body>
 
