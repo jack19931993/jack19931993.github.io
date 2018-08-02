@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <link href="css/lightbox.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/AAA.ico">
-	<link rel="bookmark" href="img/AAA.ico">
+    <link rel="bookmark" href="img/AAA.ico">
 
     <style>
         body {
@@ -154,14 +154,6 @@
             font-size: 24px
         }
 
-        /* .teaminfo-5 {
-            text-shadow: -0.5px -0.5px 0 rgb(165, 93, 12),
-            0.5px -0.5px 0 rgb(165, 93, 12),
-            -0.5px 0.5px 0 rgb(165, 93, 12),
-            0.5px 0.5px 0 rgb(165, 93, 12),
-            0.5px 0.5px 0.5px rgb(165, 93, 12);
-        } */
-
         .team-bg-1 {
             max-height: 100%;
             max-width: 100%;
@@ -199,24 +191,10 @@
             line-height: 48px;
         }
 
-        .profile-tittle{
+        .profile-tittle {
             font-size: 34px;
         }
 
-        /* .border {
-            text-decoration: underline;
-        } */
-
-
-        /* .button{
-            height: 50px;
-            width: 80px;
-            position: absolute;
-            top: 70%;
-            right: 50px;
-            font-size: 24px;
-            background-color: aqua
-        } */
 
         .more1 {
             position: absolute;
@@ -296,35 +274,57 @@
             /* background-color: white */
             letter-spacing: 3px;
             /* padding: 1px */
+            border: 4px solid rgba(182, 182, 182, 0.3);
+            box-sizing: border-box;
+/* font-size: 16px */
         }
 
         .news-L {
-            width: 30%;
-            height: 100%;
+            width: 100%;
+            height: 60px;
             /* background-color: aqua; */
             float: left;
             box-sizing: border-box;
             padding: 20px;
-            border: 4px solid rgba(182, 182, 182, 0.3);
+            letter-spacing: 3px;
             background-color: rgba(0, 0, 0, 0.7);
+
+        }
+
+        .news-date{
+            float: left;
+            margin-right: 20px
+        }
+
+        .news-tittle{
+            float: left;
         }
 
         .news-text {
-            width: 70%;
-            height: 100%;
+            width: 100%;
+            height: calc(100% - 60px);
             /* background-color: blueviolet; */
             float: left;
             box-sizing: border-box;
             padding: 15px;
-            border: 4px solid rgba(182, 182, 182, 0.3);
+            line-height: 29px;
+            /* border: 4px solid rgba(182, 182, 182, 0.3); */
             background-color: rgba(0, 0, 0, 0.7);
+        }            .news-box {
+                /* font-size: 16px */
+            }
+
+
+        .footer {
+            width: 85%;
+            height: 100%;
         }
 
 
 
         @media (max-width:1080px) {
             .logo {
-                height: 20px;
+                height: 25px;
                 margin: 0px auto;
                 margin-top: 10px
             }
@@ -334,15 +334,17 @@
 
                 margin: 0 auto;
                 width: 84px;
-
+                margin-bottom: 15px
             }
 
-            .tab_box{
-                width: 80%;
+            .tab_box {
+                width: 550px;
+                margin:0 auto
+
                 /* border:1px solid white */
             }
 
-            .tab_btn{
+            .tab_btn {
 
                 padding: 0px 10px;
                 /* border: 1px bold rgba(182, 182, 182, 0.3); */
@@ -350,78 +352,195 @@
             }
 
             .info {
-            padding: 30px;
-            height: 63%;
-            /* padding-top: 1%; */
-            letter-spacing: 6px;
-            line-height: 28px;
-            font-size: 18px;
-            overflow: scroll;
-        }
+                padding: 30px;
+                height: 63%;
+                /* padding-top: 1%; */
+                letter-spacing: 6px;
+                line-height: 28px;
+                font-size: 18px;
+                overflow: scroll;
+            }
 
-        .swiper-container {
-            max-height: 100%;
-            max-width: 100%;
-            /* width: 100%; */
-            height: calc(100vh - 100px);
-            /* height: 700px; */
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
+            .swiper-container {
+                max-height: 100%;
+                max-width: 100%;
+                /* width: 100%; */
+                height: calc(100vh - 100px);
+                /* height: 700px; */
+                padding-top: 5px;
+                padding-bottom: 10px;
+            }
 
-        .profile-infobox{
-            height: 98%;
-        }
+            .swiper-slide {
 
-        .profile-img {
-            width: 20%;
+                text-shadow: -0.1px -0.1px 0 rgb(87, 165, 168),
+                0.1px -0.1px 0 rgb(87, 165, 168),
+                -0.1px 0.1px 0 rgb(87, 165, 168),
+                0.1px 0.1px 0 rgb(87, 165, 168),
+                0.1px 0.1px 0.1px rgb(87, 165, 168);
+
+                /* font-weight: bold */
+                /* padding: 30px */
+            }
+
+            .profile-infobox {
+                height: 98%;
+            }
+
+            .profile-img {
+                width: 20%;
+                height: 100%;
+                /* background-color: blue; */
+                float: left;
+                /* border-radius: 50% */
+            }
+
+
+            .profile-text {
+                width: 80%;
+                padding: 5px;
+                padding-top: 0;
+                padding-left: 20px;
+                letter-spacing: 6px;
+                line-height: 24px;
+                font-size: 16px;
+                overflow: scroll;
+                height: 80%;
+
+            }
+            .profile-tittle {
+                font-size: 18px;
+            }
+
+            /* movie */
+            .movie-box {
+                width: 100%;
+                height: 70%;
+                /* background-color: green; */
+                box-sizing: border-box;
+                /* border: 1px solid white; */
+            }
+
+            .video {
+                width: 50%;
+                height: 100%;
+                /* background-color: red; */
+                float: left;
+                /* margin-right: 15px; */
+                padding: 15px;
+                box-sizing: border-box;
+            }
+
+            .movie-cover {
+                overflow: scroll;
+            }
+
+            .news-box {
+                font-size: 16px;
+                width: 100%;
+            height: 33%;
+            /* background-color: white */
+            letter-spacing: 3px;
+            /* padding: 1px */
+            }
+
+
+            .news-text {
+                display: -webkit-box;
+                width: 70%;
             height: 100%;
-            /* background-color: blue; */
+            /* background-color: blueviolet; */
             float: left;
-            /* border-radius: 50% */
-        }
+            box-sizing: border-box;
+            padding: 15px;
+                /* -webkit-box-orient: vertical; */
+                -webkit-line-clamp: 3;
+                overflow: scroll;
+                border: 2px solid rgba(182, 182, 182, 0.3);
+                font-size: 14px;
 
+            }
 
-        .profile-text{
-            width: 63%;
-            padding: 5px;
-            padding-top:0;
-            padding-left: 20px;
-            letter-spacing:6px;
-            line-height: 24px;
-            font-size: 16px;
-            overflow: scroll;
-
-        }
-        .profile-tittle{
-            font-size: 18px;
-        }
-
-        .news-box{
-            font-size: 16px
-        }
-
-        /* .news- */
-
-        .news-text{
-            display: -webkit-box;
-/* -webkit-box-orient: vertical; */
--webkit-line-clamp: 3;
-overflow: scroll;
+            .news-L {
+                width: 30%;
+            height: 100%;
+            /* background-color: aqua; */
+            float: left;
+            box-sizing: border-box;
+                padding: 0;
+                -webkit-line-clamp: 3;
+                overflow: scroll;
+                border: 2px solid rgba(182, 182, 182, 0.3);
+                font-size: 14px;
+            }
 
         }
 
-        .news-L{
-            padding: 0;
-            -webkit-line-clamp: 3;
-overflow: scroll;
+        #tab_content_5{
+            background-color: rgba(0, 0, 0, 0.08);
+            height: calc(100vh - 200px);
+            width: 85%;
+            position: relative;
         }
 
+        .footer-text{
+            /* width: 70%; */
+            height: 50px;
+            /* background-color: #333333; */
+            margin: 0 auto;
+            margin-top: 18%;
+            text-align: center;
+            font-family: Microsoft JhengHei;
+            text-shadow: -0.2px -0.2px 0 rgb(87, 165, 168),
+            0.2px -0.2px 0 rgb(87, 165, 168),
+            -0.2px 0.2px 0 rgb(87, 165, 168),
+            0.2px 0.2px 0 rgb(87, 165, 168),
+            0.2px 0.2px 0.2px rgb(87, 165, 168);
+            font-size: 21px;
+            color: white;
+            /* position: absolute;
+            top: 42%;
+    right: 30%; */
+
         }
 
+        .links{
+            /* position: absolute; */
+            width: 360px;
+            /* height: 200px; */
+            /* background-color: #333; */
+            margin:0 auto;
+            /* bottom: 35%; */
+            /* right: 40%; */
+        }
+        .link-box{
+            width: 35px;
+            height: 35px;
+            background-color: white;
+            float: left;
+            margin-right: 30px;
+            background-position: center;
+            background-size: cover
+        }
 
-
-
+        .facebook{
+            background-image: url(../img/facebook.png);
+        }
+        .twitter{
+            background-image: url(../img/twitter.png);
+        }
+        .youtube{
+            background-image: url(../img/youtube.png);
+        }
+        .aaa{
+            background-image: url(../img/LOGO-2.png);
+            width: 150px;
+            height: 35px;
+            /* background-color: red; */
+            float: left;
+            background-position: center;
+            background-size: cover
+        }
     </style>
 </head>
 
@@ -439,7 +558,7 @@ overflow: scroll;
         <div class="tab_btn" id="tab_btn_2">PROFILE</div>
         <div class="tab_btn" id="tab_btn_3">MOVIE</div>
         <div class="tab_btn" id="tab_btn_4">NEWS</div>
-        <div class="tab_btn" id="tab_btn_5">SCHEDULE</div>
+        <div class="tab_btn" id="tab_btn_5">WEB INFO</div>
     </div>
 
     <!-- ABOUT輪播 -->
@@ -511,13 +630,13 @@ overflow: scroll;
                             </div>
                             <div class="profile-text">
                                 <span class="border">
-                                    <span class="profile-tittle" >NAOYA URATA</span>　浦田 直也　1982/11/10</span>
+                                    <span class="profile-tittle">NAOYA URATA</span>　浦田 直也　1982/11/10</span>
                                 <p>團長兼主唱，多次擔任AAA的舞蹈編排。與濱崎步姐弟相稱。
                                     <br> 有過50次參加甄選會而落選的經驗。
 
                                     <br> 2001年，參加了為選出擔任濱崎步的伴舞員的「DOME TOUR 2001」，
-                                    <br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。
-                                     之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。 手非常巧，曾幫兩位女團員製作指甲彩繪。
+                                    <br> 亦在『濱崎步甄選會』中合格，並且在合格者中選出了浦田作為領隊。 之後擔任濱崎步LIVE、「DOME TOUR 2001」、「STADIUM TOUR 2002」的伴舞。
+                                    手非常巧，曾幫兩位女團員製作指甲彩繪。
                                 </p>
 
                             </div>
@@ -534,7 +653,7 @@ overflow: scroll;
                             </div>
                             <div class="profile-text">
                                 <span class="border">
-                                    <span class="profile-tittle" >TAKAHIRO NISHIJIMA</span>　西島 隆弘　1986/9/30</span>
+                                    <span class="profile-tittle">TAKAHIRO NISHIJIMA</span>　西島 隆弘　1986/9/30</span>
                                 <p>擔任男主唱。6歲已經開始跳舞及唱歌。
 
                                     <br> 會彈吉他，單曲夢ノカケラ的音樂錄影帶和巡迴演唱會均有展現。
@@ -557,7 +676,7 @@ overflow: scroll;
                             </div>
                             <div class="profile-text">
                                 <span class="border">
-                                    <span class="profile-tittle" >MISAKO UNO</span>　宇野 實彩子　1986/7/16</span>
+                                    <span class="profile-tittle">MISAKO UNO</span>　宇野 實彩子　1986/7/16</span>
                                 <p>擔任女主唱，第一個加入AAA的女團員。
                                     <br> 歷經數次甄選落榜，實彩子放棄了偶像夢想轉向學院派路線，學習系統化的表演藝術，繼續藝人志願。
                                     <br> 在朋友「留下一份值得回憶的夏天」的慫恿下，實彩子簡歷面試了avex第二屆全國甄選會。不報期望的實彩子通過初審，闖入現場評審的二審、三審及最終審查。 2008年，實彩子回絕了公司單飛出道與AAA解散的提議，並表示「不管怎樣，我想加強成員關系，取得一些成績」。
@@ -577,11 +696,11 @@ overflow: scroll;
                             </div>
                             <div class="profile-text">
                                 <span class="border">
-                                    <span  class="profile-tittle" >MITSUHIRO HIDAKA</span>　日高 光啓　1986/12/12</span>
-                                    <p>日高光啓左耳患有先天性的聽覺障礙。
-                                            <br> 曾希望長大成為足球運動員，但當他上到中學的時候，因為受到左耳的聽覺障礙影響，已經完全聽不清教練所說的話。 日高光啟放棄了足球夢想，選擇了自己第二喜歡的音樂。但同樣的音樂，日高聽到的感覺與其他人並不一樣，曾想過放棄。因父親鼓勵他：「因為耳朵的關係，你可以聽到與眾不同的音樂，豈不更好！」，這之後日高開始以音樂作為自己的目標。
-                                            <br> 在AAA中主要擔當說唱（Rap），大部分歌曲中的Rap詞都是由日高自己創作。但也曾被團員說過：「日高因為會使用難的詞語而會令他們不明白當中意思」。
-                                        </p>
+                                    <span class="profile-tittle">MITSUHIRO HIDAKA</span>　日高 光啓　1986/12/12</span>
+                                <p>日高光啓左耳患有先天性的聽覺障礙。
+                                    <br> 曾希望長大成為足球運動員，但當他上到中學的時候，因為受到左耳的聽覺障礙影響，已經完全聽不清教練所說的話。 日高光啟放棄了足球夢想，選擇了自己第二喜歡的音樂。但同樣的音樂，日高聽到的感覺與其他人並不一樣，曾想過放棄。因父親鼓勵他：「因為耳朵的關係，你可以聽到與眾不同的音樂，豈不更好！」，這之後日高開始以音樂作為自己的目標。
+                                    <br> 在AAA中主要擔當說唱（Rap），大部分歌曲中的Rap詞都是由日高自己創作。但也曾被團員說過：「日高因為會使用難的詞語而會令他們不明白當中意思」。
+                                </p>
 
                             </div>
                         </div>
@@ -597,12 +716,12 @@ overflow: scroll;
                             </div>
                             <div class="profile-text">
                                 <span class="border">
-                                    <span class="profile-tittle" >CHIAKI ITO</span>　伊藤 千晃　1987/1/10</span>
-                                    <p>最晚加入AAA的成員。
-                                            <br> 日本公投最時尚女明星第5位、日本女性最崇拜女明星第9位。 曾演出台灣偶像劇「蜂蜜幸運草」在華人地區也具相當知名度。多次參加模特兒工作，被日本女高中生譽為21世紀新潮流代言人。
-                                            <br> 2017年，伊藤千晃宣布與圈外男友結婚並懷孕3個月，於同年3月末從AAA畢業。
-                                            <br> 隊長—浦田直也曾評價「有著很強的自尊心，是女人中的女人，成員中最坦誠的一個。 對於想要去做的事情都有人生規劃，清楚自己最理想的前進方向。」
-                                        </p>
+                                    <span class="profile-tittle">CHIAKI ITO</span>　伊藤 千晃　1987/1/10</span>
+                                <p>最晚加入AAA的成員。
+                                    <br> 日本公投最時尚女明星第5位、日本女性最崇拜女明星第9位。 曾演出台灣偶像劇「蜂蜜幸運草」在華人地區也具相當知名度。多次參加模特兒工作，被日本女高中生譽為21世紀新潮流代言人。
+                                    <br> 2017年，伊藤千晃宣布與圈外男友結婚並懷孕3個月，於同年3月末從AAA畢業。
+                                    <br> 隊長—浦田直也曾評價「有著很強的自尊心，是女人中的女人，成員中最坦誠的一個。 對於想要去做的事情都有人生規劃，清楚自己最理想的前進方向。」
+                                </p>
 
                             </div>
                         </div>
@@ -618,12 +737,12 @@ overflow: scroll;
                             </div>
                             <div class="profile-text">
                                 <span class="border">
-                                    <span class="profile-tittle" >SHUTA SUEYOSHI</span>　末吉 秀太　1986/12/11</span>
-                                    <p>擅長跳舞，與隊長蒲田、真司郎擔任編舞。
-                                            <br> 出道前從生活18年的家鄉長崎搬到東京，曾因改不掉長崎口音而苦惱。
-                                            <br> 伊藤千晃說他是個「九州男兒」，隊長評價「少年，犬。對於自己喜歡的事，會擺動尾巴咬住不鬆口，而對於討厭的事情則看都不會看上一眼。這就是九州男兒。」
-                                            <br> 2012年開始每年連續與隊友宇野實彩子擔任日本青少年舞蹈大賽評委。
-                                        </p>
+                                    <span class="profile-tittle">SHUTA SUEYOSHI</span>　末吉 秀太　1986/12/11</span>
+                                <p>擅長跳舞，與隊長蒲田、真司郎擔任編舞。
+                                    <br> 出道前從生活18年的家鄉長崎搬到東京，曾因改不掉長崎口音而苦惱。
+                                    <br> 伊藤千晃說他是個「九州男兒」，隊長評價「少年，犬。對於自己喜歡的事，會擺動尾巴咬住不鬆口，而對於討厭的事情則看都不會看上一眼。這就是九州男兒。」
+                                    <br> 2012年開始每年連續與隊友宇野實彩子擔任日本青少年舞蹈大賽評委。
+                                </p>
 
                             </div>
                         </div>
@@ -639,11 +758,11 @@ overflow: scroll;
                             </div>
                             <div class="profile-text">
                                 <span class="border">
-                                    <span class="profile-tittle" >SHINJIRO ATAE</span>　與 真司郎　1988/11/26</span>
-                                    <p>最年輕的成員，擅長跳舞。自嘲雖是唯一的關西人，但沒有搞笑天賦。
-                                            <br> 因為憧憬DA PUMP，從小學開始跳舞，在中學時以團體出道。
-                                            <br> 在AAA結成之前，隸屬京都和大阪的跳舞隊。
-                                            <br> 喜歡英語、學生時代曾請日高光啓及宇野實彩子擔當家教。 </p>
+                                    <span class="profile-tittle">SHINJIRO ATAE</span>　與 真司郎　1988/11/26</span>
+                                <p>最年輕的成員，擅長跳舞。自嘲雖是唯一的關西人，但沒有搞笑天賦。
+                                    <br> 因為憧憬DA PUMP，從小學開始跳舞，在中學時以團體出道。
+                                    <br> 在AAA結成之前，隸屬京都和大阪的跳舞隊。
+                                    <br> 喜歡英語、學生時代曾請日高光啓及宇野實彩子擔當家教。 </p>
 
                             </div>
                         </div>
@@ -675,7 +794,7 @@ overflow: scroll;
                 </div>
 
                 <div class="swiper-slide team-bg-2">
-                    <div class="cover">
+                    <div class="cover movie-cover">
                         <div class="movie-box">
                             <div class="video">
                                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFGrIaAMPr0?rel=0" frameborder="0" allow="autoplay; encrypted-media"
@@ -738,14 +857,21 @@ overflow: scroll;
                     <div class="cover">
                         <div class="news-box">
                             <div class="news-L">
+                                <div class="news-date">2018-07-27</div>
+                                <div class="news-tittle">AAA新專輯『COLOR A LIFE」主打歌「DEJAVU」MV釋出</div>
+                            </div>
+                            <div class="news-text">即將在8月29日販售的AAA新專輯『COLOR A LIFE」，主打歌「DEJAVU」MV釋出，MV接續著「LIFE」的內容。2018將是回顧過去的一年！務必要去欣賞哦！
+                                <br>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <div class="news-L">
                                 <div class="news-date">2018-07-23</div>
                                 <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
                             </div>
-                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
-                                <br> 日拋6色、月拋6色，即將開始販售
-                                <br> 即日起開始預約
-                                <br> 商品將於7/30開始陸續寄出
-                                <br>
+                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」，
+                                    日拋6色、月拋6色，即將開始販售。<br>
+                                    即日起開始預約，商品將於7/30開始陸續寄出。
                             </div>
                         </div>
                         <div class="news-box">
@@ -753,19 +879,8 @@ overflow: scroll;
                                 <div class="news-date">2018-05-04</div>
                                 <div class="news-tittle">AAA NEW YEAR PARTY 2018</div>
                             </div>
-                            <div class="news-text">從2017年最後一天到2018年元旦舉辦的AAA跨年活動終於影像化！AAA首次與粉絲一同跨年，COUNTDOWN活動的超HIGH內容與爆笑MC盡收其中。與師弟團Da-iCE的特別合作之〈One Night Animal〉也完整收錄，更顯跨年活動的熱鬧光景。
-                                    特典影像：後台幕後花絮（共收錄9分鐘）。 台壓發行特殊外盒式樣，附贈團員明信片乙張（共6款，隨機贈送1款）。 全程附可隱藏式中文字幕。
-                            </div>
-                        </div>
-                        <div class="news-box">
-                            <div class="news-L">
-                                <div class="news-date">2018-07-23</div>
-                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
-                            </div>
-                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
-                                <br> 日拋6色、月拋6色，即將開始販售
-                                <br> 即日起開始預約
-                                <br> 商品將於7/30開始陸續寄出
+                            <div class="news-text">從2017年最後一天到2018年元旦舉辦的AAA跨年活動終於影像化！AAA首次與粉絲一同跨年，COUNTDOWN活動的超HIGH內容與爆笑MC盡收其中。與師弟團Da-iCE的特別合作之〈One
+                                    Night Animal〉也完整收錄，更顯跨年活動的熱鬧光景。 特典影像：後台幕後花絮（共收錄9分鐘）。 台壓發行特殊外盒式樣，附贈團員明信片乙張（共6款，隨機贈送1款）。 全程附可隱藏式中文字幕。
                                 <br>
                             </div>
                         </div>
@@ -785,82 +900,23 @@ overflow: scroll;
 
     </div>
     <div class="tab_content" id="tab_content_5">
-        <div class="swiper-container schedule" id="swiper-container">
-            <div class="swiper-wrapper">
+        <div class="footer-text">因對AAA的熱愛而製作，本網站只僅為個人練習使用不做商業用途 ©avex</div>
 
-                <div class="swiper-slide ">
-                    <div class="cover">
-                        <div class="box">
-                            <img class="team-bg-1" src="img/news-01.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide team-bg-2">
-                    <div class="cover">
-                        <div class="news-box">
-                            <div class="news-L">
-                                <div class="news-date">2018-07-23</div>
-                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
-                            </div>
-                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
-                                <br> 日拋6色、月拋6色，即將開始販售
-                                <br> 即日起開始預約
-                                <br> 商品將於7/30開始陸續寄出
-                                <br>
-                            </div>
-                        </div>
-                        <div class="news-box">
-                            <div class="news-L">
-                                <div class="news-date">2018-07-23</div>
-                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
-                            </div>
-                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
-                                <br> 日拋6色、月拋6色，即將開始販售
-                                <br> 即日起開始預約
-                                <br> 商品將於7/30開始陸續寄出
-                                <br>
-                            </div>
-                        </div>
-                        <div class="news-box">
-                            <div class="news-L">
-                                <div class="news-date">2018-07-23</div>
-                                <div class="news-tittle">《宇野實彩子》 專屬Color Con品牌「Heal me」誕生，本日起開放預約</div>
-                            </div>
-                            <div class="news-text">主打療癒，極致的Color Con品牌「Heal me」
-                                <br> 日拋6色、月拋6色，即將開始販售
-                                <br> 即日起開始預約
-                                <br> 商品將於7/30開始陸續寄出
-                                <br>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide team-bg-3">
-                    <div class="teamcover">
-                        <div class="teaminfo">AAA誕生於avex招牌的音樂事業本部第4製作部，該部擁有提出製作企劃的自主權，屬於社長松浦勝人的直系藝人，與TRF、濱崎步、大無限樂團、大塚愛、矢島美容室等藝人同門。AAA在出道不滿4個月時獲得2005年日本唱片大獎最佳新人獎，成為與冰川清志、w-inds.、中島美嘉、一青窈、大塚愛、絢香、傑洛、℃-ute、BIGBANG並列的2000年代十位最佳新人</div>
-                    </div>
-                </div>
-                <div class="swiper-slide team-bg-4">
-                    <div class="teamcover">
-                        <div class="teaminfo">AAA對日本流行音樂，特別是青少年流行音樂、舞蹈、時尚領域的影響，以及「男女混合」「一人一色」「全員ACE」等有別於同類流行樂團或偶像組合的特性，而被日本及海外媒體稱作「珍稀的男女團體」「日本最強男女組合」。團體更因積極投身社會活動，獲得2011年日本內閣授予的文化交流貢獻獎狀，以及2020年東京奧運會的空手道項目官方大使任命等榮譽。</div>
-                    </div>
-                </div>
-                <div class="swiper-slide team-bg-5">
-                    <div class="teamcover">
-                        <div class="teaminfo teaminfo-5">2013年，歌曲《戀歌與雨天》音樂影片獲得YouTube9月份的日本音樂播放量冠軍。2014年、該作取得avex集團與軟體銀行聯合運營的線上包月付費影音網站UULA年度音樂影片第3位。2015年，該作的歌詞在網站Uta-Net累計獲得約120萬次配信記錄，成為「百萬抒情歌曲」歷史上的第22位。之後音樂影片在YouTube的播放量亦超過3000萬次，並進入Google日本統計的日本本土歷史最高播放量音樂影片前20位。</div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        <div class="links">
+            <a href="https://www.facebook.com/AAA-161346937220997/" target="_blank"> <div class="link-box facebook"></div></a>
+            <a href="https://twitter.com/AAA_staff" target="_blank" > <div class="link-box twitter"></div></a>
+            <a href="https://www.youtube.com/user/avexnetwork" target="_blank"> <div class="link-box youtube"></div></a>
+            <a href="https://avex.jp/aaa/" target="_blank"> <div class=" aaa"></div></a>
         </div>
+
+
+        </div>
+
+
+
     </div>
+
+
 
     <footer></footer>
 
@@ -1062,15 +1118,15 @@ overflow: scroll;
     </script> -->
 
     <script>
-        $(window).resize(function(){
+        $(window).resize(function () {
             console.log("563879676");
-    if(window.innerHeight > window.innerWidth){
-    alert("為確保功能正常，且讓您有最好的使用體驗，請將您的螢幕旋轉為橫向，謝謝！");
-}})
+            if (window.innerHeight > window.innerWidth) {
+                alert("為確保功能正常，且讓您有最好的使用體驗，請將您的螢幕旋轉為橫向，謝謝！");
+            }
+        })
 
-if(window.innerHeight > window.innerWidth){
-    alert("為確保功能正常，且讓您有最好的使用體驗，請將您的螢幕旋轉為橫向，謝謝！");
-
+        if (window.innerHeight > window.innerWidth) {
+            alert("為確保功能正常，且讓您有最好的使用體驗，請將您的螢幕旋轉為橫向，謝謝！");
     </script>
 </body>
 
