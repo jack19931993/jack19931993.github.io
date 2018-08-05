@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            height: 100%;
+        }
+        .open-logo-box{
+				height: 150px;
+				width: 630px;
+				background-color: blue;
+				/* position: absolute; */
+				z-index: 3;
+				/* top:calc(50% - 50px);
+				right: calc(100% - 210px); */
+				/* transform: translate(50%, 50%); */
+				transform-origin: 50% 50%;
+				animation-name: logo;
+				animation-duration: 1.5s;
+				animation-timing-function:ease-in;
+                margin:0 auto;
+                margin-top: 18%;
+                
+				
+
+			}
+
+            @keyframes logo{
+                from{
+                    /* transform: rotate(0deg); */
+                    transform: scale(1);
+                    
+                }
+                to{
+                    /* transform: rotate(720deg); */
+                    transform: scale(0.5);
+                    /* transform: translate(10% 0) */
+                }
+            }
+    </style>
+</head>
+<body>
+
+        <div class="open-logo-box animated hinge">
+                <img class="open-logo" height="150px" src="img/LOGO-2.png" alt="">
+            </div>
+    
+</body>
+</html>

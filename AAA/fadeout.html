@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet"  />
+		<style>
+			body{
+				margin: 0;
+			}
+
+			.open{
+				position: relative;
+				overflow: hidden;
+				animation: fade-out 1s linear 4.5s forwards;
+			}
+
+			.open-logo-box{
+				height: 100px;
+				width: 420px;
+				/* background-color: blue; */
+				position: absolute;
+				z-index: 3;
+				top:calc(50% - 50px);
+				right: calc(100% - 210px);
+				/* transform: translate(50%, 50%); */
+				transform-origin: 50% 50%;
+				animation-name: logo;
+				animation-duration: 1.5s;
+				animation-timing-function: ease;
+				
+
+			}
+				          
+			
+			.open-box{
+				width: 50%;
+				height: 100vh;
+				background: black;
+				animation-duration: 2s;
+				animation-delay:1.5s;
+				animation-fill-mode: forwards;
+				animation-timing-function: ease-in-out;
+				float: left;
+			}
+
+			
+			.open-box:nth-child(odd){
+				transform: translate(0%, 0%);
+				animation-name: slide-right;
+			}
+			.open-box:nth-child(even){
+				transform: translate(0%, 0%);
+				animation-name: slide-left;
+			}
+
+			.all{
+				width: 500px;
+				height: 500px;
+				background-color: yellow
+			}
+			@keyframes slide-right{
+				from{
+					transform: translate(0%, 0%);
+				}
+				to{
+					transform: translate(-100%, 0);
+				}
+			}
+			@keyframes slide-left{
+				from{
+					transform: translate(0%, 0%);
+				}
+				to{
+					transform: translate(100%, 0);
+				}
+			}
+
+			/* @keyframes fade-out{
+				from{
+					opacity: 1
+				}
+				to{
+					opacity: 0
+				}
+			} */
+
+			@keyframes logo{
+				from{
+					transform: rotate(-90deg);
+					color: black
+				}
+				to{
+					transform: rotate(0deg);
+					color: white
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="open">
+			
+			<div class="open-box "></div>
+			<div class="open-box ">
+					<div class="open-logo-box animated hinge">
+							<img class="open-logo" height="100px" src="img/LOGO-2.png" alt="">
+						</div>
+			</div>
+
+			<div class="all"></div>
+			
+		</div>
+	</body>
+</html>
