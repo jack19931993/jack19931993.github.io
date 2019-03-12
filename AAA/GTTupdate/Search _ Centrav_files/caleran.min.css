@@ -1,3 +1,5 @@
+
+
 .caleran-container,
 .caleran-container-mobile {
     font-size: 15px;
@@ -1229,4 +1231,16 @@
 
 .caleran-container-mobile.caleran-inline .caleran-input .caleran-footer {
     display: none
+}
+
+.navbar{
+    margin-bottom: 0px!important
+}
+
+body{
+    margin-top: 500px
+}
+
+.MenuButton:focus{
+    background-color: #212121
 }
