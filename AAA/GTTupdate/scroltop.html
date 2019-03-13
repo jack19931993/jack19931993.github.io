@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+  <title>Hello, world!</title>
+
+  <style>
+
+    html, body {
+      position: relative;
+      height: 200%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    
+
+    .banner{
+      height: 600px;
+      margin-bottom: 100px
+    }
+    .swiper-container {
+      margin-top: 76px;
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .bg1{
+      background-color: rgb(151, 41, 41)
+    }
+    .bg2{
+      background-color: rgb(119, 126, 128)
+    }
+
+    .navbar-collapse{
+      float: right;
+    }
+
+   #logo.active{
+      height: 37px;
+      transition-duration:0.8s;
+    }
+
+    #logo{
+      transition-duration:0.8s;
+    }
+
+    .gotop {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+  text-decoration: none;
+	display: none;
+  
+}
+
+.gotop:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  color: white;
+}
+
+#section01{
+  width: 100%;
+  height: 600px;
+  background-color: aqua;
+  text-align: center;
+  font-size: 72px;
+}
+
+#section02{
+  width: 100%;
+  height: 600px;
+  background-color: bisque
+}
+    
+   
+
+    </style>
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#"><img id="logo" height="50px" src="http://www.majestic-vacations.com/newsletters/img/2017_08/MV_170831_uni_url_01.png"
+        alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Tours" href="#">Tours</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- Swiper -->
+  <div class="banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg1">Slide 1</div>
+        <div class="swiper-slide bg2">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <a href="#" id="gotop" class="gotop">Go Top</a>
+
+  <div id="section01">Section01</div>
+  <div id="section02">Section02</div>
+  <!-- <div id="gotop" class="gotop">Go Top</div> -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+
+  <!-- GoTop -->
+  <script>
+    var box_hight = $("#box height")
+    $("#box").click(function () {
+      $("#box").css({
+        "font-weight": "bolder",
+        "font-size": "30px",
+        "color": "green"
+      })
+    });
+    $(window).scroll(function () {
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > 300) {
+        $("#gotop").fadeIn(200)
+      } else {
+        $("#gotop").fadeOut(200)
+      }
+    })
+    $("#gotop").click(function () {
+      $('html, body').animate({
+        scrollTop: 0}, 500);
+    })
+
+   $(document).ready(function(){
+    $(function(){ $('#Tours').click(function(){ 
+        $('html,body').animate({scrollTop:$('#section01').offset().top}, 500);});  
+    }); 
+}); 
+    
+  </script>
+
+  <!-- NAVBAR縮小 -->
+  <script>
+    $(window).scroll(function () {
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > 200) {
+        $("#logo").addClass("active")
+      } else {
+        $("#logo").removeClass("active")
+      }
+    })
+  </script>
+
+  <!-- Swiper JS -->
+  <!-- <script src="../dist/js/swiper.min.js"></script> -->
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

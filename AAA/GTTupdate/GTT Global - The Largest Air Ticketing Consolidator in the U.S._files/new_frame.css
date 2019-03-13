@@ -1,0 +1,138 @@
+#MainBackground-home{
+    background: url(cloudBG.png) no-repeat #165faa;
+    background-size: 100%;
+/*    overflow: auto;*/
+}
+#MainBackground{
+    background: url(cloudBG.png) no-repeat #165faa;
+    background-size: 100%;
+/*    overflow: auto;*/
+}
+
+#Main {
+    width: 100%;
+    min-width: 1000px;
+}
+
+#MainTail{
+    overflow: hidden;
+}
+#divBackGround{
+    height: auto;
+}
+
+/*menu*/
+
+
+/*menu end*/
+
+
+
+.Content_login {
+    padding: 57px 35px 30px 35px;
+}
+.box_title, .promo_title {
+    background: #3586be;
+    border-radius: 7px;
+    width: 100%;
+    background: -webkit-linear-gradient(#3991cf,#286d9d);
+    background: -o-linear-gradient(#3991cf,#286d9d);
+    background: -moz-linear-gradient(#3991cf,#286d9d);
+    background: linear-gradient(#3991cf,#286d9d);
+}
+.news_head, .news_txt, .news_more{
+    width: 100%;
+}
+.popup_top {
+    background: #ebf8ff;
+}
+.promo_slide{
+    width: 97%;
+    overflow: auto;
+    box-sizing: border-box;
+    margin: auto;
+}
+.fa-chevron-left, .fa-chevron-right{
+    font-size: 19px;
+    color: #637e9e;
+}
+.promo_slide button.rt{
+    float: right;
+    margin-right: 12px;
+}
+#Footer{
+    width: 100%;
+    padding-top: 20px;
+    background: #165faa;
+}
+#Footer .Copyright, #Footer .Navigation, #Footer .cilist{
+    width: auto;
+    margin: 8px auto;
+    display: table;
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    right: inherit;
+}
+#Footer .Navigation {
+    
+}
+#Footer .cilist {
+    
+}
+
+@media screen and (max-width: 1450px){
+    .promo_slide .browser-page{
+        width: 91%!important;
+    }
+    .promo_slide .toolbox{
+        width: 100%!important;
+    }
+    
+}
+@media screen and (max-width: 1380px){
+    .Content_login {
+        padding: 57px 20px 30px 20px;
+    }
+    #Tag li.Tag_top{
+        font-size: 13px;
+    }
+    #Tag li a.Tag_top_link, #Tag li a.Tag_top_last{
+        padding: 0 0 0 5px;
+    }
+    #Tag li a.Tag_top_link span{
+        padding: 0 12px;
+    }
+    #Tag li a.Tag_top_link img, #Tag li a.Tag_top_last img{
+        padding-right: 13px;
+    }
+    .slide-item {
+        margin: 0px 0px 0px 0px!important;
+    }
+}
+@media screen and (min-width: 1201px){
+    #MainTail{
+        min-width: 1000px;
+    }
+    #Main {
+        width: 100%;
+        min-width: 1000px;
+    }
+    .Wrapper_main{
+        width: 74%!important;
+    }
+    
+}
+@media screen and (max-width: 1200px){
+    #MainTail{
+        min-width: 920px;
+    }
+    #Main {
+        width: 100%;
+        max-width: 920px;
+    }
+    .Wrapper_main{
+        width: 74%!important;
+    }
+    
+}

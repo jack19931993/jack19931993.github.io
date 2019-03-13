@@ -1,0 +1,15 @@
+.Wrapper_left{
+    width: 25%;
+}
+.Wrapper_main{
+    width: 72%;
+}
+.box_left{
+    width: 100%;
+}
+.promo_slide{
+    width: 97% !important;
+}
+.promo_slide .browser-page{
+    width: 92% !important;
+}
