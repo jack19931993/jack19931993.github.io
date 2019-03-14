@@ -621,6 +621,10 @@ a.text-primary:hover {
     color: #9c1a1f
 }
 
+#AdvancedSearchTab:focus{
+    color: #9c1a1f
+}
+
 .text-success {
     color: #155724
 }
