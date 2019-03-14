@@ -1,0 +1,52 @@
+
+#engine{
+    border: 1px solid #3f8ec7;
+}
+.engine_subtittle{
+    background: #43609c;
+}
+.engine_bn-on a, .engine_bn-on a:link, .engine_bn-on a:visited, .engine_bn-on a:active{
+    background: #4b99d6;
+}
+.engine_bn-off a, .engine_bn-off a:link, .engine_bn-off a:visited{
+    color: #d9ebff;
+}
+.engine_bn-off a:hover{
+    color: #fff;
+}
+.engine_content-middle-searchoption{
+    border-top: 1px #e0e0e0 solid;
+}
+#engine .button a{
+    font-size: 13px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: #fff;
+    border: 0px solid;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 35px;
+    width: 130px;
+    background-color: white;
+    padding: 0 0 2px 0;
+    margin: 0px;
+    background: -webkit-linear-gradient(#4b99d6,#43609c);
+    background: -o-linear-gradient(#4b99d6,#43609c);
+    background: -moz-linear-gradient(#4b99d6,#43609c);
+    background: linear-gradient(#4b99d6,#43609c);
+}
+#engine .button a:hover{
+    background: -webkit-linear-gradient(#fba44c,#ff7f00);
+    background: -o-linear-gradient(#fba44c,#ff7f00);
+    background: -moz-linear-gradient(#fba44c,#ff7f00);
+    background: linear-gradient(#fba44c,#ff7f00);
+}
+.engine_content h1{
+    color: #43609c;
+}
+input, textarea, select{
+    height: 30px;
+}
+.engine_content-from-300, .engine_content-from-270, .engine_content-from-180{
+    font-size: 15px;
+}

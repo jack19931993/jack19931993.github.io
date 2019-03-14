@@ -1,0 +1,746 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	GTT Global - The Largest Air Ticketing Consolidator in the U.S.
+</title><meta http-equiv="X-UA-Compatible" content="IE=100">
+        
+        <link href="AirBooking_files/style_b2b-min.css" rel="stylesheet" type="text/css">
+        <link href="AirBooking_files/style_search-min.css" rel="stylesheet" type="text/css">
+        <link href="AirBooking_files/style_core.css" rel="stylesheet" type="text/css">
+        <link href="AirBooking_files/airbooking_search.css" rel="stylesheet" type="text/css">
+        
+    <link href="AirBooking_files/jquery-ui-1.css" rel="stylesheet" type="text/css">
+    
+    <script src="AirBooking_files/jquery-1.js" type="text/javascript"></script>
+
+    <script language="javascript">
+        var myTime = setTimeout("Timeout()", 7200000);
+        function resetTime() {
+            clearTimeout(myTime);
+            myTime = setTimeout('Timeout()', 7200000);
+        }
+        function Timeout() {
+            alert("Please login again, the session is timeout.");
+            document.location.href = '../Index.aspx';
+        }
+        document.documentElement.onkeydown = resetTime;
+        document.documentElement.onclick = resetTime;  
+    </script>
+<link href="https://d3plhpfg3500fc.cloudfront.net/images/favicon2.ico" rel="shortcut icon"></head>
+<body>
+    <form method="post" action="./SearchFlight.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTUzODc4MjM3MQ9kFgICAw9kFgICAQ9kFgQCFQ8WAh4HVmlzaWJsZWhkAiMPFgIfAGgWAgIIDxYCHwBoZGR5bLnjk4VdQYnQcg2Jv+Q8T8Mj7JGk9H98363tW/U8cQ==">
+</div>
+
+<script type="text/javascript" src="AirBooking_files/common.txt"></script><script type="text/javascript" src="AirBooking_files/GTT.txt"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="61F46128">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAq+ct9RLpFBQn21ca/cc9KvpWd1R4MBi9S6bjNyNavfJRq1zhxvpUSzpc0fEOXlPGV7JoJZxuLk8Jz6IwJbprvPJg1eyH6tTgzXI5t02f9mqjmuwaJAlB07f0Ht0GFkEp1kV5UnOfuMeUs5OrlxIU48d5vCEjEqr3EJgXQ8qpkydtpGPpGbwJpNyKyWYbDI7ePWI5GveSCBuWigUXLoTdOmn9vOap1GhQhCWKbSwKlZx+29nPD3zu531pUHVc2oAGA=">
+</div>
+    <div id="MainTail">
+        <div id="MainBackground">
+            <div id="Main">
+                
+    <script src="AirBooking_files/Register.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="AirBooking_files/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<div id="Header">
+    <div id="Logo">
+        <input name="Header1$HideAccountCode" type="hidden" id="Header1_HideAccountCode" value="ctrip">
+        <input name="Header1$HideEanTemp2" type="hidden" id="Header1_HideEanTemp2" value="GTTDTW-ctrip">
+        <input name="Header1$HidAgentCode" type="hidden" id="Header1_HidAgentCode">
+        <input name="Header1$HidAgentName" type="hidden" id="Header1_HidAgentName">
+        <input name="Header1$HidBranch" type="hidden" id="Header1_HidBranch" value="GTTDTW">
+        <input name="Header1$HidUserID" type="hidden" id="Header1_HidUserID">
+        <input name="Header1$HidAT" type="hidden" id="Header1_HidAT" value="first_name=ctrip&amp;last_name=ctrip&amp;partner_tracking_code=ctrip-GTTDTW&amp;email=hszhao@ctrip.com&amp;password=GTTGlobal">
+        <input name="Header1$HidUserName" type="hidden" id="Header1_HidUserName" value="ctrip">
+        <a href="https://www.gttglobal.com/index.aspx">
+            <img src="AirBooking_files/logo2.png" alt="GTT Global" border="0"></a>
+    </div>
+    <div id="Login_01">
+        <div id="LoginContent_login">
+            <div class="Welcome_title">
+                <span id="Header1_LabelCN1">My GTT</span>
+            </div>
+            <div class="Welcome">
+                <span id="Header1_Label1">Welcome:</span>
+                <span class="Welcome_name"><a style="color: Yellow;" href="javascript:void(0)" onclick="ShowUrlConn('9999',this,'0','../','SUB','../BasePage/UserUpdate.aspx');">
+                    ctrip</a>
+                    </span> | <a href="https://www.gttglobal.com/BasePage/Logout.aspx">
+                        <span id="Header1_Label2">Log out</span></a><br>
+                <a href="javascript:void(0)" id="Header1_a1" onclick="ShowUrlConn('198',this,'1','<%=PATH %>','<%=UserType %>');">
+                    <span id="Header1_Label3">My Tickets</span></a>
+                | <a href="javascript:void(0)" id="Header1_a2" onclick="ShowUrlConn('109',this,'1','<%=PATH %>','<%=UserType %>');">
+                    <span id="Header1_Label4">My Orders</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="width: 100%; float: left; margin: 0px 0px 0px 0px; display: inline;" class="Menu">
+    <ul id="Tag">
+        <li id="Header1_liIndex" class="Tag_top"><a id="menu1" onclick="ShowUrlConn('100',this,'1','../','SUB');" class="Tag_top_link">
+            <span>
+                <span id="Header1_Label5">HOME</span></span></a>
+        </li>
+        <li class="Tag_top"><a id="menu2" href="javascript:void(0)" onclick="ShowUrlConn('101',this,'2','../','SUB');" class="Tag_top_link"><span class="down">
+                <span id="Header1_Label6">FARE SEARCH</span></span><i class="fas fa-caret-down"></i> </a>
+            <ul class="Tag_sub">
+                <li id="Header1_liSearchFare"><a href="javascript:void(0)" id="menu2_2" onclick="ShowUrlConn('101',this,'2','../','SUB');">
+                    <span>
+                        <span id="Header1_Label7">Fare Search</span></span></a>
+                </li>
+                <li id="Header1_liFareSheet" class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('61',this,'2','../','SUB');">
+                    <span id="Header1_Label8">Airline Contract</span></a>
+                </li>
+            </ul>
+        </li>
+        <li id="Header1_hideBooking" class="Tag_top"><a id="menu3" href="javascript:void(0)" onclick="ShowUrlConn('29',this,'3','../','SUB');" class="Tag_top_selected"><span class="down">
+                <span id="Header1_Label9">ONLINE BOOKING</span></span><i class="fas fa-caret-down"></i> </a>
+            <ul class="Tag_sub">
+                <li id="Header1_liMulti"><a href="javascript:void(0)" onclick="ShowUrlConn('29',this,'3','../','SUB');">
+                    <span id="Header1_Label10">Air Booking</span></a>
+                </li>
+                <li class="current"><a href="javascript:void(0)" id="Header1_aMyOrders" onclick="ShowUrlConn('109',this,'3','<%=PATH %>','<%=UserType %>');">
+                    <span id="Header1_Label11">Your Online PNR</span></a>
+                </li>
+                <li class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('81',this,'3','../','SUB', 'https://wave.live/marketplace/companies/b91b88/channels/794d12?custom1=ctrip|ctrip|ctrip&amp;custom2=ctrip-DFW|hszhao@ctrip.com');">
+                    VOX City Guides</a></li>
+            </ul>
+        </li>
+        <li class="Tag_top"><a id="menu4" class="Tag_top_link"><span class="down">
+            <span id="Header1_Label12">REQUEST TICKETING</span></span><i class="fas fa-caret-down"></i> </a>
+            <ul class="Tag_sub">
+                <li id="Header1_liTicketRequest"><a href="javascript:void(0)" onclick="ShowUrlConn('37',this,'4','../','SUB');">
+                    <span id="Header1_Label13">Request Ticketing</span></a>
+                </li>
+                
+                <li id="Header1_liTicketSupport" class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('8838',this,'4','../','SUB');">
+                    <span id="Header1_Label15">Ticketing Support</span></a></li>
+                <li class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('75',this,'4','../','SUB');">
+                    <span id="Header1_Label16">Chat Support</span></a>
+                </li>
+                <li class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('70',this,'4','../','SUB');">
+                    <span id="Header1_Label17">Review your Tickets/Invoices</span></a>
+                </li>
+            </ul>
+        </li>
+        <li class="Tag_top"><a id="menu5" class="Tag_top_link"><span class="down">
+            <span id="Header1_Label18">CALL CENTER 24/7</span></span><i class="fas fa-caret-down"></i></a>
+            <ul class="Tag_sub" style="width: 235px">
+                <li><a href="">
+                    <span id="Header1_Label19">888-288-7182 (English and Tagalog)</span></a>
+                </li>
+                <li class="current"><a href="">
+                    <span id="Header1_Label20">4008-203-201 (Chinese)</span></a>
+                </li>
+                <li class="current"><a href="">
+                    <span id="Header1_Label21">888-818-8813 (Vietnamese)</span></a>
+                </li>
+                <li class="current"><a href="">
+                    <span id="Header1_Label22">888-222-7852 (Spanish)</span></a>
+                </li>
+                <li class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('75',this,'5','../','SUB');">
+                    <span id="Header1_Label23">Chat Support</span></a>
+                </li>
+            </ul>
+        </li>
+        <li class="Tag_top"><a id="menu6" class="Tag_top_link"><span class="down">
+            <span id="Header1_Label24">HELP</span></span><i class="fas fa-caret-down"></i> </a>
+            <ul class="Tag_sub" style="width: 130px;">
+                <li><a href="javascript:void(0)" onclick="ShowUrlConn('105',this,'6','../','SUB');">
+                    <span id="Header1_Label25">Airline Contacts</span></a>
+                </li>
+                <li class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('16',this,'6','../','SUB');">
+                    <span id="Header1_Label26">Forms</span></a>
+                </li>
+                <li class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('120',this,'6','../','SUB');">
+                    <span id="Header1_Label27">Change Password</span></a></li>
+            </ul>
+        </li>
+        
+        <div class="line2">
+            <li class="Tag_top"><a id="menu7" class="Tag_top_link"><span class="down">
+                <span id="Header1_Label46">HOTELS</span></span><i class="fas fa-caret-down"></i> </a>
+                <ul class="Tag_sub">
+                    <li id="Header1_liEANHotelNew"><a href="javascript:void(0)" onclick="ShowUrlConn('23',this,'7','../','SUB','loginname=gtt_autologin&amp;password=Test123!&amp;performAutologin=true&amp;externalCompanyId=137594&amp;externalUserName=ctrip-GTT&amp;externalFirstName=Ctrip&amp;externalLastName=Ctrip&amp;currencyCode=USD&amp;department=ctrip-DFW&amp;email=hszhao@ctrip.com');">
+                        <span id="Header1_Label47">GTT Hotel</span></a></li>
+                    <li id="Header1_liGTAHotel" class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('10',this,'7','../','SUB','//terms.majestic-vacations.com/GTTLogin.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2cctrip%2c&amp;TYPE=H');">
+                        <span id="Header1_Label48">GTA Hotel</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="Tag_top"><a id="menu8" class="Tag_top_link"><span class="down">
+                <span id="Header1_Label49">CRUISES</span></span><i class="fas fa-caret-down"></i> </a>
+                <ul class="Tag_sub" style="width: 160px">
+                    <li id="Header1_LiAgentCommision"><a href="javascript:void(0)" onclick="ShowUrlConn('28',this,'8','../','SUB');">
+                        <span id="Header1_Label50">Agent Commision Sheet</span></a></li>
+                    <li id="Header1_LiCruiseRequest" class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('76',this,'8','../','SUB');">
+                        <span id="Header1_Label51">Cruise Request Form</span></a></li>
+                </ul>
+            </li>
+            <li class="Tag_top"><a id="menu9" class="Tag_top_link"><span class="down">
+                <span id="Header1_Label52">TRAVEL INSURANCE</span></span><i class="fas fa-caret-down"></i> </a>
+                <ul class="Tag_sub" style="width: 130px">
+                    <li><a href="javascript:void(0)" onclick="ShowUrlConn('57',this,'9','../','SUB');">
+                        <span id="Header1_Label95">US Resident</span></a></li>
+                    <li class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('80',this,'9','../','SUB', 'loginname=gtt_autologin&amp;password=XXXX&amp;performAutologin=true&amp;agentgttid=777&amp;externalCompanyId=748&amp;externalUserName=ctrip-GTT&amp;externalFirstName=Ctrip&amp;externalLastName=Ctrip&amp;currencyCode=USD&amp;department=GTTDTW&amp;email=hszhao@ctrip.com');">
+                        <span id="Header1_Label96">Non-US Resident</span></a></li>
+                </ul>
+            </li>
+            <li class="Tag_top"><a id="menu10" href="javascript:void(0)" onclick="ShowUrlConn('112',this,'10','../','SUB');" class="Tag_top_link"><span class="down">
+                    <span id="Header1_Label53">APPLY VISA</span></span>
+            </a></li>
+            <li class="Tag_top"><a id="menu11" class="Tag_top_link"><span class="down">
+                <span id="Header1_Label54">CARS</span></span><i class="fas fa-caret-down"></i> </a>
+                <ul class="Tag_sub" style="width: 140px">
+                    <li id="Header1_liCarBooking" class="current"><a href="javascript:void(0)" onclick="ShowUrlConn('44',this,'11','../','SUB');">
+                        <span id="Header1_Label55">Car booking</span></a></li>
+                    <li id="Header1_liGroundTransportation"><a href="javascript:void(0)" onclick="ShowUrlConn('52',this,'11','../','SUB');">
+                        <span id="Header1_Label56">Private Car Hire</span></a>
+                    </li>
+                    <li id="Header1_liAT"><a href="javascript:void(0)" onclick="ShowAirportTransportation();">
+                        <span id="Header1_Label57">Airport Transportation</span></a></li>
+                </ul>
+            </li>
+            <li class="Tag_top"><a id="menu15" class="Tag_top_link"><span class="down">
+                <span id="Header1_Label58">VACATIONS</span></span><i class="fas fa-caret-down"></i> </a>
+                <ul class="Tag_sub">
+                    <li><a href="javascript:void(0)" onclick="ShowUrlConn('46',this,'15','../','SUB');">
+                        <span id="Header1_Label59">Apple vacation</span></a>
+                    </li>
+                    <li><a href="javascript:void(0)" onclick="ShowUrlConn('62',this,'15','../','SUB','http://extranet.limatours.com.pe/?logginname=3G0000&amp;password=5dFF_w2f21m7&amp;externalUserName=ctrip&amp;externalFirstName=ctrip&amp;externalLastName=ctrip&amp;currencyCode=USD&amp;department=ctrip&amp;email=hszhao@ctrip.com&amp;costcenter=GTTDTW');">
+                        <span id="Header1_Label60">Lima Tours</span></a>
+                    </li>
+                    <li><a href="javascript:void(0)" onclick="ShowUrlConn('50',this,'15','../','SUB');">
+                        <span id="Header1_Label61">GOEUGO Travel</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="Tag_top"><a id="menu12" class="Tag_top_link"><span class="down">TOURS<span id="Header1_Label62">GTT</span></span><i class="fas fa-caret-down"></i> </a>
+                <ul class="Tag_sub" style="width: 140px">
+                    <li id="North_America" class="gosecond"><a href="">North America<span id="Header1_Label63">GTT</span><i class="fas fa-caret-right"></i></a>
+                        <ul class="second_menu" style="display: none;">
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=East Coast-E-WORLD&amp;Ver=en');">
+                                East Coast - E-WORLD<span id="Header1_Label64">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=East Coast-L*L&amp;Ver=en');">
+                                East Coast - L&amp;L<span id="Header1_Label65">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=East Coast-Mayi&amp;Ver=en');">
+                                East Coast - Mayi<span id="Header1_Label66">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=West Coast&amp;Ver=en');">
+                                West Coast<span id="Header1_Label67">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Hawaii&amp;Ver=en');">
+                                Hawaii<span id="Header1_Label68">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Orlando&amp;Ver=en');">
+                                Orlando<span id="Header1_Label69">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Canada&amp;Ver=en');">
+                                Canada<span id="Header1_Label70">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Caribbean Sea&amp;Ver=en');">
+                                Caribbean Sea<span id="Header1_Label71">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Houston&amp;Ver=en');">
+                                Houston<span id="Header1_Label72">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Seattle&amp;Ver=en');">
+                                Seattle<span id="Header1_Label73">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Dallas&amp;Ver=en');">
+                                Dallas<span id="Header1_Label74">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Yellowknife&amp;Ver=en');">
+                                Yellowknife<span id="Header1_Label75">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Alaska&amp;Ver=en');">
+                                Alaska<span id="Header1_Label76">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Cuba&amp;Ver=en');">
+                                Cuba<span id="Header1_Label77">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Chicago&amp;Ver=en');">
+                                Chicago<span id="Header1_Label78">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Atlanta&amp;Ver=en');">
+                                Atlanta<span id="Header1_Label79">GTT</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="South_America" class="gosecond"><a href="">South America<span id="Header1_Label80">GTT</span><i class="fas fa-caret-right"></i></a>
+                        <ul class="second_menu" style="display: none;">
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Peru&amp;Ver=en');">
+                                Peru<span id="Header1_Label81">GTT</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Europe&amp;Ver=en');">
+                        Europe<span id="Header1_Label82">GTT</span></a>
+                    </li>
+                    <li id="Asia" class="gosecond"><a href="">Asia<span id="Header1_Label83">GTT</span><i class="fas fa-caret-right"></i></a>
+                        <ul class="second_menu" style="display: none;">
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=China&amp;Ver=en');">
+                                China<span id="Header1_Label84">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Taiwan&amp;Ver=en');">
+                                Taiwan<span id="Header1_Label85">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Japan&amp;Ver=en');">
+                                Japan<span id="Header1_Label86">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Korea&amp;Ver=en');">
+                                Korea<span id="Header1_Label87">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=South East Asia&amp;Ver=en');">
+                                South East Asia<span id="Header1_Label88">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=The United Arab Emirates&amp;Ver=en');">
+                                The United Arab Emirates<span id="Header1_Label89">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Philippines&amp;Ver=en');">
+                                Philippines<span id="Header1_Label90">GTT</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="Africa" class="gosecond"><a href="">Africa<span id="Header1_Label91">GTT</span><i class="fas fa-caret-right"></i></a>
+                        <ul class="second_menu" style="display: none;">
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Kenya&amp;Ver=en');">
+                                Kenya<span id="Header1_Label92">GTT</span></a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'12','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Johannesburg&amp;Ver=en');">
+                                Johannesburg<span id="Header1_Label93">GTT</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="Tag_top"><a id="menu13" class="Tag_top_link"><span class="down">旅遊</span><i class="fas fa-caret-down"></i> </a>
+                <ul class="Tag_sub" style="width: 140px">
+                    <li id="ch_North_America" class="gosecond"><a href="">北美洲<i class="fas fa-caret-right"></i></a>
+                        <ul class="second_menu" style="display: none;">
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=East Coast-E-WORLD&amp;Ver=cn');">
+                                美國東岸 - 天馬</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=East Coast-L*L&amp;Ver=cn');">
+                                美國東岸 - 縱橫</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=East Coast-Mayi&amp;Ver=cn');">
+                                美國東岸 - 蚂蚁</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=West Coast&amp;Ver=cn');">
+                                美國西岸</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Hawaii&amp;Ver=cn');">
+                                夏威夷</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Orlando&amp;Ver=cn');">
+                                奧蘭多</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Canada&amp;Ver=cn');">
+                                加拿大</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Caribbean Sea&amp;Ver=cn');">
+                                加勒比海</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Houston&amp;Ver=cn');">
+                                休斯顿</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Seattle&amp;Ver=cn');">
+                                西雅圖</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Dallas&amp;Ver=cn');">
+                                達拉斯</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Yellowknife&amp;Ver=cn');">
+                                黄刀镇</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Alaska&amp;Ver=cn');">
+                                阿拉斯加</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Cuba&amp;Ver=cn');">
+                                古巴</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Chicago&amp;Ver=cn');">
+                                芝加哥</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Atlanta&amp;Ver=cn');">
+                                亞特蘭大</a></li>
+                        </ul>
+                    </li>
+                    <li id="ch_South_America" class="gosecond"><a href="">南美洲<i class="fas fa-caret-right"></i></a>
+                        <ul class="second_menu" style="display: none;">
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Peru&amp;Ver=cn');">
+                                祕魯</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Europe&amp;Ver=cn');">
+                        歐洲</a> </li>
+                    <li id="ch_Asia" class="gosecond"><a href="">亞洲<i class="fas fa-caret-right"></i></a>
+                        <ul class="second_menu" style="display: none;">
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=China&amp;Ver=cn');">
+                                中國</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Taiwan&amp;Ver=cn');">
+                                台灣</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Japan&amp;Ver=cn');">
+                                日本</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Korea&amp;Ver=cn');">
+                                韓國</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=South East Asia&amp;Ver=cn');">
+                                東南亞</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=The United Arab Emirates&amp;Ver=cn');">
+                                阿聯酋</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Philippines&amp;Ver=cn');">
+                                菲律賓</a></li>
+                        </ul>
+                    </li>
+                    <li id="ch_Africa" class="gosecond"><a href="">非洲<i class="fas fa-caret-right"></i></a>
+                        <ul class="second_menu" style="display: none;">
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Kenya&amp;Ver=cn');">
+                                肯尼亞</a></li>
+                            <li><a href="javascript:void(0)" onclick="ShowUrlConn('24',this,'13','../','SUB','//www.majestic-vacations.com/B2B_SUB/GttGlobalSkipIndex.aspx?MJVID=ctrip%2cctrip%2chszhao%40ctrip.com%2c8008206666%2cctrip%2cctrip%2cGTTDTW%2c646b38ed-539d-462a-a31e-4dee6c46502d%2c00000%2c%2cshanghai%2cCN%2c00000%2cUSA%2c%2c,T' + '&amp;Region=Johannesburg&amp;Ver=cn');">
+                                约翰内斯堡</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <div class="mvbox">
+                <a class="mv" href="http://www.majestic-vacations.com/" target="_blank">
+                    <img src="AirBooking_files/mv2.png" alt=""></a>
+            </div>
+        </div>
+    </ul>
+</div>
+<input type="hidden" id="lblTime" value="179">
+<script type="text/javascript">
+    var MENUINDEX = '3'
+
+    for (var i = 1; i < 15; i++) {
+        if (i != 14) {
+            if (i.toString() == MENUINDEX) {
+                if ($("#menu" + MENUINDEX).length > 0) {
+                    $("#menu" + MENUINDEX).removeClass().addClass("Tag_top_selected");
+                }
+            }
+            else {
+                if ($("#menu" + i.toString()).length > 0) {
+                    $("#menu" + i.toString()).removeClass().addClass("Tag_top_link");
+                }
+            }
+        }
+        else {
+            if (i.toString() == MENUINDEX) {
+                if ($("#menu" + MENUINDEX).length > 0) {
+                    $("#menu" + MENUINDEX).removeClass().addClass("Tag_top_last_s");
+                }
+            }
+            else {
+                if ($("#menu" + i.toString()).length > 0) {
+                    $("#menu" + i.toString()).removeClass().addClass("Tag_top_last");
+                }
+            }
+        }
+    }
+</script>
+<script type="text/javascript">    websiteAbsolutlyPath = '../';</script>
+
+                <!-- content begin-->
+                <div id="Content_login">
+                    <div class="Guide">
+                        <div class="Guide_home">
+                        </div>
+                        <div class="Guide_link">
+                            <span id="LabelCN1">Online Booking</span></div>
+                        <div class="Guide_arrow">
+                        </div>
+                        <div class="Guide_link">
+                            <span id="LabelCN2">Air Booking (Multi-GDS)</span></div>
+                    </div>
+                    <div class="Wrapper" style="width:100%">                    
+                        <div id="engine_tittle">
+                           <span id="LabelCN3">Search and Book Available Flights</span></div>
+                        
+<div id="engine" class="searchEngine">
+    <input name="SearchEngine1$HideAccountCode" type="hidden" id="SearchEngine1_HideAccountCode" value="ctrip">
+    <input type="hidden" name="flightType" id="hdflightType" value="RoundTrip" class="shortCookie">
+    <div class="engine_subtittle">
+        <span id="spRT" class="engine_bn-off"><a href="#">
+            <span id="SearchEngine1_LabelCN1">Round Trip</span></a></span>
+        <span id="spOW" class="engine_bn-off"><a href="#">
+            <span id="SearchEngine1_Label1">One Way</span></a></span>
+        <span id="spMC" class="engine_bn-off"><a href="#">
+            <span id="SearchEngine1_Label2">Multi City</span></a></span>
+        <span class="button"><a id="btn_Close" style="width: 60px; height: 28px; margin: 3px -11px 0px 0px;
+            display: none">
+            <span id="SearchEngine1_Label3">Close</span></a></span>
+    </div>
+    <div class="engine_content">
+        <!-- oneway & roundtrip -->
+        <div class="engine_content-left">
+            <h1>
+                <span id="SearchEngine1_Label4">From</span></h1>
+            <input class="engine_content-from-300 shortCookie" tabindex="1" id="txtDep" name="txtDep" type="text"><br>
+            <h1>
+                <span id="SearchEngine1_Label5">Depart</span></h1>
+            <input class="engine_content-from-270 shortCookie" tabindex="3" maxlength="30" onchange="SetLenDay('dep');" name="depDate1" type="text" id="depDate1">
+            <div style="float: right; margin: 2px 0px 0px 0px; display: none;" id="dvFlexDaysDep">
+                <select class="engine_content-middle-input shortCookie" name="flexDaysDep" id="selDepFlexible">
+                    
+                    <option value="3" selected="selected">+/- 3 Days</option>
+                    <option value="2">+/- 2 Days</option>
+                    <option value="1">+/- 1 Day</option>
+                    <option value="0">Exact day</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div class="engine_content-right">
+            <h1>
+                <span id="SearchEngine1_Label6">To</span></h1>
+            <input class="engine_content-from-300 shortCookie allcanfly" tabindex="2" maxlength="30" id="txtDes" name="txtDes" type="text"><br>
+            <div id="divReturnDate">
+                <h1>
+                    <span id="SearchEngine1_Label7">Return</span></h1>
+                <input class="engine_content-from-270 shortCookie" tabindex="4" onchange="SetLenDay('rtn');" name="reDate1" type="text" id="reDate1">
+                <div style="float: right; margin: 2px 0px 0px 0px; display: none;" id="dvFlexDaysRtn">
+                    <select class="engine_content-middle-input shortCookie" name="flexDaysReturn" id="selRtnFlexible">
+                        
+                        <option value="3" selected="selected">+/- 3 Days</option>
+                        <option value="2">+/- 2 Days</option>
+                        <option value="1">+/- 1 Day</option>
+                        <option value="0">Exact day</option>
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="engine_content-middle" id="dvFlexTab">
+            <p>
+                <input name="raFlexible" type="radio" class="shortCookie" value="Exact" checked="checked">
+                <span id="SearchEngine1_Label8">Exact Dates</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="raFlexible" value="Flex" class="shortCookie">
+                <span id="SearchEngine1_Label36">+/- 1 to 3 Days</span>
+                <span style="display: none;" id="flexibelMsg">
+                    <span id="SearchEngine1_Label9">(Compare the Best Prices on and Around Your Dates)</span></span></p>
+        </div>
+        <div class="engine_content-middle">
+            <!-- Openjaw -->
+            
+            <!-- Multi-City -->
+            <div class="engine_content-middle-2" style="display: none">
+                <div id="multiCityLeg0" style="display: block;" class="multiCityLeg">
+                    <p style="margin: 10px 0px 0px 0px;" class="multi-hd">
+                        <span class="engine_content-multi-right">
+                            <span id="SearchEngine1_Label10">From</span></span>
+                        <span id="SearchEngine1_Label11">To</span></p>
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie ui-autocomplete-input" tabindex="5" maxlength="30" name="txtFrom0" id="txtFrom0" type="text">
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie allcanfly ui-autocomplete-input" tabindex="6" maxlength="30" name="txtTo0" id="txtTo0" type="text">
+                    <input class="engine_content-from-100 shortCookie" tabindex="7" readonly="readonly" name="txtDate0" id="txtDate0" type="text">
+                    <br>
+                </div>
+                <div id="multiCityLeg1" style="display: block;" class="multiCityLeg">
+                    <p style="margin: 10px 0px 0px 0px;" class="multi-hd">
+                        <span class="engine_content-multi-right">
+                            <span id="SearchEngine1_Label13">From</span></span>
+                        <span id="SearchEngine1_Label12">To</span></p>
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie ui-autocomplete-input" tabindex="8" maxlength="30" name="txtFrom1" id="txtFrom1" type="text">
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie allcanfly ui-autocomplete-input" tabindex="9" maxlength="30" name="txtTo1" id="txtTo1" type="text">
+                    <input class="engine_content-from-100 shortCookie" readonly="readonly" tabindex="10" name="txtDate1" id="txtDate1" type="text">
+                    <span class="removeLeg"><a href="javascript:" id="removeLeg1"></a></span><br>
+                </div>
+                <div id="multiCityLeg2" style="display: block;" class="multiCityLeg">
+                    <p style="margin: 10px 0px 0px 0px;" class="multi-hd">
+                        <span class="engine_content-multi-right">
+                            <span id="SearchEngine1_Label14">From</span></span>
+                        <span id="SearchEngine1_Label15">To</span></p>
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie ui-autocomplete-input" tabindex="11" maxlength="30" name="txtFrom2" id="txtFrom2" type="text">
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie allcanfly ui-autocomplete-input" tabindex="12" maxlength="30" name="txtTo2" id="txtTo2" type="text">
+                    <input class="engine_content-from-100 shortCookie" readonly="readonly" tabindex="13" name="txtDate2" id="txtDate2" type="text">
+                    <span class="removeLeg"><a href="javascript:" id="removeLeg2"></a></span><br>
+                </div>
+                <div id="multiCityLeg3" style="display: block;" class="multiCityLeg">
+                    <p style="margin: 10px 0px 0px 0px;" class="multi-hd">
+                        <span class="engine_content-multi-right">
+                            <span id="SearchEngine1_Label16">From</span></span>
+                        <span id="SearchEngine1_Label17">To</span></p>
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie ui-autocomplete-input" tabindex="14" maxlength="30" name="txtFrom3" id="txtFrom3" type="text">
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie allcanfly ui-autocomplete-input" tabindex="15" maxlength="30" name="txtTo3" id="txtTo3" type="text">
+                    <input class="engine_content-from-100 shortCookie" readonly="readonly" tabindex="16" name="txtDate3" id="txtDate3" type="text">
+                    <span class="removeLeg"><a href="javascript:" id="removeLeg3"></a></span><br>
+                </div>
+                <div id="multiCityLeg4" style="display: none;" class="multiCityLeg">
+                    <p style="margin: 10px 0px 0px 0px;" class="multi-hd">
+                        <span class="engine_content-multi-right">
+                            <span id="SearchEngine1_Label18">From</span></span>
+                        <span id="SearchEngine1_Label19">To</span></p>
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie ui-autocomplete-input" tabindex="17" maxlength="30" name="txtFrom4" id="txtFrom4" type="text">
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie allcanfly ui-autocomplete-input" tabindex="18" maxlength="30" name="txtTo4" id="txtTo4" type="text">
+                    <input class="engine_content-from-100 shortCookie" readonly="readonly" tabindex="19" name="txtDate4" id="txtDate4" type="text">
+                    <span class="removeLeg"><a href="javascript:" id="removeLeg4"></a></span>
+                    <br>
+                </div>
+                <div id="multiCityLeg5" style="display: none;" class="multiCityLeg">
+                    <p style="margin: 10px 0px 0px 0px;" class="multi-hd">
+                        <span class="engine_content-multi-right">
+                            <span id="SearchEngine1_Label20">From</span></span>
+                        <span id="SearchEngine1_Label21">To</span></p>
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie ui-autocomplete-input" tabindex="20" maxlength="30" name="txtFrom5" id="txtFrom5" type="text">
+                    <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="engine_content-from-230 shortCookie allcanfly ui-autocomplete-input" tabindex="21" maxlength="30" name="txtTo5" id="txtTo5" type="text">
+                    <input class="engine_content-from-100 shortCookie" readonly="readonly" tabindex="22" name="txtDate5" id="txtDate5" type="text">
+                    <span class="removeLeg"><a href="javascript:" id="removeLeg5"></a></span>
+                    <br>
+                </div>
+                <p style="margin: 10px 0px 0px 0px;">
+                    <span class="addLeg" id="addLegSpan" style="display: block;"><a href="javascript:" style="color: #0066CC;" id="addLeg">
+                        <span id="SearchEngine1_Label22">Add another flight (up to 6)</span></a></span></p>
+            </div>
+            <div class="engine_content-middle-3">
+                <h1>
+                    <span id="SearchEngine1_Label23">Passengers</span></h1>
+                <span id="SearchEngine1_Label24">Adult</span>
+                (12+)
+                <select class="engine_content-middle-input shortCookie" name="jumpMenu3" id="adultNum">
+                    <option selected="selected">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+                <span id="SearchEngine1_Label25">Children</span>
+                (2-12)
+                <select class="engine_content-middle-input shortCookie" name="jumpMenu2" id="childNum">
+                    <option selected="selected">0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+            </div>
+            <div class="engine_content-middle-4">
+                <h1>
+                    <span id="SearchEngine1_Label26">Airlines Code (e.g. UA,AA)</span></h1>
+                <input class="engine_content-from-180 shortCookie" name="txtAir" type="text" id="txtAir" style="text-transform: uppercase">
+            </div>
+            <div class="engine_content-middle-5">
+                <h1>
+                    <span id="SearchEngine1_Label27">Length of Stay (days)</span></h1>
+                <input class="engine_content-from-180 shortCookie" name="txtDayLen" type="text" onchange="SetLenDay('len');" id="txtDayLen">
+            </div>
+            <div class="engine_content-middle-down">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tbody><tr>
+                        <td style="text-align: left;">
+                            <div style="margin: 0px 0px 10px 0px;">
+                                <h1>
+                                    <span id="SearchEngine1_Label28">Cabin</span></h1>
+                                <input type="radio" name="raCabin" value="ALL" class="shortCookie" checked="checked">
+                                <span id="SearchEngine1_Label37">ALL</span>
+                                &nbsp;&nbsp;
+                                <input type="radio" name="raCabin" value="Economy" class="shortCookie">
+                                <span id="SearchEngine1_Label38">Economy</span>
+                                &nbsp;&nbsp;
+                                <input type="radio" name="raCabin" value="PremiumEco" class="shortCookie">
+                                <span id="SearchEngine1_Label39">Premium Eco</span>
+                                &nbsp;&nbsp;
+                                <input type="radio" name="raCabin" value="Business" class="shortCookie">
+                                <span id="SearchEngine1_Label40">Business</span>
+                                &nbsp;&nbsp;
+                                <input type="radio" name="raCabin" value="First" class="shortCookie">
+                                <span id="SearchEngine1_Label41">First</span>
+                                &nbsp;&nbsp;
+                            </div>
+                        </td>
+                        <td style="width: 200px; text-align: right; vertical-align: top; padding-top: 20px;">
+                            <span class="button"><a id="btnSearch" class="btnSearch" href="javascript:searchFlight();">
+                                <span id="SearchEngine1_Label29">Search Fares</span></a></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="engine_content-middle-searchoption">
+                <table style="margin-left: 24px" width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tbody><tr>
+                        <td style="text-align: left;">
+                            <div>
+                                <h1>
+                                    <span id="SearchEngine1_Label30">GDS Search Option</span></h1>
+                                
+                                
+                                
+                                <input type="checkbox" name="ckbGds" value="P" class="shortCookie" checked="checked">
+                                <span id="uapiText">
+                                    <span id="SearchEngine1_Label31">Worldspan</span>
+                                    &nbsp;&nbsp;</span>
+                                <input type="checkbox" name="ckbGds" value="S" class="shortCookie" checked="checked">
+                                <span id="SearchEngine1_Label32">Sabre</span>
+                                &nbsp;&nbsp;
+                                <input type="checkbox" name="ckbGds" value="A" class="shortCookie" checked="checked">
+                                <span id="amadeusText">
+                                    <span id="SearchEngine1_Label33">Amadeus</span>
+                                    &nbsp;&nbsp;</span>
+                                <input type="checkbox" id="ckbTS" name="ckbGds" value="T" class="shortCookie">
+                                <span id="travelskyText">
+                                    <span id="SearchEngine1_Label34">Travelsky (China outbound only)</span></span>
+                            </div>
+                            <h1 id="compreh1">
+                                <input name="showcompare" type="checkbox" value="" onclick="ControlDisplay();">
+                                <span id="SearchEngine1_Label35">Compare GTT prices to other sites</span></h1>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+        <!-- end engine_content-middle -->
+    </div>
+    <div id="divCompare" class="bot" style="display: none;">
+        <div id="SearchFlightControl1_divCompare" class="bot_content-middle">
+            <div id="compare_boxes">
+            </div>
+        </div>
+    </div>
+    <!-- end engine_content -->
+</div>
+
+
+                        <!-- end engine -->
+                    </div>
+                </div>
+                <!-- content end -->
+                
+<div id="Footer">
+    <div class="Copyright">
+        © <span id="Footer1_LabelCN1">Copyright (C) 2018 GTT Global. All Rights Reserved. CST 2033348-40</span></div>
+    <div class="Navigation">
+        <ul>
+            <li><a href="javascript:void(0)" onclick="ShowUrlConn('100',this,'1','../','');">
+                <span id="Footer1_Label1">Home</span></a> | </li>
+            <li><a href="javascript:void(0)" onclick="ShowUrlConn('105',this,'7','../','');">
+                <span id="Footer1_Label2">Useful Info</span></a> | </li>
+            <li><a href="javascript:void(0)" onclick="ShowUrlConn('107',this,'7','../','');">
+                <span id="Footer1_Label3">About GTT Global</span></a> | </li>
+            <li><a href="javascript:void(0)" onclick="ShowUrlConn('118',this,'7','../','');" style="color: #ffcd19;
+                font-weight: bold;"><span id="Footer1_Label4">Jobs at GTT</span></a> | </li>
+            <li><a href="javascript:void(0)" onclick="ShowUrlConn('108',this,'7','../','');">
+                <span id="Footer1_Label5">Contact Us</span></a> | </li>
+            <li><a href="javascript:void(0)" onclick="ShowUrlConn('104',this,'7','../','');">
+                <span id="Footer1_Label6">Terms and Conditions</span></a> | </li>
+            <li><a href="http://www.majestic-vacations.com/"><span id="Footer1_Label7">Tour Packages</span></a></li>
+            
+        </ul>
+    </div>
+    <div class="cilist">
+        <ul>
+            <li>
+                <img src="AirBooking_files/ci_arc.gif" alt="A.R.C" border="0"></li>
+            
+            <li>
+                <img src="AirBooking_files/ci_iata.gif" alt="IATA" border="0"></li>
+            <li><a href="http://www.cruising.org/">
+                <img src="AirBooking_files/ci_clia.gif" alt="A.R.C" border="0"></a></li>
+            <li><a href="http://www.ustoa.com/2009/">
+                <img src="AirBooking_files/ci_usta_v2.gif" alt="A.R.C" border="0"></a></li>
+            <li><a href="http://www.travelguard.com/majestic-vacations/">
+                <img src="AirBooking_files/ci_aig2018-35-1.png" alt="A.R.C" border="0"></a></li>
+            <li><a href="https://www.gttglobal.com/File/NTA.pdf">
+                <img src="AirBooking_files/ci_nta.gif" alt="NTA" border="0"></a></li>
+        </ul>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    </form>
+    <script src="AirBooking_files/jquery.js" type="text/javascript"></script>
+    <script src="AirBooking_files/jquery-ui-1.js" type="text/javascript"></script>
+    <script src="AirBooking_files/compare.js" type="text/javascript"></script>
+    <script src="AirBooking_files/MultiSearch.js" type="text/javascript"></script>
+    <script src="AirBooking_files/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-3007278-3";
+        urchinTracker();
+
+        $(document).ready(function () {
+            SetCookie();
+            SearchCondition.init();
+            SearchConditionController.assign(SearchCondition);
+            //GetValueFromCookie();
+            SearchConditionController.pageInit(SearchCondition);
+        });
+    </script>
+
+
+
+<div style="display: none; position: absolute;" class=""><div class="aui_outer"><table class="aui_border"><tbody><tr><td class="aui_nw"></td><td class="aui_n"></td><td class="aui_ne"></td></tr><tr><td class="aui_w"></td><td class="aui_c"><div class="aui_inner"><table class="aui_dialog"><tbody><tr><td colspan="2" class="aui_header"><div class="aui_titleBar"><div class="aui_title" style="cursor: move;"></div><a class="aui_close" href="javascript:/*artDialog*/;">×</a></div></td></tr><tr><td class="aui_icon" style="display: none;"><div class="aui_iconBg" style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;"></div></td><td class="aui_main" style="width: auto; height: auto;"><div class="aui_content" style="padding: 20px 25px;"></div></td></tr><tr><td colspan="2" class="aui_footer"><div class="aui_buttons" style="display: none;"></div></td></tr></tbody></table></div></td><td class="aui_e"></td></tr><tr><td class="aui_sw"></td><td class="aui_s"></td><td class="aui_se" style="cursor: se-resize;"></td></tr></tbody></table></div></div></body></html>

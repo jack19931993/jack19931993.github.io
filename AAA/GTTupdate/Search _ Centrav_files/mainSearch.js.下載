@@ -154,7 +154,7 @@ function rotateQuote() {
 $(document).ready(function () {
     setInterval(rotateQuote, 15e3), 
     $("#AdvancedSearchTab").click(function () {
-        switchSecurityTab("AdvancedSear")
+        switchSecurityTab("Search")
     }), 
     $("#SearchTab").click(function () {
         switchSecurityTab("Search")
