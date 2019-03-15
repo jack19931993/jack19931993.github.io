@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
   <link rel="stylesheet" href="./css/centrav.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+  <link href="//d3plhpfg3500fc.cloudfront.net/images/favicon2.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
   <!-- <script type="text/javascript" async="" src="./js/w.js.下載"></script> -->
     <!-- <script type="text/javascript" async="" src="./js/analytics.js.下載"></script> -->
     <!-- <script async="" src="./js/375e2bcd1fda73581948ce6a5.js.下載"></script> -->
@@ -28,34 +31,47 @@
 
     html, body {
       position: relative;
-      height: 200%;
+      
     }
     body {
-      background: #eee;
+      /* background: #eee; */
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color:#000;
-      margin: 80px 0 0 0;
+      margin: 120px 0 0 0;
       padding: 0;
+      background-image: url("img/cloudBG.jpg");
+      background-size: contain
       
     }
 
     .navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0,1);
+    color: rgb(0, 0, 0);
 }
 
-.navbar{
+.navbar-dark .navbar-nav .nav-link{
+    color: rgb(255, 255, 255)
+}
+
+.navbar {
     font-family: Noto Sans;
+    background:rgba(4, 48, 143, 0.3);
 }
 
 .navbar-nav{
     font-size: 14px
 }
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgba(3, 84, 189, 0.479)
+
+}
+
     
 
     .banner{
       height: 600px;
-      margin-bottom: 100px
+      /* margin-bottom: 100px; */
     }
     .swiper-container {
       margin-top: 76px;
@@ -79,6 +95,8 @@
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
+      background-position: center;
+      background-repeat: no-repeat
     }
     .bg1{
       background-color: rgb(151, 41, 41)
@@ -89,6 +107,11 @@
 
     .navbar-collapse{
       float: right;
+    }
+
+    .navbar-collapse{
+        opacity: 1;
+        font-family: Noto Sans;
     }
 
    #logo.active{
@@ -106,16 +129,17 @@
 	right: 2em;
 	text-decoration: none;
 	color: white;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 	font-size: 12px;
 	padding: 1em;
   text-decoration: none;
 	display: none;
+    z-index: 3;
   
 }
 
 .gotop:hover {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(172, 7, 7, 0.7);
   text-decoration: none;
   color: white;
 }
@@ -138,8 +162,59 @@
   height: 500px;
   width: 100%;
 }
+
+.clear{
+    clear: both
+}
+
+.tab_box{
+    width: 100%;
+    height: 100px;
+    /* background-color: #3684b1; */
+    text-align: center;
+    font-size: 18px;
+    margin:0 auto;
+    transition-duration: 0.3s;
+    border: #409bcf 1px solid;
+    font-weight: bold
     
-   
+    
+
+}
+
+.Re_btn{
+    
+    line-height: 102px;
+    color: #409bcf
+}
+
+.tab_box:hover{
+    /* height: 100px; */
+    /* font-size: 20px; */
+    width: 99%;
+    border-right: #409bcf 5px solid;
+    border-bottom: rgba(13, 176, 241, 0.425) 5px solid;
+    color: #409bcf;
+}
+
+.AD{
+    max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            background-size: cover;
+            background-position: center;
+}
+
+.footer_logo{
+    height: 80px;
+}
+
+    
+ footer{
+     background-color: rgb(41, 41, 41);
+     height: 150px;
+ }  
 
     </style>
 
@@ -148,8 +223,8 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top" style="background-position:0 11%;background-size: cover; ">
-    <a class="navbar-brand" href="#"><img id="logo" height="70px" src="./img/GTT_LOGO.png"
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
+    <a class="navbar-brand" href="#"><img id="logo" height="70px" src="./img/GTT_LOGO_white-01.png"
         alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -219,7 +294,7 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="section1 container">
     <div class="row">
       <div class="col-xl-12">
         <div class="AD_box">
@@ -227,13 +302,12 @@
                 <div class="container clearfix">
                     <div class="tabs travel-organiser-tabs clearfix">
                         <ul class="tab-nav tab-nav2 clearfix ui-tabs-nav" role="tablist">
-                            <li id="SearchTab" class="auth-tab  ui-state-active" role="tab"><a><i class="fa fa-users"></i>
+                            <li id="SearchTab" class="auth-tab  ui-state-active" role="tab"><a></i>
                                 Search</a></li>
-                            <li id="AdvancedSearchTab" class="auth-tab  ui-state-default  ui-state-default" role="tab"><a><i
-                                        class="fa fa-plane"></i>Advanced Search</a></li>
-                            <li id="BuilderTab" class="auth-tab  ui-state-default" role="tab"><a><i class="fa fa-wrench"></i>Auto
+                            <li id="AdvancedSearchTab" class="auth-tab  ui-state-default  ui-state-default" role="tab"><a></i>Advanced Search</a></li>
+                            <li id="BuilderTab" class="auth-tab  ui-state-default" role="tab"><a></i>Auto
                                     Ticketing</a></li>
-                            <li id="GroupsTab" class="auth-tab  ui-state-default" role="tab"><a><i class="fa fa-users"></i>Travel
+                            <li id="GroupsTab" class="auth-tab  ui-state-default" role="tab"><a></i>Travel
                                     Insurance</a></li>
                                     
                         </ul>
@@ -1188,15 +1262,14 @@
                                                     <input id="consolidator" tabindex="30" class="checkbox-style  default "
                                                         name="fareTypeCodeSet[]" value="CONSOLIDATOR" type="checkbox"
                                                         checked="">
-                                                    <label for="consolidator" class="checkbox-style-3-label"><i
-                                                            class="fa fa-consolidator fare-type-icon less-space-right"></i>
+                                                    <label for="consolidator" class="checkbox-style-3-label"></i>
                                                         Bulk</label>
                                                 </span>
                                                 <span class="fare-type space-right">
                                                     <input id="published" tabindex="31" class="checkbox-style  default "
                                                         name="fareTypeCodeSet[]" value="PUBLISHED" type="checkbox"
                                                         checked="">
-                                                    <label for="published" class="checkbox-style-3-label"><i class="fa fa-published fare-type-icon less-space-right"></i>
+                                                    <label for="published" class="checkbox-style-3-label"></i>
                                                         Published</label>
                                                 </span>
                                                 <!-- <span class="fare-type space-right">
@@ -1206,7 +1279,7 @@
                                                 <span class="fare-type space-right">
                                                     <input id="student" tabindex="33" class="checkbox-style " name="fareTypeCodeSet[]"
                                                         value="STUDENT" type="checkbox">
-                                                    <label for="student" class="checkbox-style-3-label"><i class="fa fa-student fare-type-icon less-space-right"></i>
+                                                    <label for="student" class="checkbox-style-3-label"></i>
                                                         Student</label>
                                                 </span>
                                             </div>
@@ -1214,8 +1287,7 @@
                                     </div>
                                     <button tabindex="60" type="submit" id="FareSearchButton" onclick="checkAuth(&#39;FareSearch&#39;, event)"
                                         class="search-button button button-reveal button-large more-space-left pull-right"
-                                        formnovalidate=""><span id="FareSearchButtonText">Search for Fares</span><i
-                                            class="fa fa-angle-right"></i></button>
+                                        formnovalidate=""><span id="FareSearchButtonText">Search for Fares</span><i class="fa fa-angle-right"></i></button>
                                     <div>
                                         <input tabindex="36" id="NonstopFlights" class="checkbox-style" name="nonStopFlightsOnly"
                                             type="checkbox" value="true">
@@ -1438,7 +1510,31 @@ $(document).ready(function(){
 
                             </div>
                             <div id="BuilderForm" class="tab-content clearfix  hidden  ">
-                                <img src="./Search _ Centrav_files/RequestTicketing.JPG" alt="">
+                                    <div class="row">
+                                            <div class="col-xs-4">
+                                                <label for="Adults">Gds</label>
+                                                <select tabindex="27" id="Adults" value="1" class="search-form-input form-control no-pad-right"
+                                                    name="numberOfAdults">
+                                                    <option value="1">Sabre</option>
+                                                    <option value="2">WorldSpan</option>
+                                                    <option value="3">Amadeus</option>
+                                                    
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <label for="">Record Locator: </label>
+                                                <input style="width:50%;" type="text" required=""
+                                                            tabindex="27" autocomplete="off" class="form-control search-form-input datepicker round-trip-date"
+                                                            name="departureDate" id="FareDepartureDate" 
+                                                            value="">
+                                                            <button tabindex="60" type="submit" id="FareSearchButton" onclick="checkAuth(&#39;FareSearch&#39;, event)"
+                                        class="search-button button button-reveal button-large more-space-left pull-right"
+                                        formnovalidate=""><span id="FareSearchButtonText">Search for Fares</span><i
+                                            class="fa fa-angle-right"></i></button>
+                                            </div>
+
+                                            
+                                        </div>
                                 <!-- <form action="https://www.centrav.com/builder" method="POST" class="no-space-bottom"
                                     id="BuilderSearch" onsubmit="$(&#39;#ErrorMessages&#39;).hide()">
                                     <input type="hidden" name="persist" value="builderInput">
@@ -2342,653 +2438,29 @@ $(document).ready(function(){
 </script> -->
                             </div>
                             <div id="GroupsForm" class="tab-content clearfix   hidden  ">
-                                <img src="./Search _ Centrav_files/TravelInsurance.JPG" alt="">
-                                <!-- <form role="form" method="POST" action="https://www.centrav.com/search/groups" id="GroupRequestForm"
-                                    onsubmit="$(&#39;#ErrorMessages&#39;).hide();$(&#39;#GroupRequestBtn&#39;).attr(&#39;disabled&#39;, &#39;disabled&#39;)">
-                                    <input type="hidden" name="persist" value="groupRequest">
-                                    <div class="btn-group space-bottom">
-                                        <button id="GroupRoundTripBtn" type="button" class="btn btn-default active"
-                                            onclick="setTripType(&#39;ROUND_TRIP&#39;, &#39;Group&#39;)">Round Trip</button>
-                                        <button id="GroupOneWayBtn" type="button" class="btn btn-default" onclick="setTripType(&#39;ONE_WAY&#39;, &#39;Group&#39;)">One
-                                            Way</button>
-                                        <button id="GroupMultiCityBtn" type="button" class="btn btn-default"
-                                            onclick="setTripType(&#39;MULTI_CITY&#39;, &#39;Group&#39;)">Multi City</button>
-                                        <input type="hidden" name="tripType" value="ROUND_TRIP" id="GroupTripTypeInput">
-                                    </div>
-                                    <div class="row" id="GroupStandardForm">
-                                        <div class="input-column col-xs-3">
-                                            <div class="has-float-label">
-                                                <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                        type="text" required="" autocomplete="off" class="form-control airport-autocomplete tt-input"
-                                                        data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                        name="flyingFrom" id="GroupFlyingFrom" placeholder="ci‌ty or air‌port"
-                                                        value="" spellcheck="false" dir="auto"
-                                                        aria-activedescendant="" aria-owns="GroupFlyingFrom_listbox"
-                                                        role="combobox" aria-readonly="true" aria-autocomplete="list"
-                                                        style="position: relative; vertical-align: top;"><label
-                                                        class="control-label" for="GroupFlyingFrom" placeholder="Flying From"></label><span
-                                                        role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                    <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                    <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                        <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                    </div></span>
-
-                                            </div>
-                                        </div>
-                                        <div class="input-column col-xs-3">
-                                            <div class="has-float-label">
-                                                <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                        type="text" required="" autocomplete="off" class="form-control airport-autocomplete tt-input"
-                                                        data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                        name="flyingTo" id="GroupFlyingTo" placeholder="ci‌ty or air‌port"
-                                                        value="" spellcheck="false" dir="auto"
-                                                        aria-activedescendant="" aria-owns="GroupFlyingTo_listbox"
-                                                        role="combobox" aria-readonly="true" aria-autocomplete="list"
-                                                        style="position: relative; vertical-align: top;"><label for="GroupFlyingTo"
-                                                        placeholder="Flying To"></label><span role="status"
-                                                        aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                    <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                    <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                        <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                    </div></span>
-
-                                            </div>
-                                        </div>
-                                        <div class="input-column col-xs-3">
-                                            <div class="has-float-label">
-                                                <input type="text" required="" autocomplete="off" class="form-control datepicker round-trip-date"
-                                                    name="departureDate" id="GroupDepartureDate" placeholder="MM/DD/YYYY"
-                                                    value="">
-                                                <label for="GroupDepartureDate" placeholder="Departure Date"></label>
-                                            </div>
-                                        </div>
-                                        <div class="input-column col-xs-3" id="GroupReturnDateGroup">
-                                            <div class="has-float-label">
-                                                <input type="text" required="" autocomplete="off" class="form-control datepicker round-trip-date"
-                                                    name="returnDate" id="GroupReturnDate" placeholder="MM/DD/YYYY"
-                                                    value="">
-                                                <label for="GroupReturnDate" placeholder="Return Date"></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="GroupMultiCityForm" class="multi-segment-container" style="display: none;">
-                                        <input class="hidden" id="GroupNumberOfDestinations" name="_numDestinations"
-                                            value="2">
-                                        <div id="MultiCitySegments">
-                                            <div class="row shown-Group " id="GroupSegment0">
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="1" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-from tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingFrom[]" id="GroupMultiFlyingFrom0"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingFrom0_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingFrom0" placeholder="Flying From"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="2" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-to tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingTo[]" id="GroupMultiFlyingTo0"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingTo0_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingTo0" placeholder="Flying To"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="row">
-                                                        <div class="col-xs-10">
-                                                            <div class="form-group">
-                                                                <div class="has-float-label">
-                                                                    <input tabindex="3" type="text" required=""
-                                                                        autocomplete="off" class="form-control datepicker travel-date multi-date multi-date-req"
-                                                                        name="multiTravelDate[]" id="GroupMultiTravelDate0"
-                                                                        placeholder="MM/DD/YYYY" value="">
-                                                                    <label for="GroupMultiTravelDate0" placeholder="Travel Date"></label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-2">
-                                                            <h4 id="GroupFirstX" class="less-space-top delete-search"
-                                                                onclick="removeDestination(&#39;0&#39;, &#39;Group&#39;)"><i
-                                                                    class="fa fa-times" data-toggle="tooltip" title=""
-                                                                    data-original-title="Remove Destination"></i></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row shown-Group " id="GroupSegment1">
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="4" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-from tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingFrom[]" id="GroupMultiFlyingFrom1"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingFrom1_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingFrom1" placeholder="Flying From"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="5" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-to tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingTo[]" id="GroupMultiFlyingTo1"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingTo1_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingTo1" placeholder="Flying To"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="row">
-                                                        <div class="col-xs-10">
-                                                            <div class="form-group">
-                                                                <div class="has-float-label">
-                                                                    <input tabindex="6" type="text" required=""
-                                                                        autocomplete="off" class="form-control datepicker travel-date multi-date multi-date-req"
-                                                                        name="multiTravelDate[]" id="GroupMultiTravelDate1"
-                                                                        placeholder="MM/DD/YYYY" value="">
-                                                                    <label for="GroupMultiTravelDate1" placeholder="Travel Date"></label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-2">
-                                                            <h4 class="less-space-top delete-search" onclick="removeDestination(&#39;1&#39;, &#39;Group&#39;)"><i
-                                                                    class="fa fa-times" data-toggle="tooltip" title=""
-                                                                    data-original-title="Remove Destination"></i></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row " id="GroupSegment2" style="display: none;">
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="7" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-from tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingFrom[]" id="GroupMultiFlyingFrom2"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingFrom2_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingFrom2" placeholder="Flying From"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="8" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-to tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingTo[]" id="GroupMultiFlyingTo2"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingTo2_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingTo2" placeholder="Flying To"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="row">
-                                                        <div class="col-xs-10">
-                                                            <div class="form-group">
-                                                                <div class="has-float-label">
-                                                                    <input tabindex="9" type="text" required=""
-                                                                        autocomplete="off" class="form-control datepicker travel-date multi-date multi-date-req"
-                                                                        name="multiTravelDate[]" id="GroupMultiTravelDate2"
-                                                                        placeholder="MM/DD/YYYY" value="">
-                                                                    <label for="GroupMultiTravelDate2" placeholder="Travel Date"></label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-2">
-                                                            <h4 class="less-space-top delete-search" onclick="removeDestination(&#39;2&#39;, &#39;Group&#39;)"><i
-                                                                    class="fa fa-times" data-toggle="tooltip" title=""
-                                                                    data-original-title="Remove Destination"></i></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row " id="GroupSegment3" style="display: none;">
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="10" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-from tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingFrom[]" id="GroupMultiFlyingFrom3"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingFrom3_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingFrom3" placeholder="Flying From"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="11" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-to tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingTo[]" id="GroupMultiFlyingTo3"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingTo3_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingTo3" placeholder="Flying To"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="row">
-                                                        <div class="col-xs-10">
-                                                            <div class="form-group">
-                                                                <div class="has-float-label">
-                                                                    <input tabindex="12" type="text" required=""
-                                                                        autocomplete="off" class="form-control datepicker travel-date multi-date multi-date-req"
-                                                                        name="multiTravelDate[]" id="GroupMultiTravelDate3"
-                                                                        placeholder="MM/DD/YYYY" value="">
-                                                                    <label for="GroupMultiTravelDate3" placeholder="Travel Date"></label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-2">
-                                                            <h4 class="less-space-top delete-search" onclick="removeDestination(&#39;3&#39;, &#39;Group&#39;)"><i
-                                                                    class="fa fa-times" data-toggle="tooltip" title=""
-                                                                    data-original-title="Remove Destination"></i></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row " id="GroupSegment4" style="display: none;">
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="13" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-from tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingFrom[]" id="GroupMultiFlyingFrom4"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingFrom4_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingFrom4" placeholder="Flying From"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="14" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-to tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingTo[]" id="GroupMultiFlyingTo4"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingTo4_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingTo4" placeholder="Flying To"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="row">
-                                                        <div class="col-xs-10">
-                                                            <div class="form-group">
-                                                                <div class="has-float-label">
-                                                                    <input tabindex="15" type="text" required=""
-                                                                        autocomplete="off" class="form-control datepicker travel-date multi-date multi-date-req"
-                                                                        name="multiTravelDate[]" id="GroupMultiTravelDate4"
-                                                                        placeholder="MM/DD/YYYY" value="">
-                                                                    <label for="GroupMultiTravelDate4" placeholder="Travel Date"></label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-2">
-                                                            <h4 class="less-space-top delete-search" onclick="removeDestination(&#39;4&#39;, &#39;Group&#39;)"><i
-                                                                    class="fa fa-times" data-toggle="tooltip" title=""
-                                                                    data-original-title="Remove Destination"></i></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row " id="GroupSegment5" style="display: none;">
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="16" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-from tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingFrom[]" id="GroupMultiFlyingFrom5"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingFrom5_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingFrom5" placeholder="Flying From"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="has-float-label">
-                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
-                                                                tabindex="17" type="text" required="" autocomplete="off"
-                                                                class="form-control airport-autocomplete flying-to tt-input"
-                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
-                                                                name="multiFlyingTo[]" id="GroupMultiFlyingTo5"
-                                                                placeholder="ci‌ty or air‌port" value="" spellcheck="false"
-                                                                dir="auto" aria-activedescendant="" aria-owns="GroupMultiFlyingTo5_listbox"
-                                                                role="combobox" aria-readonly="true"
-                                                                aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
-                                                                for="GroupMultiFlyingTo5" placeholder="Flying To"></label><span
-                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
-                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
-                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
-                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
-                                                            </div></span>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-4">
-                                                    <div class="row">
-                                                        <div class="col-xs-10">
-                                                            <div class="form-group">
-                                                                <div class="has-float-label">
-                                                                    <input tabindex="18" type="text" required=""
-                                                                        autocomplete="off" class="form-control datepicker travel-date multi-date multi-date-req"
-                                                                        name="multiTravelDate[]" id="GroupMultiTravelDate5"
-                                                                        placeholder="MM/DD/YYYY" value="">
-                                                                    <label for="GroupMultiTravelDate5" placeholder="Travel Date"></label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xs-2">
-                                                            <h4 class="less-space-top delete-search" onclick="removeDestination(&#39;5&#39;, &#39;Group&#39;)"><i
-                                                                    class="fa fa-times" data-toggle="tooltip" title=""
-                                                                    data-original-title="Remove Destination"></i></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="btn btn-default" id="GroupAddDestinationButton"
-                                            tabindex="22" onclick="return addDestination(&#39;Group&#39;)"><i class="fa fa-plus less-space-right"></i>
-                                            Add a Destination</button>
-                                    </div>
                                     <div class="row">
-                                        <div class="space-top col-xs-6">
-                                            <label for="PreferredAirlines">Preferred Airlines</label>
-                                            <select id="PreferredAirlines" class="form-control ajax-autocomplete select2-hidden-accessible"
-                                                name="preferredAirlines[]" multiple="" style="width:511px;"
-                                                placeholder="Any Airline" allowclear="allowClear"
-                                                data-initial-values="" data-initial-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airline"
-                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airline/search"
-                                                data-id-key="iata" data-text-key="shortName"
-                                                data-template-result-function="fancyAirline"
-                                                data-template-selection-function="fancyAirline" tabindex="-1"
-                                                aria-hidden="true">
-                                            </select><span class="select2 select2-container select2-container--bootstrap"
-                                                dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple form-control ajax-autocomplete"
-                                                        role="combobox" aria-haspopup="true" aria-expanded="false"
-                                                        tabindex="-1">
-                                                        <ul class="select2-selection__rendered">
-                                                            <li class="select2-search select2-search--inline"><input
-                                                                    class="select2-search__field" type="search"
-                                                                    tabindex="0" autocomplete="off" autocorrect="off"
-                                                                    autocapitalize="off" spellcheck="false" role="textbox"
-                                                                    aria-autocomplete="list" placeholder="Any Airline"
-                                                                    style="width: 100px;"></li>
-                                                        </ul>
-                                                    </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                        </div>
-                                        <div class="col-xs-6 space-top">
-                                            <input id="GroupAnyAlliance" class="radio-style" name="alliance" type="radio"
-                                                checked="" value="">
-                                            <label for="GroupAnyAlliance" class="radio-style-3-label more-space-right">
-                                                Any Alliance</label>
+                                            <div class="col-xs-6">
 
-                                            <hr class="hr-xxs">
-
-                                            <input id="GroupSkyteam" class="radio-style" name="alliance" type="radio"
-                                                value="SKY_TEAM">
-                                            <label for="GroupSkyteam" class="radio-style-3-label more-space-right"><img
-                                                    src="./Search _ Centrav_files/skyteam-xs.png" width="30" class="less-space-right">
-                                                SkyTeam</label>
-
-                                            <input id="GroupStarAlliance" class="radio-style" name="alliance" type="radio"
-                                                value="STAR_ALLIANCE">
-                                            <label for="GroupStarAlliance" class="radio-style-3-label more-space-right"><img
-                                                    src="./Search _ Centrav_files/staralliance-xs.png" width="30"
-                                                    class="less-space-right"> Star Alliance</label>
-
-                                            <input id="GroupOneworld" class="radio-style" name="alliance" type="radio"
-                                                value="ONE_WORLD">
-                                            <label for="GroupOneworld" class="radio-style-3-label"><img src="./Search _ Centrav_files/oneworld-xs.png"
-                                                    width="30" class="less-space-right"> oneworld</label>
-                                        </div>
-                                    </div>
-                                    <hr class="hr-sm">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <div class="has-float-label">
-                                                <input type="text" required="" class="form-control" name="tripName"
-                                                    id="tripName" value="">
-                                                <label for="tripName" alt="Give this group a name." placeholder="Group Name"></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-2">
-                                            <div class="has-float-label">
-                                                <input type="text" placeholder="min. 10" required="" class="form-control"
-                                                    name="numberOfTravelers" id="numberOfTravelers" value="">
-                                                <label for="numberOfTravelers" placeholder="# Travelers"></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-2">
-                                            <div class="has-float-label">
-                                                <input type="text" required="" class="form-control" name="MaxBudget"
-                                                    id="MaxBudget" placeholder="per traveler" value="">
-                                                <label for="MaxBudget" placeholder="Max Budget"></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <div class="has-float-label">
-                                                <select required="" id="groupTypeCode" class="form-control" name="groupTypeCode">
-                                                    <option value="">
-                                                    </option>
-                                                    <option value="LEISURE">Leisure</option>
-                                                    <option value="CORPORATE">Corporate</option>
-                                                    <option value="SPORTS">Sports Team</option>
-                                                    <option value="STUDENT">Student</option>
-                                                    <option value="CRUISE">Cruise</option>
-                                                    <option value="HUMANITARIAN">Humanitarian</option>
-                                                    <option value="RELIGIOUS">Religious</option>
-
-                                                </select>
-                                                <label for="GroupType" placeholder="Group Type"></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label class="control-label" for="airlinePreference">Are your travel
-                                                dates flexible?</label>
-                                            <div>
-                                                <input class="radio-style" type="radio" id="datesFlexYes" name="datesFlexible"
-                                                    value="yes" onclick="$(&#39;#FlexibleDates&#39;).show();checkHeight();">
-                                                <label class="space-right radio-style-3-label" for="datesFlexYes">Yes</label>
-
-                                                <input class="radio-style" type="radio" id="datesFlexNo" name="datesFlexible"
-                                                    value="no" onclick="$(&#39;#FlexibleDates&#39;).hide();checkHeight();">
-                                                <label class="radio-style-3-label" for="datesFlexNo">No</label>
-
-                                            </div>
-                                            <div id="FlexibleDates" class="form-group" style="display: none;">
-                                                <label class="control-label" for="howFlexible">How flexible are
-                                                    your dates?</label>
-                                                <select class="form-control" name="howFlexible" id="howFlexible">
-                                                    <option>Flexible by +/- 1 day, length of trip can change.</option>
-                                                    <option>Flexible by +/- 1 day, length of trip must remain the
-                                                        same.</option>
-                                                    <option>Flexible by +/- 2 days, length of trip can change.</option>
-                                                    <option>Flexible by +/- 2 days, length of trip must remain the
-                                                        same.</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <div class="form-group">
-                                                <label class="control-label" for="airlinePreference">Is this a
-                                                    reoccurring group?</label>
-                                                <div class="has-helpful-tip">
-                                                    <input class="radio-style" type="radio" id="reoccurringYes"
-                                                        name="reoccurringGroup" value="yes">
-                                                    <label class="radio-style-3-label space-right" for="reoccurringYes">Yes</label>
-
-                                                    <input type="radio" class="radio-style" id="reoccurringNo" name="reoccurringGroup"
-                                                        value="no">
-                                                    <label class="radio-style-3-label" for="reoccurringNo">No</label>
-                                                    <span class="helpful-tip alert alert-info">Does this group
-                                                        travel multiple times a year and/or every year?</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="airlinePreference">Do you already have
-                                            confirmed space for this group with an airline or another travel
-                                            agency?</label>
-                                        <div class="has-helpful-tip">
-                                            <input class="radio-style" type="radio" id="confirmedSpaceYes" name="confirmedSpace"
-                                                value="yes" onclick="$(&#39;#PreviousConfirmationDetails&#39;).show().find(&#39;input&#39;).prop(&#39;disabled&#39;, false);checkHeight();">
-                                            <label class="radio-style-3-label space-right" for="confirmedSpaceYes">Yes</label>
-
-                                            <input class="radio-style" type="radio" id="confirmedSpaceNo" name="confirmedSpace"
-                                                value="no" onclick="$(&#39;#PreviousConfirmationDetails&#39;).hide().find(&#39;input&#39;).prop(&#39;disabled&#39;, true);checkHeight();">
-                                            <label class="radio-style-3-label" for="confirmedSpaceNo">No</label>
-                                            <span style="white-space:normal;" class="helpful-tip alert alert-info">Please
-                                                inform us if this is a duplicate group request. Some airlines have
-                                                very strict rules on duplicate group space and this helps us as an
-                                                agency approach your group request in the best possible manner.</span>
-                                        </div>
-                                    </div>
-                                    <div id="PreviousConfirmationDetails" class="form-group" style="display: none;">
-                                        <div class="row">
-                                            <div class="col-xs-3">
-                                                <div class="has-float-label">
-                                                    <input type="text" required="" class="form-control" name="confirmedAirline"
-                                                        id="confirmedAirline" value="">
-                                                    <label class="control-label" for="confirmedAirline" placeholder="Confirmed Airline"></label>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-3">
-                                                <div class="has-float-label">
-                                                    <input type="text" required="" class="form-control" name="confirmedPrice"
-                                                        id="confirmedPrice" value="">
-                                                    <label class="control-label" for="confirmedPrice" placeholder="Confirmed Price"></label>
-                                                </div>
+                                                
+                                                <a class="Re_btn" target="blank" href="https://buy.travelguard.com/tgi2/proc/stateselector.aspx?br=agentlink&arc=125162&agentlinkasp=yes">
+                                                <div class="tab_box" >
+                                                        US Resident <i class="fa fa-angle-right"></i>
+                                                    </div></a>
+                                                
+                                                    
                                             </div>
                                             <div class="col-xs-6">
-                                                <textarea class="form-control" name="confirmedGroupDetails" id="confirmedGroupDetails"
-                                                    placeholder="Other details of your previously confirmed group"></textarea>
-                                            </div>
+                                                    <a class="Re_btn" target="blank" href="https://gtt.trawickinternational.com/home/" >
+                                                        <div class="tab_box" >
+                                                                Non-US Resident <i class="fa fa-angle-right"></i>
+                                                            </div></a>
+                                                    
+                                                        
+                                                </div>
+
+                                            
                                         </div>
-                                    </div>
-                                    <hr class="hr-sm">
-                                    <div class="form-group">
-                                        <label for="groupCommentBox">Let us know any other preferences or
-                                            background info you have for this group.</label>
-                                        <textarea class="form-control" name="comments" id="groupCommentBox" rows="2"></textarea>
-                                    </div>
-                                    <div class="pad-top">
-                                        <button id="GroupRequestBtn" onclick="checkAuth(&#39;GroupRequestForm&#39;, event)"
-                                            class="search-button button button-reveal button-large pull-right"
-                                            formnovalidate=""><span>Send Group Request</span><i class="fa fa-angle-right"></i></button>
-                                    </div>
-                                </form>
-                                <script>
-                                    //Display appropriate search form on load
-var tripType = $('#GroupTripTypeInput').val();
-if(tripType !== 'ROUND_TRIP') setTripType(tripType, 'Group');
-</script> -->
-                            </div>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -3002,10 +2474,11 @@ if(tripType !== 'ROUND_TRIP') setTripType(tripType, 'Group');
   <div class="banner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide bg1"><img src="./img/AD_banner_ALL-1.jpg" alt=""> </div>
+        <div class="swiper-slide bg1"> <div class="AD_box" ><img class="AD" src="img/AD_banner_ALL-2.jpg" alt=""> </div> </div>
         <div class="swiper-slide bg2">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide" style="background-image:url(../img/)"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
         <div class="swiper-slide">Slide 5</div>
         <div class="swiper-slide">Slide 6</div>
         <div class="swiper-slide">Slide 7</div>
@@ -3018,10 +2491,20 @@ if(tripType !== 'ROUND_TRIP') setTripType(tripType, 'Group');
     </div>
   </div>
 
+
   <a href="#" id="gotop" class="gotop">Go Top</a>
 
-  <div id="section01">Section01</div>
-  <div id="section02">Section02</div>
+  <div class="clear"></div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4">
+                <img class="footer_logo" src="img/GTT_LOGO_white.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
   <!-- <div id="gotop" class="gotop">Go Top</div> -->
 
   <!-- Optional JavaScript -->
@@ -3091,13 +2574,23 @@ if(tripType !== 'ROUND_TRIP') setTripType(tripType, 'Group');
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
+        var swiper = new Swiper('.swiper-container', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
 </body>
 
 </html>
