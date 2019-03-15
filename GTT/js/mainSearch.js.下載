@@ -1,0 +1,176 @@
+function resetSearchForm() {
+    var e = $(".airport-autocomplete");
+    $("#FareSearch").find(":input").not("input:hidden").not("input:checkbox").val(null), e.typeahead("val", null), $("#Adults").val("1"), $("#Children").val("0"), $("#Infants").val("0"), $(".fare-type input").prop("checked", !1), $(".fare-type input.default").prop("checked", !0), $("#CabinClassInput").val("ECONOMY"), $("#EconomyBtn").addClass("active"), $("#PremiumBtn").removeClass("active"), $("#FirstBtn").removeClass("active"), $("#BusinessBtn").removeClass("active"), $("#NonstopFlights").prop("checked", !1), $("#ExcludeBasicEconomy").prop("checked", !1), $("#AirlineCodeSet").val(null).trigger("change"), $("#AnyAlliance").prop("checked", !0), $("#StarAlliance").prop("checked", !1), $("#Skyteam").prop("checked", !1), $("#Oneworld").prop("checked", !1), $("#AdvancedMenu").hide(), $("#ShowAdvancedOptions").show(), $("#HideAdvancedOptions").hide(), $(".fare-routing").each(function () {
+        $(this).addClass("hidden")
+    }), $("#ShowStandardFareRouting").val(0);
+    for (var a = 0; a < $("#FareNumberOfDestinations").val(); a++) hideMultiRouting(a, "Fare");
+    $("#FlexOutboundSelect").val("0"), $("#FlexInboundSelect").val("0"), $("#MaxConnectionTime").val("0"), $("#MinConnectionTime").val("0"), initializeRoundTrip("Fare"), checkHeight()
+}
+
+function setTripType(e, a) {
+    var i = $("#" + a + "RoundTripBtn"),
+        t = $("#" + a + "OneWayBtn"),
+        n = $("#" + a + "MultiCityBtn");
+    "ROUND_TRIP" === e ? i.addClass("active") : i.removeClass("active"), "ONE_WAY" === e ? t.addClass("active") : t.removeClass("active"), "MULTI_CITY" === e ? n.addClass("active") : n.removeClass("active");
+    var o = $("#" + a + "MultiCityForm"),
+        l = $("#" + a + "StandardForm"),
+        d = $("#FlexOutbound"),
+        s = $("#FlexMulti1"),
+        r = $("#FlexMulti2"),
+        u = $("#FlexInbound");
+    if ("MULTI_CITY" === e) l.hide(), l.find(":input").prop("disabled", !0), o.find(":input").prop("disabled", !1), o.show(), "Fare" === a && (d.hide(), d.find(":input").prop("disabled", !0), u.hide(), u.find(":input").prop("disabled", !0), Number($("#FareNumberOfDestinations").val()) < 3 ? (s.show(), s.find(":input").prop("disabled", !1), 1 !== Number($("#FareNumberOfDestinations").val()) && (r.show(), r.find(":input").prop("disabled", !1))) : $("#MultiFlexTip").show());
+    else {
+        o.hide(), o.find(":input").prop("disabled", !0), $("#MultiFlexTip").hide(), l.find(":input").prop("disabled", !1), l.show();
+        var c = $("#" + a + "ReturnDateGroup"),
+            p = $("#" + a + "InboundRouting");
+        if ("ONE_WAY" === e) {
+            l.find(".input-column").removeClass("col-xs-3").addClass("col-xs-4"), c.hide(), c.find(":input").prop("disabled", !0), "Fare" !== a && "Builder" !== a || (p.hide(), p.find(":input").prop("disabled", !0), "Fare" === a && (d.show(), d.find(":input").prop("disabled", !1), s.hide(), s.find(":input").prop("disabled", !0), u.hide(), u.find(":input").prop("disabled", !0), r.hide(), r.find(":input").prop("disabled", !0)));
+            var h = $("#" + a + "DepartureDate"),
+                v = $("#" + a + "ReturnDate");
+            h.data("caleran") && (h.data("caleran").destroy(), v.data("caleran") && v.data("caleran").destroy());
+            var m = moment(h.prop("value")).format("MM/DD/YYYY");
+            "Invalid date" === m && (m = ""), h.caleran({
+                singleDate: !0,
+                autoCloseOnSelect: !0,
+                minDate: moment(),
+                maxDate: moment().add("330", "days"),
+                startEmpty: !0,
+                showOn: "bottom-right",
+                locale: $("html").attr("lang"),
+                format: "MM/DD/YYYY",
+                oninit: function (e) {
+                    e.$elem.val(m), caleranStart = e
+                }
+            })
+        } else {
+            l.find(".input-column").removeClass("col-xs-4").addClass("col-xs-3"), c.find(":input").prop("disabled", !1), c.show(), "Fare" !== a && "Builder" !== a || (p.show(), p.find(":input").prop("disabled", !1), "Fare" === a && (d.show(), d.find(":input").prop("disabled", !1), s.hide(), s.find(":input").prop("disabled", !0), u.show(), u.find(":input").prop("disabled", !1), r.hide(), r.find(":input").prop("disabled", !0))), (h = $("#" + a + "DepartureDate")).data("caleran") && h.data("caleran").destroy(), initializeRoundTrip(a)
+        }
+    }
+    return $("#" + a + "TripTypeInput").val(e), checkHeight(), !1
+}
+
+function addDestination(e) {
+    var a = $(".shown-" + e),
+        i = $("#" + e + "FirstX"),
+        t = $("#" + e + "AddDestinationButton"),
+        n = a.length;
+    i.show(), 5 <= n && t.hide();
+    var o = $("#FlexMulti1"),
+        l = $("#FlexMulti2");
+    2 <= n && (o.hide(), o.find(":input").prop("disabled", !0), l.hide(), l.find(":input").prop("disabled", !0), $("#MultiFlexTip").show()), 1 === n && (l.show(), l.find(":input").prop("disabled", !1));
+    var d = $("#" + e + "Segment" + n);
+    d.show(), d.addClass("shown-" + e);
+    var s = $("#" + e + "NumberOfDestinations");
+    return s.val(Number(s.val()) + 1), checkHeight(), !1
+}
+
+function removeDestination(e, a) {
+    var i = Number(e),
+        t = $(".shown-" + a).length - 1,
+        n = "shown-" + a;
+    if ($("#" + a + "Segment" + (i + 1)).hasClass(n))
+        for (var o = i; o < t; o++) {
+            var l = $("#" + a + "MultiFlyingFrom" + o),
+                d = $("#" + a + "MultiFlyingFrom" + (o + 1)),
+                s = $("#" + a + "MultiFlyingTo" + o),
+                r = $("#" + a + "MultiFlyingTo" + (o + 1)),
+                u = $("#" + a + "Destination" + o + "Stop1"),
+                c = $("#" + a + "Destination" + (o + 1) + "Stop1"),
+                p = $("#" + a + "Destination" + o + "Stop2"),
+                h = $("#" + a + "Destination" + (o + 1) + "Stop2"),
+                v = $("#" + a + "MultiTravelDate" + o),
+                m = $("#" + a + "MultiTravelDate" + (o + 1));
+            l.val(d.val()), l.typeahead("val", d.val()), s.val(r.val()), s.typeahead("val", r.val()), u.val(c.val()), u.typeahead("val", c.val()), p.val(h.val()), p.typeahead("val", h.val()), v.val(m.val())
+        }
+    var f = $("#" + a + "Segment" + t);
+    l = $("#" + a + "MultiFlyingFrom" + t), s = $("#" + a + "MultiFlyingTo" + t), u = $("#" + a + "Destination" + t + "Stop1"), p = $("#" + a + "Destination" + t + "Stop2");
+    var g = $("#" + a + "MultiTravelDate" + t);
+    l.val(null), l.typeahead("val", ""), s.val(""), s.typeahead("val", ""), u.val(""), u.typeahead("val", ""), p.val(""), p.typeahead("val", ""), g.val(""), g.data("caleran").destroy(), g.caleran({
+        singleDate: !0,
+        minDate: moment(),
+        maxDate: moment().add("330", "days"),
+        showFooter: !1,
+        locale: $("html").attr("lang"),
+        format: "MM/DD/YYYY",
+        oninit: function (e) {
+            e.$elem.val("")
+        }
+    }), f.hide(), f.removeClass(n), $("#" + a + "AddDestinationButton").show();
+    var b = $("#" + a + "NumberOfDestinations"),
+        C = $("#" + a + "FirstX");
+    if (b.val(Number(b.val()) - 1), 1 === Number(b.val()) && C.hide(), Number(b.val()) < 3) {
+        var y = $("#FlexMulti1"),
+            F = $("#FlexMulti2");
+        y.show(), y.find(":input").prop("disabled", !1), F.show(), F.find(":input").prop("disabled", !1), $("#MultiFlexTip").hide()
+    }
+    1 === Number(b.val()) && (F.hide(), F.find(":input").prop("disabled", !0)), checkHeight()
+}
+
+function setCabinClass(e) {
+    "BASIC_ECONOMY" === e ? $("#EconomyBtn").addClass("active") : $("#BasicBtn").removeClass("active"), "ECONOMY" === e ? $("#EconomyBtn").addClass("active") : $("#EconomyBtn").removeClass("active"), "PREMIUM_ECONOMY" === e ? $("#PremiumBtn").addClass("active") : $("#PremiumBtn").removeClass("active"), "FIRST" === e ? $("#FirstBtn").addClass("active") : $("#FirstBtn").removeClass("active"), "BUSINESS" === e ? $("#BusinessBtn").addClass("active") : $("#BusinessBtn").removeClass("active"), $("#CabinClassInput").val(e)
+}
+
+function startFareSearch() {
+    $("#HideFareForm").hide(), $("#ErrorMessages").hide(), $("#FareSearch").css("opacity", 0), $("#FareSearching").show(), $("#FareSearching").css("opacity", 1)
+}
+
+function toggleRouting(e) {
+    var a = e.toLowerCase();
+    1 == $("#ShowStandard" + e + "Routing").val() ? ($("." + a + "-routing").each(function () {
+        $(this).addClass("hidden"), $(this).find("input").typeahead("val", "")
+    }), $("#ShowStandard" + e + "Routing").val(0)) : ($("." + a + "-routing").each(function () {
+        $(this).removeClass("hidden")
+    }), $("#ShowStandard" + e + "Routing").val(1), $("#" + e + "OutboundStop1").focus()), checkHeight()
+}
+
+function showMultiRouting(e, a) {
+    $("#Hide" + a + "MultiRouting" + e).show(), $("#Show" + a + "MultiRouting" + e).hide(), $("#" + a + "Routing" + e).removeClass("hidden"), $("#Show" + a + "MultiRoutingInput" + e).val(1);
+    var i = $("#" + a + "Segment" + e);
+    i.find(".input-column").removeClass("col-xs-4").addClass("col-xs-3"), i.find(".col-greedy").removeClass("col-greedy").addClass("col-greedy-disabled"), i.find(".has-routing-button").removeClass("has-routing-button").addClass("has-routing-button-disabled"), $("#" + a + "Destination" + e + "Stop1").focus(), checkHeight()
+}
+
+function hideMultiRouting(e, a) {
+    $("#Show" + a + "MultiRouting" + e).show(), $("#Hide" + a + "MultiRouting" + e).hide();
+    var i = $("#" + a + "Routing" + e);
+    i.find("input").typeahead("val", ""), i.addClass("hidden"), $("#Show" + a + "MultiRoutingInput" + e).val(0);
+    var t = $("#" + a + "Segment" + e);
+    t.find(".input-column").removeClass("col-xs-3").addClass("col-xs-4"), t.find(".col-greedy-disabled").removeClass("col-greedy-disabled").addClass("col-greedy"), t.find(".has-routing-button-disabled").removeClass("has-routing-button-disabled").addClass("has-routing-button"), checkHeight()
+}
+
+function checkAuth(e, a) {
+    a.preventDefault(), $(".datepicker").each(function () {
+        $(this).val(formatDate($(this).val()))
+    }), $("#UnAuthenticatedMenu").hasClass("hidden") ? ($(".auth-tab").off("click"), $("#" + e).submit()) : ($("#LoginModal").modal("show"), wasSearching = e)
+}
+
+function rotateQuote() {
+    var i = $("#TestimonialText");
+    i.fadeOut(3e3, function () {
+        var e = $(".current-testimonial"),
+            a = e.next("span");
+        0 === a.length && (a = i.find("span").first()), e.hide(), e.removeClass("current-testimonial"), a.show(), a.addClass("current-testimonial"), i.fadeIn(3e3)
+    })
+}
+$(document).ready(function () {
+    setInterval(rotateQuote, 15e3), 
+    $("#AdvancedSearchTab").click(function () {
+        switchSecurityTab("Search")
+    }), 
+    $("#SearchTab").click(function () {
+        switchSecurityTab("Search")
+    }), 
+    $("#BuilderTab").click(function () {
+        switchSecurityTab("Builder")
+    }), $("#GroupsTab").click(function () {
+        switchSecurityTab("Groups")
+    }), checkHeight(), $(".flying-to").focusout(function () {
+        var e = $(this).parents(".row").next(".row").find(".flying-from");
+        e && $(this).val() && "" === e.val() && (e.val($(this).val()), e.typeahead("val", $(this).val()))
+    }), $("#LoginModal").on("shown.bs.modal", function () {
+        $("#ModalEmail").focus()
+    }), $(".nav-tab").click(function () {
+        checkHeight()
+    });
+    var e = $("#GroupTripTypeInput");
+    "ROUND_TRIP" !== e.val() && setTripType(e.val(), "Group"), "ROUND_TRIP" !== (e = $("#BuilderTripTypeInput")).val() && setTripType(e.val(), "Builder")
+});
