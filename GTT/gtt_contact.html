@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/centrav.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+    <link href="//d3plhpfg3500fc.cloudfront.net/images/favicon2.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    <style>
+        body{
+            background-image: url("img/cloudBG.jpg");
+            background-size: cover;
+            
+        }
+        .clear{
+            clear: both
+}
+
+        .Contact_box{
+            padding: 45px 0 50px 0;
+        }
+        </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
+        <a class="navbar-brand" href="#"><img id="logo" height="70px" src="./img/GTT_LOGO_white-01.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        SEARCH
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Search</a>
+                        <a class="dropdown-item" href="#">Advanced Search</a>
+                        <a class="dropdown-item" href="#">Auto Ticketing</a>
+                        <a class="dropdown-item" href="#">Travel Insurance</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">MY BOOKING <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="Tours" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        RESOURCES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Airline Contacts</a>
+                        <a class="dropdown-item" href="#">Forms</a>
+
+                        <a class="dropdown-item" href="#">Visa Applications</a>
+                        <a class="dropdown-item" href="#">Travel Document</a>
+                        <a class="dropdown-item" href="#">Baggage information</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        PARTNER SITES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Majsetic-Vacations</a>
+                        <a class="dropdown-item" href="#">Hotels</a>
+
+                        <a class="dropdown-item" href="#">Cruises</a>
+                        <a class="dropdown-item" href="#">Apply Visa</a>
+                        <a class="dropdown-item" href="#">Cars</a>
+                        <a class="dropdown-item" href="#">Vacations</a>
+                        <a class="dropdown-item" href="#">Tours</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">REGISTER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">LOGIN</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container Contact_box">
+        <div class="row">
+            <div class="col-xl-9">
+                    <div id="ContactArea" class="light well">
+                            <form novalidate="" style="margin-bottom: 0;" id="ContactForm" class="space-left" method="post" action="https://www.centrav.com/contact" onsubmit="showLoading('#ContactSubmit');">
+<input type="hidden" name="persist" value="contactInput">
+<div class="row">
+<div class="col-xs-4" style="padding-left: 0;">
+<div class="space-bottom has-float-label">
+<input type="text" required="" id="Name" class="req-input form-control" name="name">
+<label for="Name" placeholder="Name*"></label>
+</div>
+<div class="space-bottom has-float-label">
+<input type="text" required="" id="Email" class="req-input form-control" name="email">
+<label for="Email" placeholder="Email Address*"></label>
+</div>
+<div class="space-bottom has-float-label">
+<input type="text" required="" id="Phone" class="form-control" name="phone">
+<label for="Phone" placeholder="Phone"></label>
+</div>
+<div class="space-bottom has-float-label">
+<select required="" id="Subject" class="req-input form-control" name="subject" style="height: 43px;">
+<option value="comment" selected="selected">Comment/Suggestion</option>
+<option value="question">Question</option>
+<option value="problem">Problem/Error</option>
+<option value="profile">Change My Profile</option>
+<option value="booking_request">Change/Cancel Booking Request</option>
+<option value="training">Website Training</option>
+<option value="other">Other</option>
+</select>
+<label for="Subject" placeholder="Subject"></label>
+</div>
+</div>
+<div class="col-xs-8">
+<textarea style="resize: none;" class="req-input form-control pad-bottom" rows="9" cols="65" id="Message" name="message" placeholder="(write your message here)"></textarea>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-6" style="padding-left: 0;">
+                            <div class="g-recaptcha" data-sitekey="6LelWlEUAAAAADMwUM2RmhoEPIT19YBBd7Khtmzi"><div style="width: 304px; height: 78px;"><div><iframe src="Contact%20Us%20%20%20Centrav_files/anchor.htm" role="presentation" name="a-m80ktg6d9gln" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                        </div>
+<div class="col-xs-6 space-top text-right" style="white-space: nowrap;">
+<button type="submit" id="ContactSubmit" disabled="disabled" class="btn btn-primary">Send Message</button>
+</div>
+<span class="pull-right space-right less-space-top"><small><i class="fa fa-info-circle fa-lg less-space-right"></i>Monitored daily from 9:00am CT until 11:30pm CT</small></span>
+
+<div class="clearfix"></div>
+</div>
+</form>
+</div>
+            </div>
+            <div class="col-xs-3">
+                    <div id="MailingAddress" class="light well">
+                        <h4><i class="fa fa-building fa-fw less-space-right"></i> Mailing Address</h4>
+                        <div class="space-left">
+                            <div class="row">GTT Global</div>
+                            <div class="row">600 DATA DR. SUITE 101</div>
+                            <div class="row">PLANO TX 75075</div>
+                        </div>
+                    </div>
+
+                    <div id="PhoneNumbers" class="light well">
+                        <h4><i class="fa fa-phone fa-fw less-space-right"></i> Phone Numbers</h4>
+                                                    <div><strong>Reservations</strong> <a href="tel:800-874-2033"><span class="pull-right">800-874-2033</span></a></div>
+                                                    <div><strong>Groups</strong> <a href="tel:800-266-6610"><span class="pull-right">800-266-6610</span></a></div>
+                                                    <div><strong>Local Res</strong> <a href="tel:952-886-7600"><span class="pull-right">952-886-7600</span></a></div>
+                                                    <div><strong>Admin</strong> <a href="tel:952-886-7650"><span class="pull-right">952-886-7650</span></a></div>
+                                                    <div><strong>Fax</strong> <a href="tel:800-255-6138"><span class="pull-right">800-255-6138</span></a></div>
+                                                    <div><strong>Local Fax</strong> <a href="tel:952-886-7640"><span class="pull-right">952-886-7640</span></a></div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="gotop" class="gotop">Go Top</a>
+    <div class="clear"></div>
+
+    <footer >
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <img class="footer_logo" src="img/GTT_LOGO_white.png" alt="">
+                </div>
+                <div class="col-xl-8">
+                    <div class="footer_r"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/initializeDatepicker.js.下載"></script> -->
+    <script type="text/javascript" src="./js/mainSearch.js.下載"></script>
+
+
+    <!-- GoTop -->
+    <script>
+        var box_hight = $("#box height")
+        $("#box").click(function () {
+            $("#box").css({
+                "font-weight": "bolder",
+                "font-size": "30px",
+                "color": "green"
+            })
+        });
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 300) {
+                $("#gotop").fadeIn(200)
+            } else {
+                $("#gotop").fadeOut(200)
+            }
+        })
+        $("#gotop").click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+        })
+
+        $(document).ready(function () {
+            $(function () {
+                $('#Tours').click(function () {
+                    $('html,body').animate({
+                        scrollTop: $('#section01').offset().top
+                    }, 500);
+                });
+            });
+        });
+    </script>
+
+    <!-- NAVBAR縮小 -->
+    <script>
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 200) {
+                $("#logo").addClass("active")
+            } else {
+                $("#logo").removeClass("active")
+            }
+        })
+    </script>
+
+</body>
+
+</html>

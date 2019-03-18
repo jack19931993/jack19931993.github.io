@@ -54,7 +54,7 @@
 }
 
 .navbar {
-    font-family: Noto Sans;
+    /* font-family: Noto Sans; */
     background:rgba(4, 48, 143, 0.3);
 }
 
@@ -66,6 +66,24 @@
     background-color: rgba(3, 84, 189, 0.479)
 
 }
+
+.navbar-collapse{
+      float: right;
+    }
+
+    .navbar-collapse{
+        opacity: 1;
+        /* font-family: Noto Sans; */
+    }
+
+   #logo.active{
+      height: 50px;
+      transition-duration:0.8s;
+    }
+
+    #logo{
+      transition-duration:0.8s;
+    }
 
     
 
@@ -105,23 +123,7 @@
       background-color: rgb(119, 126, 128)
     }
 
-    .navbar-collapse{
-      float: right;
-    }
 
-    .navbar-collapse{
-        opacity: 1;
-        font-family: Noto Sans;
-    }
-
-   #logo.active{
-      height: 50px;
-      transition-duration:0.8s;
-    }
-
-    #logo{
-      transition-duration:0.8s;
-    }
 
     .gotop {
 	position: fixed;
@@ -214,7 +216,14 @@
  footer{
      background-color: rgb(41, 41, 41);
      height: 150px;
+     padding: 20px 0 0 0
  }  
+
+ .footer_r{
+     height: 100%;
+     width: 100%;
+     background-color: #666666
+ }
 
     </style>
 
@@ -249,7 +258,7 @@
           <a class="nav-link" href="#">MY BOOKING <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="Tours" href="#">CONTACT</a>
+          <a class="nav-link" id="Tours" href="/gtt_contact.html">CONTACT</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -284,7 +293,7 @@
                 </div>
               </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">REGISTER</a>
+          <a class="nav-link " href="/Register.html">REGISTER</a>
         </li>
         <li class="nav-item">
                 <a class="nav-link " href="#">LOGIN</a>
@@ -2490,6 +2499,7 @@ $(document).ready(function(){
       <div class="swiper-pagination"></div>
     </div>
   </div>
+  
 
 
   <a href="#" id="gotop" class="gotop">Go Top</a>
@@ -2501,6 +2511,12 @@ $(document).ready(function(){
         <div class="row">
             <div class="col-xl-4">
                 <img class="footer_logo" src="img/GTT_LOGO_white.png" alt="">
+                <div class="col-xl-12" style="color:white;font-size:10px">
+                        © Copyright (C) 2019 GTT Global. All Rights Reserved. CST 2033348-40
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="footer_r"></div>
             </div>
         </div>
     </div>
@@ -2517,11 +2533,7 @@ $(document).ready(function(){
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
   <!-- <script type="text/javascript" src="./js/initializeDatepicker.js.下載"></script> -->
   <script type="text/javascript" src="./js/mainSearch.js.下載"></script>
   

@@ -1,0 +1,90 @@
+body {
+    /* background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 120px 0 0 0;
+    padding: 0;
+    background-image: url("img/cloudBG.jpg");
+    background-size: contain;
+    position: relative;
+    
+  }
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: rgb(255, 255, 255)
+}
+
+.navbar {
+    /* font-family: Noto Sans; */
+    background:rgba(4, 48, 143, 0.3);
+}
+
+.navbar-nav{
+    font-size: 14px
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgba(3, 84, 189, 0.479)
+
+}
+
+.navbar-collapse{
+      float: right;
+    }
+
+    .navbar-collapse{
+        opacity: 1;
+        /* font-family: Noto Sans; */
+    }
+
+   #logo.active{
+      height: 50px;
+      transition-duration:0.8s;
+    }
+
+    #logo{
+      transition-duration:0.8s;
+    }
+
+    .gotop {
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        padding: 1em;
+      text-decoration: none;
+        display: none;
+        z-index: 3;
+      
+    }
+    
+    .gotop:hover {
+        background-color: rgba(172, 7, 7, 0.7);
+      text-decoration: none;
+      color: white;
+    }
+
+    .footer_logo{
+        height: 80px;
+    }
+    
+        
+     footer{
+         background-color: rgb(41, 41, 41);
+         height: 150px;
+         
+     }  
+    
+     .footer_r{
+         height: 150px;
+         width: 100%;
+         background-color: #666666
+     }

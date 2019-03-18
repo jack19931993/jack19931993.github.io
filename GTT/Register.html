@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/centrav.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+    <link href="//d3plhpfg3500fc.cloudfront.net/images/favicon2.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    <style>
+        body {
+    /* background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 120px 0 0 0;
+    padding: 0;
+    background-image: url("img/cloudBG.jpg");
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed
+    
+  }
+
+  
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
+        <a class="navbar-brand" href="#"><img id="logo" height="70px" src="./img/GTT_LOGO_white-01.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        SEARCH
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Search</a>
+                        <a class="dropdown-item" href="#">Advanced Search</a>
+                        <a class="dropdown-item" href="#">Auto Ticketing</a>
+                        <a class="dropdown-item" href="#">Travel Insurance</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">MY BOOKING <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="Tours" href="/gtt_contact.html">CONTACT</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        RESOURCES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Airline Contacts</a>
+                        <a class="dropdown-item" href="#">Forms</a>
+
+                        <a class="dropdown-item" href="#">Visa Applications</a>
+                        <a class="dropdown-item" href="#">Travel Document</a>
+                        <a class="dropdown-item" href="#">Baggage information</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        PARTNER SITES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Majsetic-Vacations</a>
+                        <a class="dropdown-item" href="#">Hotels</a>
+
+                        <a class="dropdown-item" href="#">Cruises</a>
+                        <a class="dropdown-item" href="#">Apply Visa</a>
+                        <a class="dropdown-item" href="#">Cars</a>
+                        <a class="dropdown-item" href="#">Vacations</a>
+                        <a class="dropdown-item" href="#">Tours</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">REGISTER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">LOGIN</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container Contact_box">
+        <div class="row">
+            <div class="col-xl-3"></div>
+            <div class="col-xl-6">
+                <div id="ContactArea" class="light well">
+                    <form novalidate="" style="margin-bottom: 0;" id="ContactForm" class="space-left" method="post"
+                        action="https://www.centrav.com/contact" onsubmit="showLoading('#ContactSubmit');">
+                        <input type="hidden" name="persist" value="contactInput">
+                        <div class="row">
+
+
+                            <div class="col-xs-12" style="padding-left: 0;">
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="ARC / IATA / CLIA #"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="Create a log-in name"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="Create a password"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="First Name"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="Last Name"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="Agency (or Host Agency) Name"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="Agency Street Address"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="City"></label>
+                                </div>
+
+
+                                <div class="space-bottom has-float-label">
+                                    <select required="" id="Subject" class="req-input form-control" name="subject"
+                                        style="height: 43px;">
+                                        <option value="comment" selected="selected">Blank</option>
+                                        <option value="question">AK</option>
+                                        <option value="problem">AL</option>
+                                        <option value="profile">AR</option>
+                                        <option value="booking_request">AZ</option>
+                                        <option value="training">CA</option>
+                                        <option value="other">CO</option>
+                                        <option value="other">CT</option>
+                                        <option value="other">DC</option>
+                                        <option value="other">DE</option>
+                                        <option value="other">FL</option>
+                                        <option value="other">GA</option>
+                                        <option value="other">GU</option>
+                                        <option value="other">HI</option>
+                                        <option value="other">IA</option>
+                                        <option value="other">ID</option>
+                                        <option value="other">IL</option>
+                                        <option value="other">IN</option>
+                                        <option value="other">KS</option>
+                                        <option value="other">KY</option>
+                                        <option value="other">LA</option>
+                                        <option value="other">MA</option>
+                                        <option value="other">MD</option>
+                                        <option value="other">ME</option>
+                                        <option value="other">MI</option>
+                                        <option value="other">MN</option>
+                                        <option value="other">MO</option>
+                                        <option value="other">MS</option>
+                                        <option value="other">MT</option>
+                                        <option value="other">NC</option>
+                                        <option value="other">ND</option>
+                                        <option value="other">NE</option>
+                                        <option value="other">NH</option>
+                                        <option value="other">NJ</option>
+                                        <option value="other">NM</option>
+                                        <option value="other">NV</option>
+                                        <option value="other">NY</option>
+                                        <option value="other">OH</option>
+                                        <option value="other">OK</option>
+                                        <option value="other">OR</option>
+                                        <option value="other">PA</option>
+                                        <option value="other">RI</option>
+                                        <option value="other">SC</option>
+                                        <option value="other">SD</option>
+                                        <option value="other">TN</option>
+                                        <option value="other">TX</option>
+                                        <option value="other">UD</option>
+                                        <option value="other">VA</option>
+                                        <option value="other">VI</option>
+                                        <option value="other">VT</option>
+                                        <option value="other">WA</option>
+                                        <option value="other">WI</option>
+                                        <option value="other">WV</option>
+                                        <option value="other">AB</option>
+                                        <option value="other">BC</option>
+                                        <option value="other">NF</option>
+                                        <option value="other">NS</option>
+                                        <option value="other">ON</option>
+                                        <option value="other">PQ</option>
+
+
+                                    </select>
+                                    <label for="Subject" placeholder="State / Province: "></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="Zip code / Postal code"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <select required="" id="Subject" class="req-input form-control" name="subject"
+                                        style="height: 43px;">
+                                        <option value="comment" selected="selected">USA</option>
+                                        <option value="question">CANADA</option>
+
+                                    </select>
+                                    <label for="Subject" placeholder="Country"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="Phone number"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                    <label for="Name" placeholder="Fax number"></label>
+                                </div>
+                                <div class="space-bottom has-float-label">
+                                        <select required="" id="Subject" class="req-input form-control" name="subject"
+                                            style="height: 43px;">
+                                            <option value="comment" selected="selected">None</option>
+                                            <option value="question">Amadeus</option>
+                                            <option value="question">Apollo</option>
+                                            <option value="question">Sabre</option>
+                                            <option value="question">Worldspan</option>
+    
+                                        </select>
+                                        <label for="Subject" placeholder="Agency GDS"></label>
+                                    </div>
+                                    <div class="space-bottom has-float-label">
+                                            <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                            <label for="Name" placeholder="Pseudo city code"></label>
+                                        </div>
+                                        <div class="space-bottom has-float-label">
+                                                <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                                <label for="Name" placeholder="E-mail address"></label>
+                                            </div>
+                                            <div class="space-bottom has-float-label" >
+                                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                                    <label for="Name" placeholder="GTT account code"></label>
+                                                    <p style="font-size:10px;float: right;">If you do not have account with GTT please contact our GTT branches.</p>
+                                                </div>
+                                                <div class="space-bottom has-float-label">
+                                                <select required="" id="Subject" class="req-input form-control" name="subject"
+                                                style="height: 43px;">
+                                                <option value="comment" selected="selected">Unknown</option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+                                                <option value="question"></option>
+        
+                                            </select>
+                                            <label for="Subject" placeholder="GTT Office"></label>
+                                        </div>
+                                        <div class="space-bottom has-float-label">
+                                                <select required="" id="Subject" class="req-input form-control" name="subject"
+                                                style="height: 43px;">
+                                                <option value="comment" selected="selected">Mothers maiden name</option>
+                                                <option value="question">High school name</option>
+                                                <option value="question">Favorite color</option>
+                                                
+                                            </select>
+                                            <label for="Subject" placeholder="Choose a security question for password reset"></label>
+                                        </div>
+                                        <div class="space-bottom has-float-label">
+                                                <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                                <label for="Name" placeholder=" Secret answer to"></label>
+                                            </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-xs-7 space-top text-right" style="white-space: nowrap;">
+                                <button type="submit" id="ContactSubmit" disabled="disabled" class="btn btn-primary">Send
+                                    Submit</button>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

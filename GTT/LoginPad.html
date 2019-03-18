@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/centrav.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+  <link href="//d3plhpfg3500fc.cloudfront.net/images/favicon2.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+        <style>
+            body {
+      /* background: #eee; */
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 120px 0 0 0;
+      padding: 0;
+      background-image: url("img/cloudBG.jpg");
+      background-size: cover;
+      position: relative;
+      
+    }
+        #LoginForm{
+            
+            position: absolute;
+            right: 0;
+            height: 280px;
+            width: 280px;
+            background-color: rgba(4, 48, 143, 0.3);
+
+        }
+        </style>
+</head>
+<body>
+        <div id="LoginForm" class="">
+                <div class="pad">
+                    <h4 id="LoginHeader">Login</h4>
+                    <div class="slim-notice login-error-container hidden">
+                        <i class="fa fa-exclamation-triangle"></i>
+                        <div class="login-error-message" style="display:inline;"></div>
+                    </div>
+                    <form id="HeaderLoginForm" role="form" method="POST" action="https://www.centrav.com/login" class="no-space-bottom">
+                        <div class="space-top space-bottom">
+                            <label for="email">Email Address</label>
+                            <input type="text" required="" name="email" id="LoginEmail" class="form-control login-field">
+                        </div>
+                        <div class="space-top space-bottom">
+                            <label for="password">Password</label>
+                            <input type="password" required="" name="password" id="password" class="form-control login-field">
+                        </div>
+                        <button id="loginButton" class="btn btn-primary pull-right">Login</button>
+                    </form>
+                    <a id="ForgotPassword" href="https://www.centrav.com/password/reset" style="line-height: 35px;"><small>Forgot Password?</small></a>
+                </div>
+                <div id="LoginOptionsContainer" class="space-bottom more-space-top text-center">
+                                        <div class="test-mode" style="display:none;">
+    <span class="btn-group">
+        <a href="https://www.centrav.com/testMode/1" class="btn btn-default "><i class="fa fa-wrench less-space-right"></i> Test Mode On</a>
+        <a href="https://www.centrav.com/testMode/0" class="btn btn-default  active " style="cursor: not-allowed"><i class="fa fa-ban less-space-right"></i> Test Mode Off</a>
+    </span>
+    <a href="https://www.centrav.com/staffMode/0" class="btn btn-default space-top"><i class="fa fa-power-off less-space-right"></i><small><strong>End Staff Mode</strong> (log out &amp; in to enable again)</small></a>
+</div>                </div>
+            </div>
+</body>
+</html>

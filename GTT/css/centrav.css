@@ -15862,7 +15862,7 @@ hr.hr-xl {
 }
 
 .well.light {
-    background-color: #fff;
+    background-color: rgba(250, 250, 250, 0.7);
     border: 0
 }
 
