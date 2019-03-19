@@ -10468,7 +10468,7 @@ ul.tab-nav.tab-nav2 li a {
 
 ul.tab-nav.tab-nav2 li.ui-state-active a {
     top: 0;
-    background-color: #c82128;
+    background-color: #165faa;
     color: #fff
 }
 
@@ -13050,7 +13050,8 @@ button.toast-close-button {
 
 .travel-organiser-tabs ul.tab-nav li.ui-tabs-active a {
     top: 0;
-    background-color: #c82128
+    background-color: #165faa
+
 }
 
 .travel-organiser-tabs ul.tab-nav li .label {
@@ -13827,8 +13828,8 @@ table.dataTable thead .sorting_desc:after {
 }
 
 .btn-group .btn-default.active {
-    border-color: #3684b1;
-    background-color: #3684b1;
+    border-color: #fff;
+    background-color: #165faa  ;
     box-shadow: none;
     color: #fff
 }

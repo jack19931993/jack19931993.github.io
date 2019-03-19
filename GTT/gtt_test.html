@@ -15,6 +15,7 @@
   <link href="//d3plhpfg3500fc.cloudfront.net/images/favicon2.ico" rel="shortcut icon" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/checkbox.css">
   <!-- <script type="text/javascript" async="" src="./js/w.js.下載"></script> -->
     <!-- <script type="text/javascript" async="" src="./js/analytics.js.下載"></script> -->
     <!-- <script async="" src="./js/375e2bcd1fda73581948ce6a5.js.下載"></script> -->
@@ -83,6 +84,10 @@
 
     #logo{
       transition-duration:0.8s;
+    }
+
+    .tabbox{
+        width: 1100px;
     }
 
     
@@ -214,7 +219,7 @@
 
     
  footer{
-     background-color: rgb(41, 41, 41);
+     background-color: #165faa;
      height: 150px;
      padding: 20px 0 0 0
  }  
@@ -222,7 +227,7 @@
  .footer_r{
      height: 100%;
      width: 100%;
-     background-color: #666666
+    
  }
 
     </style>
@@ -308,7 +313,7 @@
       <div class="col-xl-12">
         <div class="AD_box">
             <div class="vertical-middle no-fade slider-overlay" style="top: 50%; position: absolute; width: 100%; padding-top: 0px; padding-bottom: 0px; margin-top: -193px;">
-                <div class="container clearfix">
+                <div class="container clearfix tabbox" style="width: 1100px;">
                     <div class="tabs travel-organiser-tabs clearfix">
                         <ul class="tab-nav tab-nav2 clearfix ui-tabs-nav" role="tablist">
                             <li id="SearchTab" class="auth-tab  ui-state-active" role="tab"><a></i>
@@ -320,7 +325,7 @@
                                     Insurance</a></li>
                                     
                         </ul>
-                        <div class="tab-container">
+                        <div class="tab-container" style="background-color: rgba(255, 255, 255, 0.534);">
                             <div id="SearchForm" class="tab-content clearfix  ">
                                 <form id="FareSearch" action="https://www.centrav.com/fares" method="post" class="no-space-bottom"
                                     onsubmit="return startFareSearch()" autocomplete="off">
@@ -331,13 +336,14 @@
                                     <div class="clearfix"></div>
                                     <div class="clearfix pull-right">
                                         <div class="btn-group">
-                                            <button type="button" id="EconomyBtn" class="btn btn-default active"
+                                            <!-- <button type="button" id="EconomyBtn" class="btn btn-default active"
                                                 onclick="setCabinClass(&#39;ECONOMY&#39;)">Economy</button>
                                             <button type="button" id="PremiumBtn" class="btn btn-default " onclick="setCabinClass(&#39;PREMIUM_ECONOMY&#39;)">Premium
                                                 Economy</button>
                                             <button type="button" id="BusinessBtn" class="btn btn-default " onclick="setCabinClass(&#39;BUSINESS&#39;)">Business</button>
                                             <button type="button" id="FirstBtn" class="btn btn-default " onclick="setCabinClass(&#39;FIRST&#39;)">First
-                                                Class</button>
+                                                Class</button> -->
+                                                
                                             <input type="hidden" name="cabinClass" value="ECONOMY" id="CabinClassInput">
                                         </div>
                                         <div class="clear"></div>
@@ -501,7 +507,49 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="travel-date-group">
+                                            <div class="col-xs-3">
+                                            
+                                               
+                                                    <!-- <div class="custom-control custom-checkbox mr-sm-2" style="display:inline">
+                                                            <input id="Economy" type="checkbox" class="custom-control-input" style="border:solid 1px #000" > 
+                                                            <label for="Economy" class="custom-control-label" ></i>
+                                                                Economy</label>                                                                
+                                                          </div>
+                                                          <div class="custom-control custom-checkbox mr-sm-2"style="display:inline">
+                                                            <input id="PremlumEconomy" type="checkbox" class="custom-control-input" > 
+                                                            <label for="PremlumEconomy" class="custom-control-label" ></i>
+                                                                Premlum Economy</label>                                                                
+                                                          </div> <br>
+                                                          <div class="custom-control custom-checkbox mr-sm-2" style="display:inline">
+                                                                <input id="Business" type="checkbox" class="custom-control-input" > 
+                                                                <label for="Business" class="custom-control-label" ></i>
+                                                                    Business</label>                                                                
+                                                              </div>
+                                                              <div class="custom-control custom-checkbox mr-sm-2"style="display:inline">
+                                                                <input id="First" type="checkbox" class="custom-control-input" > 
+                                                                <label for="First" class="custom-control-label" ></i>
+                                                                    Firsty</label>                                                                
+                                                              </div> -->
+                                                              <div style="display:inline">
+                                                              <label class="control control--radio">Economy
+                                                                    <input type="radio" name="radio" checked="checked"/>
+                                                                    <div class="control__indicator"></div></div>
+                                                                    <div style="display:inline">  <label class="control control--radio">Premlum Economy
+                                                                            <input type="radio" name="radio" checked="checked"/>
+                                                                            <div class="control__indicator"></div></div>
+                                                              
+                                            </div>
+                                            <div class="col-xs-2">
+                                                    <div style="display:inline">
+                                                            <label class="control control--radio">Business
+                                                                  <input type="radio" name="radio" checked="checked"/>
+                                                                  <div class="control__indicator"></div></div>
+                                                                  <div style="display:inline">  <label class="control control--radio">First
+                                                                          <input type="radio" name="radio" checked="checked"/>
+                                                                          <div class="control__indicator"></div></div>
+                                                            
+                                            </div>
+                                            <!-- <div class="travel-date-group">
                                                 <div class="input-column col-xs-3" style="margin-right:93px">
                                                     <div class="has-float-label">
                                                         <input style="width:180px;" type="text" required=""
@@ -521,7 +569,31 @@
                                                             placeholder="Return Date"></label>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="row">
+                                            
+                                                    
+                                                            <div class="input-column col-xs-3" style="">
+                                                                <div class="has-float-label">
+                                                                    <input style="width:100%;" type="text" required=""
+                                                                        tabindex="7" autocomplete="off" class="form-control search-form-input datepicker round-trip-date"
+                                                                        name="departureDate" id="FareDepartureDate" placeholder="MM/DD/YYYY"
+                                                                        value="">
+                                                                    <label for="FareDepartureDate" placeholder="Departure Date"></label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="input-column col-xs-3" style="">
+                                                                    <div class="has-float-label">
+                                                                        <input style="width:100%;" type="text" required=""
+                                                                            tabindex="7" autocomplete="off" class="form-control search-form-input datepicker round-trip-date"
+                                                                            name="departureDate" id="FareDepartureDate" placeholder="MM/DD/YYYY"
+                                                                            value="">
+                                                                        <label for="FareDepartureDate" placeholder="Return Date"></label>
+                                                                    </div>
+                                                                </div>
+                                                        
+                                            
                                         </div>
                                     </div>
                                     <div id="FareMultiCityForm" class="space-bottom" style="display:none;">
@@ -1294,6 +1366,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <button type="button" id="ResetSearch" class="btn btn-link pull-right no-pad-right"
+                                        onclick="resetSearchForm()" style="margin-top:-40px;height:40px;"><i class="fa fa-repeat less-space-right"></i>
+                                        Reset Search Form</button>
                                     <button tabindex="60" type="submit" id="FareSearchButton" onclick="checkAuth(&#39;FareSearch&#39;, event)"
                                         class="search-button button button-reveal button-large more-space-left pull-right"
                                         formnovalidate=""><span id="FareSearchButtonText">Search for Fares</span><i class="fa fa-angle-right"></i></button>
@@ -1309,7 +1384,7 @@
                                     </div>
                                     <h5 class="less-space-top">
                                         <a tabindex="39" href="https://www.centrav.com/#" onclick="$(&#39;#AdvancedMenu&#39;).toggle(); $(&#39;#ShowAdvancedOptions&#39;).toggle(); $(&#39;#HideAdvancedOptions&#39;).toggle(); checkHeight(); return false; ">
-                                            <span id="ShowAdvancedOptions" onclick="$(&#39;#AdvancedState&#39;).val(&#39;true&#39;);"><i
+                                            <span style="" id="ShowAdvancedOptions" onclick="$(&#39;#AdvancedState&#39;).val(&#39;true&#39;);"><i
                                                     class="fa fa-plus-circle"></i> Show Advanced Options</span>
                                             <span id="HideAdvancedOptions" onclick="$(&#39;#AdvancedState&#39;).val(&#39;false&#39;);"
                                                 style="display: none;"><i class="fa fa-minus-circle"></i> Hide
@@ -1356,20 +1431,15 @@
 
                                                 <input id="Skyteam" tabindex="42" class="radio-style" name="alliance"
                                                     type="radio" value="SKY_TEAM">
-                                                <label for="Skyteam" class="radio-style-3-label more-space-right"><img
-                                                        src="./Search _ Centrav_files/skyteam-xs.png" width="30"
-                                                        class="less-space-right"> SkyTeam</label>
+                                                <label for="Skyteam" class="radio-style-3-label more-space-right">SkyTeam</label>
 
                                                 <input id="StarAlliance" tabindex="43" class="radio-style" name="alliance"
                                                     type="radio" value="STAR_ALLIANCE">
-                                                <label for="StarAlliance" class="radio-style-3-label more-space-right"><img
-                                                        src="./Search _ Centrav_files/staralliance-xs.png" width="30"
-                                                        class="less-space-right"> Star Alliance</label>
+                                                <label for="StarAlliance" class="radio-style-3-label more-space-right"> Star Alliance</label>
 
                                                 <input id="Oneworld" tabindex="44" class="radio-style" name="alliance"
                                                     type="radio" value="ONE_WORLD">
-                                                <label for="Oneworld" class="radio-style-3-label"><img src="./Search _ Centrav_files/oneworld-xs.png"
-                                                        width="30" class="less-space-right"> oneworld</label>
+                                                <label for="Oneworld" class="radio-style-3-label">oneworld</label>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -2516,7 +2586,15 @@ $(document).ready(function(){
                 </div>
             </div>
             <div class="col-xl-8">
-                <div class="footer_r"></div>
+                <div class="row footer_r">
+                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-01.jpg" alt=""> </div>
+                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-02.jpg" alt=""> </div>
+                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-03.jpg" alt=""> </div>
+                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-04.jpg" alt=""> </div>
+                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-05.jpg" alt=""> </div>
+                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-06.jpg" alt=""> </div>
+                    
+                </div>
             </div>
         </div>
     </div>
