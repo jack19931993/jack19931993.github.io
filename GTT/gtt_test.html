@@ -41,8 +41,9 @@
       color:#000;
       margin: 120px 0 0 0;
       padding: 0;
-      background-image: url("img/cloudBG.jpg");
-      background-size: contain
+      background-image: url("img/BG-1.jpg");
+      background-size: cover;
+      background-attachment: fixed
       
     }
 
@@ -56,7 +57,9 @@
 
 .navbar {
     /* font-family: Noto Sans; */
-    background:rgba(4, 48, 143, 0.3);
+    /* background:rgba(4, 48, 143, 0.8); */
+    /* background:rgba(59, 89, 124, 0.459); */
+    background-color: #1660aab2
 }
 
 .navbar-nav{
@@ -119,7 +122,9 @@
       -webkit-align-items: center;
       align-items: center;
       background-position: center;
-      background-repeat: no-repeat
+      background-repeat: no-repeat;
+      background-size: cover
+      
     }
     .bg1{
       background-color: rgb(151, 41, 41)
@@ -209,8 +214,9 @@
             max-width: 100%;
             width: auto;
             height: auto;
-            background-size: cover;
             background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain
 }
 
 .footer_logo{
@@ -229,6 +235,8 @@
      width: 100%;
     
  }
+
+ 
 
     </style>
 
@@ -254,7 +262,7 @@
                           SEARCH
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Search</a>
+                          <a class="dropdown-item" href="./gtt_test.html">Search</a>
                           <a class="dropdown-item" href="#">Advanced Search</a>
                           <a class="dropdown-item" href="#">Auto Ticketing</a>
                           <a class="dropdown-item" href="#">Travel Insurance</a>
@@ -308,13 +316,13 @@
     </div>
   </nav>
 
-  <div class="section1 container">
-    <div class="row">
-      <div class="col-xl-12">
-        <div class="AD_box">
+  <div class="section1 container" style="height: 600px;">
+    <div class="row" >
+      <div class="col-xl-12" >
+        <div class="AD_box"  >
             <div class="vertical-middle no-fade slider-overlay" style="top: 50%; position: absolute; width: 100%; padding-top: 0px; padding-bottom: 0px; margin-top: -193px;">
-                <div class="container clearfix tabbox" style="width: 1100px;">
-                    <div class="tabs travel-organiser-tabs clearfix">
+                <div class="container clearfix tabbox" >
+                    <div class="tabs travel-organiser-tabs clearfix" style="width: 1000px;margin:0 auto">
                         <ul class="tab-nav tab-nav2 clearfix ui-tabs-nav" role="tablist">
                             <li id="SearchTab" class="auth-tab  ui-state-active" role="tab"><a></i>
                                 Search</a></li>
@@ -325,14 +333,14 @@
                                     Insurance</a></li>
                                     
                         </ul>
-                        <div class="tab-container" style="background-color: rgba(255, 255, 255, 0.534);">
+                        <div class="tab-container" style="background-color: rgba(255, 255, 255, 0.9);">
                             <div id="SearchForm" class="tab-content clearfix  ">
                                 <form id="FareSearch" action="https://www.centrav.com/fares" method="post" class="no-space-bottom"
                                     onsubmit="return startFareSearch()" autocomplete="off">
                                     <input type="hidden" name="persist" value="fareSearchInput">
-                                    <button type="button" id="ResetSearch" class="btn btn-link pull-right no-pad-right"
+                                    <!-- <button type="button" id="ResetSearch" class="btn btn-link pull-right no-pad-right"
                                         onclick="resetSearchForm()" style="margin-top:-40px;height:40px;"><i class="fa fa-repeat less-space-right"></i>
-                                        Reset Search Form</button>
+                                        Reset Search Form</button> -->
                                     <div class="clearfix"></div>
                                     <div class="clearfix pull-right">
                                         <div class="btn-group">
@@ -362,7 +370,7 @@
                                         </div>
                                         <div class="clear"></div>
                                     </div>
-                                    <div id="FareStandardForm" class="space-bottom">
+                                    <!-- <div id="FareStandardForm" class="space-bottom">
                                         <div class="row">
                                             <input type="hidden" name="ShowStandardFareRouting" value="0" id="ShowStandardFareRouting">
                                             <div class="input-column col-xs-3 col-greedy">
@@ -507,29 +515,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-3">
+                                            <div class="row">
+                                            <div class="col-xs-2.5">
                                             
                                                
-                                                    <!-- <div class="custom-control custom-checkbox mr-sm-2" style="display:inline">
-                                                            <input id="Economy" type="checkbox" class="custom-control-input" style="border:solid 1px #000" > 
-                                                            <label for="Economy" class="custom-control-label" ></i>
-                                                                Economy</label>                                                                
-                                                          </div>
-                                                          <div class="custom-control custom-checkbox mr-sm-2"style="display:inline">
-                                                            <input id="PremlumEconomy" type="checkbox" class="custom-control-input" > 
-                                                            <label for="PremlumEconomy" class="custom-control-label" ></i>
-                                                                Premlum Economy</label>                                                                
-                                                          </div> <br>
-                                                          <div class="custom-control custom-checkbox mr-sm-2" style="display:inline">
-                                                                <input id="Business" type="checkbox" class="custom-control-input" > 
-                                                                <label for="Business" class="custom-control-label" ></i>
-                                                                    Business</label>                                                                
-                                                              </div>
-                                                              <div class="custom-control custom-checkbox mr-sm-2"style="display:inline">
-                                                                <input id="First" type="checkbox" class="custom-control-input" > 
-                                                                <label for="First" class="custom-control-label" ></i>
-                                                                    Firsty</label>                                                                
-                                                              </div> -->
+                                                    
                                                               <div style="display:inline">
                                                               <label class="control control--radio">Economy
                                                                     <input type="radio" name="radio" checked="checked"/>
@@ -548,28 +538,8 @@
                                                                           <input type="radio" name="radio" checked="checked"/>
                                                                           <div class="control__indicator"></div></div>
                                                             
-                                            </div>
-                                            <!-- <div class="travel-date-group">
-                                                <div class="input-column col-xs-3" style="margin-right:93px">
-                                                    <div class="has-float-label">
-                                                        <input style="width:180px;" type="text" required=""
-                                                            tabindex="7" autocomplete="off" class="form-control search-form-input datepicker round-trip-date"
-                                                            name="departureDate" id="FareDepartureDate" placeholder="MM/DD/YYYY"
-                                                            value="">
-                                                        <label for="FareDepartureDate" placeholder="Departure Date"></label>
-                                                    </div>
-                                                </div>
-                                                <div id="FareReturnDateGroup" class="input-column col-xs-3">
-                                                    <div class="has-float-label">
-                                                        <input style="width:180px;" type="text" required=""
-                                                            tabindex="8" autocomplete="off" class="form-control search-form-input datepicker round-trip-date"
-                                                            name="returnDate" id="FareReturnDate" placeholder="MM/DD/YYYY"
-                                                            value="">
-                                                        <label class="control-label" for="FareReturnDate"
-                                                            placeholder="Return Date"></label>
-                                                    </div>
-                                                </div>
-                                            </div> -->
+                                            </div></div>
+                                           
                                         </div>
                                         <div class="row">
                                             
@@ -595,7 +565,194 @@
                                                         
                                             
                                         </div>
-                                    </div>
+                                        
+                                    </div> -->
+                                    <div id="FareStandardForm" class="space-bottom">
+                                            <div class="row">
+                                                <input type="hidden" name="ShowStandardFareRouting" value="0" id="ShowStandardFareRouting">
+                                                <div class="input-column col-xs-4 col-greedy">
+                                                    <div class="has-routing-button">
+                                                        <div class="has-float-label">
+                                                            <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
+                                                                    type="text" tabindex="1" required="" autocomplete="off"
+                                                                    class="form-control search-form-input airport-autocomplete clearable tt-input"
+                                                                    data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
+                                                                    name="flyingFrom" id="FareFlyingFrom" placeholder="ci‌ty or air‌port"
+                                                                    value="" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"
+                                                                    aria-activedescendant="" aria-owns="FareFlyingFrom_listbox"
+                                                                    role="combobox" aria-readonly="true"
+                                                                    aria-autocomplete="list"><label for="FareFlyingFrom"
+                                                                    placeholder="Flying From"></label><span role="status"
+                                                                    aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
+                                                                <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                                                                <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+                                                                    <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
+                                                                </div></span>
+    
+                                                        </div>
+                                                        <span class="input-group-btn" data-toggle="tooltip" title=""
+                                                            data-original-title="Customize Routing"><button type="button"
+                                                                class="btn btn-default routing-button" role="button"
+                                                                onclick="toggleRouting(&#39;Fare&#39;);"><i class="fa fa-map-pin"></i></button></span>
+                                                    </div>
+                                                    <div class="fare-routing  hidden ">
+                                                        <div id="FareOutboundRouting" class="col-greedy-offset">
+                                                            <label class="less-space-top">Outbound Routing</label>
+                                                            <div class="less-space-top">
+                                                                <div class="has-float-label">
+                                                                    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
+                                                                            type="text" tabindex="2" required=""
+                                                                            autocomplete="off" class="form-control search-form-input airport-autocomplete clearable tt-input"
+                                                                            data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
+                                                                            name="outboundStops[]" id="FareOutboundStop1"
+                                                                            placeholder="Outbound Stop 1" value=""
+                                                                            spellcheck="false" dir="auto"
+                                                                            aria-activedescendant="" aria-owns="FareOutboundStop1_listbox"
+                                                                            role="combobox" aria-readonly="true"
+                                                                            aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
+                                                                            for="FareOutboundStop1" placeholder="Flying Through"></label><span
+                                                                            role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
+                                                                        <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                                                                        <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+                                                                            <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
+                                                                        </div></span>
+    
+                                                                </div>
+                                                            </div>
+                                                            <div class="space-top">
+                                                                <div class="has-float-label">
+                                                                    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
+                                                                            type="text" tabindex="3" required=""
+                                                                            autocomplete="off" class="form-control search-form-input airport-autocomplete clearable tt-input"
+                                                                            data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
+                                                                            name="outboundStops[]" id="FareOutboundStop2"
+                                                                            placeholder="Outbound Stop 2" value=""
+                                                                            spellcheck="false" dir="auto"
+                                                                            aria-activedescendant="" aria-owns="FareOutboundStop2_listbox"
+                                                                            role="combobox" aria-readonly="true"
+                                                                            aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
+                                                                            for="FareOutboundStop2" placeholder="Or Flying Through"></label><span
+                                                                            role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
+                                                                        <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                                                                        <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+                                                                            <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
+                                                                        </div></span>
+    
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="btn btn-default btn-xs less-space-top"
+                                                                role="button" onclick="toggleRouting(&#39;Fare&#39;);">Cancel
+                                                                Custom Routing</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="input-column col-xs-4">
+                                                    <div class="has-float-label">
+                                                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
+                                                                type="text" required="" tabindex="4" autocomplete="off"
+                                                                class="form-control search-form-input airport-autocomplete clearable tt-input"
+                                                                data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
+                                                                name="flyingTo" id="FareFlyingTo" placeholder="ci‌ty or air‌port"
+                                                                value="" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"
+                                                                aria-activedescendant="" aria-owns="FareFlyingTo_listbox"
+                                                                role="combobox" aria-readonly="true" aria-autocomplete="list"><label
+                                                                for="FareFlyingTo" placeholder="Flying To"></label><span
+                                                                role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
+                                                            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                                                            <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+                                                                <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
+                                                            </div></span>
+    
+                                                    </div>
+                                                    <div class="fare-routing  hidden ">
+                                                        <div id="FareInboundRouting">
+                                                            <label class="less-space-top">Inbound Routing</label>
+                                                            <div class="less-space-top">
+                                                                <div class="has-float-label">
+                                                                    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
+                                                                            type="text" required="" tabindex="5"
+                                                                            autocomplete="off" class="form-control search-form-input airport-autocomplete clearable tt-input"
+                                                                            data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
+                                                                            name="inboundStops[]" id="FareInboundStop1"
+                                                                            placeholder="Inbound Stop 1" value=""
+                                                                            spellcheck="false" dir="auto"
+                                                                            aria-activedescendant="" aria-owns="FareInboundStop1_listbox"
+                                                                            role="combobox" aria-readonly="true"
+                                                                            aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
+                                                                            for="FareInboundStop1" placeholder="Flying Through"></label><span
+                                                                            role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
+                                                                        <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                                                                        <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+                                                                            <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
+                                                                        </div></span>
+    
+                                                                </div>
+                                                            </div>
+                                                            <div class="space-top">
+                                                                <div class="has-float-label">
+                                                                    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
+                                                                            type="text" required="" tabindex="6" class="form-control search-form-input airport-autocomplete clearable tt-input"
+                                                                            data-search-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airport/search"
+                                                                            name="inboundStops[]" id="FareInboundStop2"
+                                                                            placeholder="Inbound Stop 2" value=""
+                                                                            spellcheck="false" dir="auto"
+                                                                            aria-activedescendant="" aria-owns="FareInboundStop2_listbox"
+                                                                            role="combobox" aria-readonly="true"
+                                                                            aria-autocomplete="list" style="position: relative; vertical-align: top;"><label
+                                                                            for="FareInboundStop2" placeholder="Or Flying Through"></label><span
+                                                                            role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
+                                                                        <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                                                                        <div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+                                                                            <div role="presentation" class="tt-dataset tt-dataset-airport"></div>
+                                                                        </div></span>
+    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-4">
+                                                        <label for="">Cabin</label>
+                                                        <select tabindex="29" id="Infants" value="" class="search-form-input form-control no-pad-right"
+                                                            name="numberOfInfantsOnLap">
+                                                            <option value="0">Economy</option>
+                                                            <option value="1">Premium Economy</option>
+                                                            <option value="2">Business</option>
+                                                            <option value="3">First</option>
+                                                            
+                                                        </select>
+                                                </div>
+                                               
+                                               
+                                            </div>
+                                            <div class="row">
+                                                
+                                                        
+                                                                <div class="input-column col-xs-4" style="">
+                                                                    <div class="has-float-label">
+                                                                        <input style="width:100%;" type="text" required=""
+                                                                            tabindex="7" autocomplete="off" class="form-control search-form-input datepicker round-trip-date"
+                                                                            name="departureDate" id="FareDepartureDate" placeholder="MM/DD/YYYY"
+                                                                            value="">
+                                                                        <label for="FareDepartureDate" placeholder="Departure Date"></label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-column col-xs-4" style="">
+                                                                        <div class="has-float-label">
+                                                                            <input style="width:100%;" type="text" required=""
+                                                                                tabindex="7" autocomplete="off" class="form-control search-form-input datepicker round-trip-date"
+                                                                                name="departureDate" id="FareDepartureDate" placeholder="MM/DD/YYYY"
+                                                                                value="">
+                                                                            <label for="FareDepartureDate" placeholder="Return Date"></label>
+                                                                        </div>
+                                                                    </div>
+                                                            
+                                                
+                                            </div>
+                                            
+                                        </div>
                                     <div id="FareMultiCityForm" class="space-bottom" style="display:none;">
                                         <input type="hidden" name="_numDestinations" value="2" id="FareNumberOfDestinations">
                                         <div id="FareMultiCitySegments">
@@ -1289,7 +1446,7 @@
                                             Add a Destination</button>
                                     </div>
                                     <div class="row space-bottom">
-                                        <div class="col-xs-5">
+                                        <div class="col-xs-6">
                                             <div class="row">
                                                 <div class="col-xs-4">
                                                     <small class="pull-right" style="line-height:21px;">age 12+</small>
@@ -1336,7 +1493,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-7">
+                                        <div class="col-xs-5">
                                             <label for="">Fare Types</label>
                                             <div>
                                                 <span class="fare-type space-right">
@@ -1366,6 +1523,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
                                     <button type="button" id="ResetSearch" class="btn btn-link pull-right no-pad-right"
                                         onclick="resetSearchForm()" style="margin-top:-40px;height:40px;"><i class="fa fa-repeat less-space-right"></i>
                                         Reset Search Form</button>
@@ -1396,7 +1554,8 @@
                                         <div class="row space-bottom">
                                             <div class="col-xs-6">
                                                 <label>Specific Airlines</label>
-                                                <select id="AirlineCodeSet" class="form-control ajax-autocomplete select2-hidden-accessible"
+                                                <textarea style="resize: none;" class="req-input form-control pad-bottom" rows="1" cols="65" id="Message" name="message" placeholder="Any Airline"></textarea>
+                                                <!-- <select id="AirlineCodeSet" class="form-control ajax-autocomplete select2-hidden-accessible"
                                                     name="airlineCodeSet[]" multiple="" style="width:511px;"
                                                     placeholder="Any Airline" allowclear="allowClear"
                                                     data-initial-values="" data-initial-uri="https://client.managedtrip.com/ManagedTrip/public/api/client/1.0/airline"
@@ -1405,7 +1564,8 @@
                                                     data-template-result-function="fancyAirline"
                                                     data-template-selection-function="fancyAirline" tabindex="-1"
                                                     aria-hidden="true">
-                                                </select><span class="select2 select2-container select2-container--bootstrap"
+                                                </select> -->
+                                                <!-- <span class="select2 select2-container select2-container--bootstrap"
                                                     dir="ltr" style="width: 100%;"><span class="selection"><span
                                                             class="select2-selection select2-selection--multiple form-control ajax-autocomplete"
                                                             role="combobox" aria-haspopup="true" aria-expanded="false"
@@ -1419,7 +1579,7 @@
                                                                         aria-autocomplete="list" placeholder="Any Airline"
                                                                         style="width: 100px;"></li>
                                                             </ul>
-                                                        </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                        </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span> -->
                                             </div>
                                             <div class="col-xs-6">
                                                 <input id="AnyAlliance" tabindex="41" class="radio-style" name="alliance"
@@ -2553,17 +2713,11 @@ $(document).ready(function(){
   <div class="banner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide bg1"> <div class="AD_box" ><img class="AD" src="img/AD_banner_ALL-2.jpg" alt=""> </div> </div>
-        <div class="swiper-slide bg2">Slide 2</div>
-        <div class="swiper-slide" style="background-image:url(../img/)"></div>
+        <div class="swiper-slide bg1"><img class="AD"  src="img/Banner-1.jpg" alt=""> </div>
+        <div class="swiper-slide bg2" style="background-image:url(img/Banner-1.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(img/AD_banner_ALL-1.jpg)"></div>
         <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
-  <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
+  
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
@@ -2667,10 +2821,10 @@ $(document).ready(function(){
         var swiper = new Swiper('.swiper-container', {
           spaceBetween: 30,
           centeredSlides: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
+        //   autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //   },
           pagination: {
             el: '.swiper-pagination',
             clickable: true,

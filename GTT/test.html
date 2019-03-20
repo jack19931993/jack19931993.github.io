@@ -1,21 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/centrav.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+    <link href="//d3plhpfg3500fc.cloudfront.net/images/favicon2.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/navbar.css">
+
     <style>
-    footer{
-        height: 100px;
-        background-color: aqua
-    }
+             body {
+            
+            height: calc(100vh - 180px);
+    /* background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 180px 0 0 0;
+    padding: 0 0 150px 0;
+    background-image: url("img/cloudBG.jpg");
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed
+    
+  }
 
-    </style>
+  footer{
+      position: absolute;
+      bottom: 0px;
+  }
+        </style>
 </head>
-<body>
 
-    <div class="contain"></div>
-    <footer></footer>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
+                <a class="navbar-brand" href="#"><img id="logo" height="70px" src="./img/GTT_LOGO_white-01.png"
+                    alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                    <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                      aria-haspopup="true" aria-expanded="false">
+                                      SEARCH
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="./gtt_test.html">Search</a>
+                                      <a class="dropdown-item" href="#">Advanced Search</a>
+                                      <a class="dropdown-item" href="#">Auto Ticketing</a>
+                                      <a class="dropdown-item" href="#">Travel Insurance</a>
+                                  </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">MY BOOKING <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="Tours" href="./contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        RESOURCES
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Airline Contacts</a>
+                        <a class="dropdown-item" href="#">Forms</a>
+                        
+                        <a class="dropdown-item" href="#">Visa Applications</a>
+                        <a class="dropdown-item" href="#">Travel Document</a>
+                        <a class="dropdown-item" href="#">Baggage information</a>
+            
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              PARTNER SITES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Majsetic-Vacations</a>
+                              <a class="dropdown-item" href="#">Hotels</a>
+                              
+                              <a class="dropdown-item" href="#">Cruises</a>
+                              <a class="dropdown-item" href="#">Apply Visa</a>
+                              <a class="dropdown-item" href="#">Cars</a>
+                              <a class="dropdown-item" href="#">Vacations</a>
+                              <a class="dropdown-item" href="#">Tours</a>
+                  
+                            </div>
+                          </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./Register.html">REGISTER</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link " href="#">LOGIN</a>
+                          </li>
+                  </ul>
+            
+                </div>
+              </nav>
+
+              <div class="container Contact_box">
+                    <div class="row">
+                        <div class="col-xl-2"></div>
+                        <div class="col-xl-8">
+                            <div id="ContactArea" class="light well">
+                                <form novalidate="" style="margin-bottom: 0;" id="ContactForm" class="space-left" method="post"
+                                    action="https://www.centrav.com/contact" onsubmit="showLoading('#ContactSubmit');">
+                                    <input type="hidden" name="persist" value="contactInput">
+                                    <div class="row">
+            
+                                        <div class="col-xl-6">
+                                            <h5>Username</h5>
+                                            <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                               
+                                        </div>
+                                        <div class="col-xl-6">
+                                                <h5>Email Address</h5>
+                                                <input type="text" required="" id="Name" class="req-input form-control" name="name">
+                                                   
+                                            </div>
+                                       
+            
+                                    </div>
+                                    <div class="row">
+            
+                                        <div class="col-xs-12 space-top " style="white-space: nowrap;text-align: center">
+                                            <h6>Your password will be sent to your e-mail address shortly.</h6> <br>
+                                            <button type="submit" id="ContactSubmit" disabled="disabled" class="btn btn-primary">Submit</button>
+                                        </div>
+            
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="clear"></div>
+            
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <img class="footer_logo" src="img/GTT_LOGO_white.png" alt="">
+                                <div class="col-xl-12" style="color:white;font-size:10px">
+                                        © Copyright (C) 2019 GTT Global. All Rights Reserved. CST 2033348-40
+                                </div>
+                            </div>
+                            <div class="col-xl-8">
+                                <div class="row footer_r">
+                                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-01.jpg" alt=""> </div>
+                                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-02.jpg" alt=""> </div>
+                                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-03.jpg" alt=""> </div>
+                                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-04.jpg" alt=""> </div>
+                                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-05.jpg" alt=""> </div>
+                                        <div class="col-xl-2" style="height:100%;line-height:120px"><img src="img/GTT_ci-06.jpg" alt=""> </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/initializeDatepicker.js.下載"></script> -->
+    <script type="text/javascript" src="./js/mainSearch.js.下載"></script>
+
+
+    <!-- GoTop -->
+    <script>
+        var box_hight = $("#box height")
+        $("#box").click(function () {
+            $("#box").css({
+                "font-weight": "bolder",
+                "font-size": "30px",
+                "color": "green"
+            })
+        });
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 300) {
+                $("#gotop").fadeIn(200)
+            } else {
+                $("#gotop").fadeOut(200)
+            }
+        })
+        $("#gotop").click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+        })
+
+        $(document).ready(function () {
+            $(function () {
+                $('#Tours').click(function () {
+                    $('html,body').animate({
+                        scrollTop: $('#section01').offset().top
+                    }, 500);
+                });
+            });
+        });
+    </script>
+
+    <!-- NAVBAR縮小 -->
+    <script>
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 200) {
+                $("#logo").addClass("active")
+            } else {
+                $("#logo").removeClass("active")
+            }
+        })
+    </script>
+
 </body>
+
 </html>
