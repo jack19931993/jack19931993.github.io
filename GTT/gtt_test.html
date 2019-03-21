@@ -62,7 +62,13 @@
     /* font-family: Noto Sans; */
     /* background:rgba(4, 48, 143, 0.8); */
     /* background:rgba(59, 89, 124, 0.459); */
-    background-color: #1660aab2
+    background-color: #1660aa60;
+    transition-duration:0.8s;
+}
+
+#navbar.active{
+    background-color: #1660aa;
+    transition-duration:0.8s;
 }
 
 .navbar-nav{
@@ -246,7 +252,7 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
     <a class="navbar-brand" href="#"><img id="logo" height="60px" src="./img/GTT_LOGO_white-02.png"
         alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -2812,9 +2818,14 @@ $(document).ready(function(){
     $(window).scroll(function () {
       var scrollTop = $(window).scrollTop();
       if (scrollTop > 200) {
-        $("#logo").addClass("active")
+        $("#logo ").addClass("active")
       } else {
-        $("#logo").removeClass("active")
+        $("#logo ").removeClass("active")
+      }
+      if (scrollTop > 200) {
+        $("#navbar ").addClass("active")
+      } else {
+        $("#navbar ").removeClass("active")
       }
     })
   </script>

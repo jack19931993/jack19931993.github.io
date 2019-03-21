@@ -33,7 +33,7 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
                 <a class="navbar-brand" href="#"><img id="logo" height="60px" src="./img/GTT_LOGO_white-02.png"
                     alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -263,15 +263,20 @@
 
     <!-- NAVBAR縮小 -->
     <script>
-        $(window).scroll(function () {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop > 200) {
-                $("#logo").addClass("active")
-            } else {
-                $("#logo").removeClass("active")
-            }
-        })
-    </script>
+            $(window).scroll(function () {
+              var scrollTop = $(window).scrollTop();
+              if (scrollTop > 200) {
+                $("#logo ").addClass("active")
+              } else {
+                $("#logo ").removeClass("active")
+              }
+              if (scrollTop > 200) {
+                $("#navbar ").addClass("active")
+              } else {
+                $("#navbar ").removeClass("active")
+              }
+            })
+          </script>
 
 </body>
 
