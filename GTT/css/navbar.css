@@ -1,3 +1,8 @@
+html, body {
+    position: relative;
+    
+  }
+
 body {
     /* background: #eee; */
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -7,7 +12,7 @@ body {
     padding: 0;
     background-image: url("img/cloudBG.jpg");
     background-size: contain;
-    position: relative;
+    
     
   }
 
@@ -78,11 +83,10 @@ body {
     
         
      footer{
-         background-color: #165faa;
+         /* background-color: #165faa; */
+         background-color: white;
          height: 150px;
-         padding: 20px 0 0 0;
-         width: 100%
-         
+         padding: 20px 0 0 0
      }  
     
      .footer_r{
