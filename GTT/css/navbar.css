@@ -46,6 +46,14 @@ body {
 
 }
 
+.register{
+    background-color: #c82128;
+}
+
+.register:hover{
+    background-color: #165faa
+}
+
 .navbar-collapse{
       float: right;
     }
