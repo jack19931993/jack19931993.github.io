@@ -11,407 +11,553 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <link rel="stylesheet" href="./css/centrav.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
-    <link href="//d3plhpfg3500fc.cloudfront.net/images/favicon2.ico" rel="shortcut icon" />
+   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/navbar.css">
+      <link rel="stylesheet"href="css/regeister.css">
 
     <style>
-        body {
-    /* background: #eee; */
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color:#000;
-    margin: 120px 0 0 0;
-    padding: 0;
-    background-image: url("img/cloudBG.jpg");
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed
-    
-  }
+        body{
+            background-image: url("img/cloudBG.jpg");
+            background-size: cover;
+            
+        }
+        .clear{
+            clear: both
+}
 
-  
-    </style>
+        .Contact_box{
+            padding: 45px 0 50px 0;
+        }
+
+        
+        </style>
 </head>
 
 <body>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
-        <a class="navbar-brand" href="./gtt_test.html"><img id="logo" height="60px" src="./img/GTT_LOGO_white-02.png"
-            alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          
-            <ul class="navbar-nav ml-auto ">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top" style="background-position:0 11%;background-size: cover; ">
+                <a class="navbar-brand" href="#"><img id="logo" height="60px" src="./img/GTT_LOGO_white-02.png"
+                    alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                    <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                      aria-haspopup="true" aria-expanded="false">
+                                      SEARCH
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="./gtt_test.html">Search</a>
+                                      <a class="dropdown-item" href="#">Advanced Search</a>
+                                      <a class="dropdown-item" href="#">Auto Ticketing</a>
+                                      <a class="dropdown-item" href="#">Travel Insurance</a>
+                                  </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">MY BOOKING <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="Tours" href="./contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        RESOURCES
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Airline Contacts</a>
+                        <a class="dropdown-item" href="#">Forms</a>
+                        
+                        <a class="dropdown-item" href="./ApplyVisa.html">Visa Applications</a>
+                        <a class="dropdown-item" href="#">Travel Document</a>
+                        <a class="dropdown-item" href="#">Baggage information</a>
+            
+                      </div>
+                    </li>
                     <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false">
-                              SEARCH
+                              PARTNER SITES
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="./gtt_test.html">Search</a>
-                              <a class="dropdown-item" href="#">Advanced Search</a>
-                              <a class="dropdown-item" href="#">Auto Ticketing</a>
-                              <a class="dropdown-item" href="#">Travel Insurance</a>
+                              <a class="dropdown-item" href="#">Majsetic-Vacations</a>
+                              <a class="dropdown-item" href="#">Hotels</a>
+                              
+                              <a class="dropdown-item" href="#">Cruises</a>
+                              <a class="dropdown-item" href="./ApplyVisa.html">Apply Visa</a>
+                              <a class="dropdown-item" href="#">Cars</a>
+                              <a class="dropdown-item" href="#">Vacations</a>
+                              <a class="dropdown-item" href="#">Tours</a>
+                  
+                            </div>
                           </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">MY BOOKING <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="Tours" href="./contact.html">CONTACT</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                RESOURCES
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Airline Contacts</a>
-                <a class="dropdown-item" href="#">Forms</a>
-                
-                <a class="dropdown-item" href="./ApplyVisa.html">Visa Applications</a>
-                <a class="dropdown-item" href="#">Travel Document</a>
-                <a class="dropdown-item" href="#">Baggage information</a>
-    
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      PARTNER SITES
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Majsetic-Vacations</a>
-                      <a class="dropdown-item" href="#">Hotels</a>
-                      
-                      <a class="dropdown-item" href="#">Cruises</a>
-                      <a class="dropdown-item" href="./ApplyVisa.html">Apply Visa</a>
-                      <a class="dropdown-item" href="#">Cars</a>
-                      <a class="dropdown-item" href="#">Vacations</a>
-                      <a class="dropdown-item" href="#">Tours</a>
-          
-                    </div>
-                  </li>
-                  <div class="register">
-            <li class="nav-item">
-              <a  class="nav-link " href="./Register.html">REGISTER</a>
-            </li>
-        </div>
-            <li class="nav-item">
-                    <a class="nav-link " href="./LoginPad.html">LOGIN</a>
-                  </li>
-          </ul>
-    
-        </div>
-      </nav>
-
-    <div class="container Contact_box">
-        <div class="row">
-            <div class="col-xl-3"></div>
-            <div class="col-xl-6">
-                <div id="ContactArea" class="light well">
-                    <form novalidate="" style="margin-bottom: 0;" id="ContactForm" class="space-left" method="post"
-                        action="https://www.centrav.com/contact" onsubmit="showLoading('#ContactSubmit');">
-                        <input type="hidden" name="persist" value="contactInput">
-                        <div class="row">
-
-
-                            <div class="col-xs-12" style="padding-left: 0;">
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="ARC / IATA / CLIA #"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="Create a log-in name"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="Create a password"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="First Name"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="Last Name"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="Agency (or Host Agency) Name"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="Agency Street Address"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="City"></label>
-                                </div>
-
-
-                                <div class="space-bottom has-float-label">
-                                    <select required="" id="Subject" class="req-input form-control" name="subject"
-                                        style="height: 43px;">
-                                        <option value="comment" selected="selected">Blank</option>
-                                        <option value="question">AK</option>
-                                        <option value="problem">AL</option>
-                                        <option value="profile">AR</option>
-                                        <option value="booking_request">AZ</option>
-                                        <option value="training">CA</option>
-                                        <option value="other">CO</option>
-                                        <option value="other">CT</option>
-                                        <option value="other">DC</option>
-                                        <option value="other">DE</option>
-                                        <option value="other">FL</option>
-                                        <option value="other">GA</option>
-                                        <option value="other">GU</option>
-                                        <option value="other">HI</option>
-                                        <option value="other">IA</option>
-                                        <option value="other">ID</option>
-                                        <option value="other">IL</option>
-                                        <option value="other">IN</option>
-                                        <option value="other">KS</option>
-                                        <option value="other">KY</option>
-                                        <option value="other">LA</option>
-                                        <option value="other">MA</option>
-                                        <option value="other">MD</option>
-                                        <option value="other">ME</option>
-                                        <option value="other">MI</option>
-                                        <option value="other">MN</option>
-                                        <option value="other">MO</option>
-                                        <option value="other">MS</option>
-                                        <option value="other">MT</option>
-                                        <option value="other">NC</option>
-                                        <option value="other">ND</option>
-                                        <option value="other">NE</option>
-                                        <option value="other">NH</option>
-                                        <option value="other">NJ</option>
-                                        <option value="other">NM</option>
-                                        <option value="other">NV</option>
-                                        <option value="other">NY</option>
-                                        <option value="other">OH</option>
-                                        <option value="other">OK</option>
-                                        <option value="other">OR</option>
-                                        <option value="other">PA</option>
-                                        <option value="other">RI</option>
-                                        <option value="other">SC</option>
-                                        <option value="other">SD</option>
-                                        <option value="other">TN</option>
-                                        <option value="other">TX</option>
-                                        <option value="other">UD</option>
-                                        <option value="other">VA</option>
-                                        <option value="other">VI</option>
-                                        <option value="other">VT</option>
-                                        <option value="other">WA</option>
-                                        <option value="other">WI</option>
-                                        <option value="other">WV</option>
-                                        <option value="other">AB</option>
-                                        <option value="other">BC</option>
-                                        <option value="other">NF</option>
-                                        <option value="other">NS</option>
-                                        <option value="other">ON</option>
-                                        <option value="other">PQ</option>
-
-
-                                    </select>
-                                    <label for="Subject" placeholder="State / Province: "></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="Zip code / Postal code"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <select required="" id="Subject" class="req-input form-control" name="subject"
-                                        style="height: 43px;">
-                                        <option value="comment" selected="selected">USA</option>
-                                        <option value="question">CANADA</option>
-
-                                    </select>
-                                    <label for="Subject" placeholder="Country"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="Phone number"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                    <label for="Name" placeholder="Fax number"></label>
-                                </div>
-                                <div class="space-bottom has-float-label">
-                                        <select required="" id="Subject" class="req-input form-control" name="subject"
-                                            style="height: 43px;">
-                                            <option value="comment" selected="selected">None</option>
-                                            <option value="question">Amadeus</option>
-                                            <option value="question">Apollo</option>
-                                            <option value="question">Sabre</option>
-                                            <option value="question">Worldspan</option>
-    
-                                        </select>
-                                        <label for="Subject" placeholder="Agency GDS"></label>
-                                    </div>
-                                    <div class="space-bottom has-float-label">
-                                            <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                            <label for="Name" placeholder="Pseudo city code"></label>
-                                        </div>
-                                        <div class="space-bottom has-float-label">
-                                                <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                                <label for="Name" placeholder="E-mail address"></label>
-                                            </div>
-                                            <div class="space-bottom has-float-label" >
-                                                    <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                                    <label for="Name" placeholder="GTT account code"></label>
-                                                    
-                                                </div>
-                                                <div></div>
-                                                <div class="space-bottom has-float-label">
-                                                <select required="" id="Subject" class="req-input form-control" name="subject"
-                                                style="height: 43px;">
-                                                <option value="comment" selected="selected">Unknown</option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-                                                <option value="question"></option>
-        
-                                            </select>
-                                            <label for="Subject" placeholder="GTT Office"></label>
-                                        </div>
-                                        <div class="space-bottom has-float-label">
-                                                <select required="" id="Subject" class="req-input form-control" name="subject"
-                                                style="height: 43px;">
-                                                <option value="comment" selected="selected">Mothers maiden name</option>
-                                                <option value="question">High school name</option>
-                                                <option value="question">Favorite color</option>
-                                                
-                                            </select>
-                                            <label for="Subject" placeholder="Choose a security question for password reset"></label>
-                                        </div>
-                                        <div class="space-bottom has-float-label">
-                                                <input type="text" required="" id="Name" class="req-input form-control" name="name">
-                                                <label for="Name" placeholder=" Secret answer to"></label>
-                                            </div>
-
-                            </div>
-
-                        </div>
-                        <div class="row">
-
-                            <div class="col-xs-7 space-top text-right" style="white-space: nowrap;">
-                                <button type="submit" id="ContactSubmit" disabled="disabled" class="btn btn-primary">Send
-                                    Submit</button>
-                            </div>
-
-                            <div class="clearfix"></div>
-                        </div>
-                    </form>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./Register.html">REGISTER</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link " href="#">LOGIN</a>
+                          </li>
+                  </ul>
+            
                 </div>
-            </div>
-
-        </div>
-    </div>
+              </nav>
 
 
+  <div class="registerbox">
 
-    <a href="#" id="gotop" class="gotop">Go Top</a>
+     <div class="rehead">
+          <h1>Register for a new account</h1>
+     </div>
+     <div class="rbox1">
+          <div class="rinbox">
+              <div class="tyform1"><!--表格style1-->
+                    <span>&#10033</span>  <label >ARC / IATA / CLIA＃：<br> <h6>If none, enter: 1234</h6></label>
+                    <input type="text" name=""><p>Asterisk fields are requlred</p>
+              </div> 
+
+              <div class="tyform3"><!--表格style3-->                  
+                    <span>&#10033</span>  <label >First Name:</label>
+                    <input type="text" name="">
+                      <span>&#10033</span>  <label >First Name:</label>
+                    <input type="text" name="">
+                     <span>&#10033</span>  <label >First Name:</label>
+                    <input type="text" name="">    
+              </div>
+
+              <div class="tyform2"><!--表格style2-->
+                    <div class="tyformbox">
+                         <span>&#10033</span>  <label >First Name:</label>
+                         <input type="text" name="">
+                    </div>
+                    <div class="tyformbox">
+                         <span>&#10033</span>  <label >First Name:</label>
+                         <input type="text" name="">
+                    </div>
+              </div>  
+       </div>
+
+
+         <div class="rbox2">
+          <div class="rinbox">              
+             <div class="tyform1"><!--表格style1-->
+                   <span>&#10033</span>  <label >Agency  Name:<br> <h6>(or Host Agency Name:)</h6></label>
+                    <input type="text" name="">
+              </div>
+
+             <div class="tyform4"><!--表格style4-->
+                    <span>&#10033</span>  <label >Agency Street Address:</label>
+                    <input type="text" name="">
+              </div>
+            
+              <div class="tyform2"><!--表格style2-->
+                    <div class="tyformbox">
+                          <span>&#10033</span>  <label >City:</label>
+                          <input type="text" name="">
+                    </div>
+                     <div class="tyformbox">
+                          <span>&#10033</span>  <label >State / Province:</label>
+                               <select>
+                                      <option value="AK">Blank</option>
+                                      <option value="AK">AK</option>
+                                      <option value="AL">AL</option>
+                                      <option value="AR">AR</option>
+                                      <option value="AZ">AZ</option>
+                                      <option value="CA">CA</option>
+                                      <option value="CO">CO</option>
+                                      <option value="CT">CT</option>
+                                      <option value="DC">DC</option>
+                                      <option value="DE">DE</option>
+                                      <option value="FL">FL</option>
+                                      <option value="GA">GA</option>
+                                      <option value="GU">GU</option>
+                                      <option value="HI">HI</option>
+                                      <option value="IA">IA</option>
+                                      <option value="ID">ID</option>
+                                      <option value="IL">IL</option>
+                                      <option value="IN">IN</option>
+                                      <option value="KS">KS</option>
+                                      <option value="KY">KY</option>
+                                      <option value="LA">LA</option>
+                                      <option value="MA">MA</option>
+                                      <option value="MD">MD</option>
+                                      <option value="ME">ME</option>
+                                      <option value="MI">MI</option>
+                                      <option value="MN">MN</option>
+                                      <option value="MO">MO</option>
+                                      <option value="MS">MS</option>
+                                      <option value="MT">MT</option>
+                                      <option value="NC">NC</option>
+                                      <option value="ND">ND</option>
+                                      <option value="NE">NE</option>
+                                      <option value="NH">NH</option>
+                                      <option value="NJ">NJ</option>
+                                      <option value="NM">NM</option>
+                                      <option value="NV">NV</option>
+                                      <option value="NY">NY</option>
+                                      <option value="OH">OH</option>
+                                      <option value="OK">OK</option>
+                                      <option value="OR">OR</option>
+                                      <option value="PA">PA</option>
+                                      <option value="RI">RI</option>
+                                      <option value="SC">SC</option>
+                                      <option value="SD">SD</option>
+                                      <option value="TN">TN</option>
+                                      <option value="TX">TX</option>
+                                      <option value="UT">UT</option>
+                                      <option value="VA">VA</option>
+                                      <option value="VI">VI</option>
+                                      <option value="VT">VT</option>
+                                      <option value="WA">WA</option>
+                                      <option value="WI">WI</option>
+                                      <option value="WY">WV</option>
+                                      <option value="AB">AB</option>
+                                      <option value="BC">BC</option>
+                                      <option value="NB">NB</option>
+                                      <option value="NF">NF</option>
+                                      <option value="NS">NS</option>
+                                      <option value="ON">ON</option>
+                                      <option value="PQ">PQ</option>
+
+
+                                 </select>
+                       </div>
+
+              </div>
+
+               <div class="tyform2"><!--表格style2-->
+                    <div class="tyformbox">
+                                <span>&#10033</span>  <label >Zip code / Postal code:</label>
+                                <input type="text" name="">
+                    </div>
+                     <div class="tyformbox">
+                                  <span>&#10033</span>  <label >Country:</label>
+                                    <select id="country" name="country">
+                                         <option selected="selected" value="USA">USA</option>
+                                         <option value="CANADA">CANADA</option>
+                                      
+                                      </select>
+                       </div>
+
+              </div>
+
+               <div class="tyform2"><!--表格style2-->
+                      <div class="tyformbox">
+                          <span>&#10033</span>  <label >Phone number:</label>
+                          <input type="text" name="">
+                     </div>
+                     <div class="tyformbox">
+                          <span>&#10033</span>  <label >Fax number:</label>
+                          <input type="text" name="">
+                     </div>
+
+              </div>
+               <div class="tyform2"><!--表格style2-->
+                    <div class="tyformbox">
+                          <span>&#10033</span>  <label >Agency GDS:</label>
+                          <select id="country" name="country">
+                                <option value="Direct Connect">None</option>
+                                <option value="Amadeus">Amadeus</option>
+                                <option value="Apollo">Apollo</option>
+                                <option value="Sabre">Sabre</option>
+                                <option value="Worldspan">Worldspan</option>
+
+                         </select>
+                    </div>
+                     <div class="tyformbox">
+                          <span>&#10033</span>  <label >Pseudo city code:</label>
+                    <input type="text" name="">
+                       </div>
+
+              </div>
+
+               <div class="tyform4"><!--表格style4-->
+                    <span>&#10033</span>  <label >E-mail address</label>
+                    <input type="text" name="">
+              </div>
+
+
+
+
+          </div>  
+       </div>
+
+
+
+ <div class="rbox1"><!--第三塊-->
+          <div class="rinbox">
+            
+            <div class="tyform2"><!--表格style2-->
+                    <div class="tyformbox">
+                    <span></span>  <label >GTT account code:</label>
+                    <input type="text" name="">
+                    </div>
+                     <div class="tyformbox">
+                          <span></span>  <label >GTT Office:</label>
+                   <select id="country" name="country">
+                      <option value="Unknown">Unknown</option>
+                      <option value="GTT5AVE">GTT5AVE</option>
+                      <option value="GTTACA">GTTACA</option>
+                      <option value="GTTALH">GTTALH</option>
+                      <option value="GTTATL">GTTATL</option>
+                      <option value="GTTAUS">GTTAUS</option>
+                      <option value="GTTBOS">GTTBOS</option>
+                      <option value="GTTBUR">GTTBUR</option>
+                      <option value="GTTCHA">GTTCHA</option>
+                      <option value="GTTCHI">GTTCHI</option>
+                      <option value="GTTCOI">GTTCOI</option>
+                      <option value="GTTCVG">GTTCVG</option>
+                      <option value="GTTDEN">GTTDEN</option>
+                      <option value="GTTDFW">GTTDFW</option>
+                      <option value="GTTDTW">GTTDTW</option>
+                      <option value="GTTEWR">GTTEWR</option>
+                      <option value="GTTFLU">GTTFLU</option>
+                      <option value="GTTGDN">GTTGDN</option>
+                      <option value="GTTGOF">GTTGOF</option>
+                      <option value="GTTGOH">GTTGOH</option>
+                      <option value="GTTGOL">GTTGOL</option>
+                      <option value="GTTHOU">GTTHOU</option>
+                      <option value="GTTIAD">GTTIAD</option>
+                      <option value="GTTJKS">GTTJKS</option>
+                      <option value="GTTMCI">GTTMCI</option>
+                      <option value="GTTMIA">GTTMIA</option>
+                      <option value="GTTMJV">GTTMJV</option>
+                      <option value="GTTMNL">GTTMNL</option>
+                      <option value="GTTMSP">GTTMSP</option>
+                      <option value="GTTNAP">GTTNAP</option>
+                      <option value="GTTNYC">GTTNYC</option>
+                      <option value="GTTOAK">GTTOAK</option>
+                      <option value="GTTOKC">GTTOKC</option>
+                      <option value="GTTPHL">GTTPHL</option>
+                      <option value="GTTRDU">GTTRDU</option>
+                      <option value="GTTROC">GTTROC</option>
+                      <option value="GTTSAN">GTTSAN</option>
+                      <option value="GTTSDF">GTTSDF</option>
+                      <option value="GTTSEA">GTTSEA</option>
+                      <option value="GTTSFO">GTTSFO</option>
+                      <option value="GTTSHA">GTTSHA</option>
+                      <option value="GTTSJC">GTTSJC</option>
+                      <option value="GTTSLC">GTTSLC</option>
+                      <option value="GTTSNA">GTTSNA</option>
+                      <option value="GTTSTL">GTTSTL</option>
+                      <option value="GTTSTR">GTTSTR</option>
+                      <option value="GTTTPE">GTTTPE</option>
+                      <option value="GTTWAS">GTTWAS</option>
+                      <option value="GTTWIL">GTTWIL</option>
+      </select>
+                       </div>
+
+              </div>
+              <div class="tyform1"><!--表格style1-->
+                    <span>&#10033</span>  <label >Choose a security question for
+password reset:</label>
+                    <select id="country" name="country">
+                     <option value="Mothers maiden name">Mothers maiden name</option>
+                     <option value="High school name">High school name</option>
+                     <option value="Favorite color">Favorite color</option>
+      </select>
+              </div>
+
+                 <div class="tyform4"><!--表格style4-->
+                    <span>&#10033</span>  <label >Secret answer to:</label>
+                    <input type="text" name="">
+              </div>
+
+
+
+          </div>
+     </div>   
+
+</div>
+          <div class="submitbox">
+
+          <a href="">  <button class="rebtn" type="button" id="">SUBMIT</button>
+
+
+          </div>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+ <div class="rbox1">
+          <div class="rinbox">
+              <div class="tyform1">表格style1
+                    <span>&#10033</span>  <label >ARC / IATA / CLIA＃：<br> If none, enter: 1234</label>
+                    <input type="text" name="">
+              </div>
+
+              <div class="tyform2">表格style2
+                    <div class="tyformbox">
+                    <span>&#10033</span>  <label >First Name:</label>
+                    <input type="text" name="">
+                    </div>
+                     <div class="tyformbox">
+                          <span>&#10033</span>  <label >First Name:</label>
+                    <input type="text" name="">
+                       </div>
+
+              </div>
+
+    
+             <div class="tyform3">表格style3
+                  
+                    <span>&#10033</span>  <label >First Name:</label>
+                    <input type="text" name="">
+                      <span>&#10033</span>  <label >First Name:</label>
+                    <input type="text" name="">
+
+                     <span>&#10033</span>  <label >First Name:</label>
+                    <input type="text" name="">                   
+                   
+             </div>
+
+             <div class="tyform4">表格style4
+                    <span>&#10033</span>  <label >ARC / IATA / CLIA＃：</label>
+                    <input type="text" name="">
+              </div>
+
+
+ -->
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-md-4 col-sm-4">
-                   <a href="./gtt_test.html"> <img class="footer_logo" src="img/GTT_LOGO-02.png" alt=""> </a><br>
-                    <p style="color:#103675;font-size:10px" >© Copyright (C) 2019 GTT Global. All Rights Reserved. CST 2033348-40 </p> 
-                    
-                </div>
-                
-                <div class="col-xl-8 col-md-8 col-sm-8">             
-                                    <div class="row">
-                                        <div class="col" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-01.jpg" alt=""> </div>
-                                        <div class="col" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-02.jpg" alt=""> </div>
-                                        <div class="col" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-03.jpg" alt=""> </div>
-                                        <div class="col" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-04.jpg" alt=""> </div>
-                                        <div class="col" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-05.jpg" alt=""> </div>
-                                        <div class="col" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-06.jpg" alt=""> </div>
-                                
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                            <a href="./gtt_test.html"> <img class="footer_logo" src="img/GTT_LOGO-02.png" alt=""> </a><br>
+                        <p style="color:#103675;font-size:10px" >© Copyright (C) 2019 GTT Global. All Rights Reserved. CST 2033348-40 </p> 
+                        <!-- <div class="col-xl-12" style="color:white;font-size:10px">
+                                © Copyright (C) 2019 GTT Global. All Rights Reserved. CST 2033348-40
+                        </div> -->
+                    </div>
+                    <div class="col-xl-1"></div>
+                    <div class="col-xl-7">             
+                                        <div class="row">
+                                            <div class="col-xl-2" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-01.jpg" alt=""> </div>
+                                            <div class="col-xl-2" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-02.jpg" alt=""> </div>
+                                            <div class="col-xl-2" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-03.jpg" alt=""> </div>
+                                            <div class="col-xl-2" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-04.jpg" alt=""> </div>
+                                            <div class="col-xl-2" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-05.jpg" alt=""> </div>
+                                            <div class="col-xl-2" style="height:100%;line-height:120px"><img style="height:50px;" src="img/GTT_ci-06.jpg" alt=""> </div>
+                                    
+                                </div>
+                            
                         
+                    </div>
                     
                 </div>
-                
             </div>
-        </div>
-    </footer>
+        </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
- 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-  <!-- <script type="text/javascript" src="./js/initializeDatepicker.js.下載"></script> -->
-  <script type="text/javascript" src="./js/mainSearch.js.下載"></script>
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/initializeDatepicker.js.下載"></script> -->
+    <script type="text/javascript" src="./js/mainSearch.js.下載"></script>
+
 
     <!-- GoTop -->
-  <script>
+    <script>
         var box_hight = $("#box height")
         $("#box").click(function () {
-          $("#box").css({
-            "font-weight": "bolder",
-            "font-size": "30px",
-            "color": "green"
-          })
+            $("#box").css({
+                "font-weight": "bolder",
+                "font-size": "30px",
+                "color": "green"
+            })
         });
         $(window).scroll(function () {
-          var scrollTop = $(window).scrollTop();
-          if (scrollTop > 300) {
-            $("#gotop").fadeIn(200)
-          } else {
-            $("#gotop").fadeOut(200)
-          }
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 300) {
+                $("#gotop").fadeIn(200)
+            } else {
+                $("#gotop").fadeOut(200)
+            }
         })
         $("#gotop").click(function () {
-          $('html, body').animate({
-            scrollTop: 0}, 500);
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
         })
-    
-       $(document).ready(function(){
-        $(function(){ $('#Tours').click(function(){ 
-            $('html,body').animate({scrollTop:$('#section01').offset().top}, 500);});  
-        }); 
-    }); 
-        
-      </script>
-    
-      <!-- NAVBAR縮小 -->
-      <script>
-          $(window).scroll(function () {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop > 200) {
-              $("#logo ").addClass("active")
-            } else {
-              $("#logo ").removeClass("active")
-            }
-            if (scrollTop > 200) {
-              $("#navbar ").addClass("active")
-            } else {
-              $("#navbar ").removeClass("active")
-            }
-          })
-        </script>
+
+        $(document).ready(function () {
+            $(function () {
+                $('#Tours').click(function () {
+                    $('html,body').animate({
+                        scrollTop: $('#section01').offset().top
+                    }, 500);
+                });
+            });
+        });
+    </script>
+
+    <!-- NAVBAR縮小 -->
+    <script>
+            $(window).scroll(function () {
+              var scrollTop = $(window).scrollTop();
+              if (scrollTop > 200) {
+                $("#logo ").addClass("active")
+              } else {
+                $("#logo ").removeClass("active")
+              }
+              if (scrollTop > 200) {
+                $("#navbar ").addClass("active")
+              } else {
+                $("#navbar ").removeClass("active")
+              }
+            })
+          </script>
 
 </body>
 
