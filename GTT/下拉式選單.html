@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		body{
+			margin:0;
+		}
+		ul{
+			list-style-type:none;
+			margin:0;
+			padding:0;
+		}
+		.nav{
+			height: 50px;
+			background-color: #333;
+			padding: 0 15px;
+		}
+		.logo{
+			float:left;
+			color:white;
+			font-size: 22px;
+			font-weight: bold;
+			padding: 12px 0;
+			margin-right: 40px;
+		}
+		.menu > li{
+			display: inline-block;
+		}
+		.menu > li > a{
+			display: inline-block;
+			color:white;
+			/* 文字裝飾(底線) */
+			text-decoration: none;
+			font-size: 18px;
+			padding: 14px;
+		}
+		.menu > li:hover{
+			background-color: black;
+		}
+		.relative{
+			position: relative;
+		}
+		.dropdown{
+			position: absolute;
+			width: 100%;
+			background-color: #333;
+			text-align: center;
+			border-radius: 4px;
+			display: none;
+		}
+		.dropdown > li{
+			border-top: 1px solid white;
+		}
+		.dropdown > li > a{
+			display: inline-block;
+			text-decoration: none;
+			color:white;
+			font-size: 18px;
+			padding:6px 0;
+		}
+		.menu > li:hover > .dropdown{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="logo">
+			LOGO
+		</div>
+		<ul class="menu">
+			<li><a href="">首頁</a></li>
+			<li><a href="">公司簡介</a></li>
+			<li class="relative">
+				<a href="">產品介紹+</a>
+				<ul class="dropdown">
+					<li><a href="">產品一</a></li>
+					<li><a href="">產品二</a></li>
+					<li><a href="">產品三</a></li>
+				</ul>
+			</li>
+			<li><a href="">聯絡我們</a></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .tab_btn{
+            display: inline-block;
+            border: 1px solid;
+            padding: 20px 30px;
+        }
+        .tab_btn_switch{
+            display: inline-block;
+            background-color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            /* margin-left: 10px; */
+        }
+
+        .tab_btn_switch.active{
+            background-color: rgb(0, 110, 255);
+            color: rgb(248, 141, 10)
+        }
+
+        .tab_content{
+            height: 500px;
+            width: 1280px;
+            border: 1px solid;
+            display: none;
+        }
+
+        .tab_content_form{
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: none;
+        }
+
+        .tab_content.active{
+            display: block;
+        }
+
+        .tab_content_form.active{
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+  
+    <div class="tab_btn" id="tab_btn_1">tab1</div>
+    <div class="tab_btn" id="tab_btn_2">tab2</div>
+    <div class="tab_btn" id="tab_btn_3">tab3</div>
+
+    <div class="tab_content active" id="tab_content_1">
+        <div class="tab_btn_switch active" id="tab_btn_4" style="float:left">Round Trip</div>
+        <div class="tab_btn_switch" id="tab_btn_5" style="float:left">One Way</div>
+        <div class="tab_btn_switch" id="tab_btn_6" style="float:left">Multi City</div>
+        <div style="background-color:royalblue" class="tab_content_form active" id="tab_content_4">
+            <div class="switch_content">321</div>
+        </div>
+        <div style="background-color:sandybrown" class="tab_content_form" id="tab_content_5">One Way</div>
+        <div style="background-color:rgb(187, 244, 96)" class="tab_content_form" id="tab_content_6">Multi City</div>
+        </div>
+    <div class="tab_content" id="tab_content_2">456</div>
+    <div class="tab_content" id="tab_content_3">789</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+        $("#tab_btn_1").click(function(){
+            $("#tab_content_1").addClass("active");
+            $("#tab_content_2").removeClass("active");
+            $("#tab_content_3").removeClass("active");
+        });
+
+        $("#tab_btn_2").click(function(){
+            $("#tab_content_1").removeClass("active");
+            $("#tab_content_2").addClass("active");
+            $("#tab_content_3").removeClass("active");
+        });
+
+        $("#tab_btn_3").click(function(){
+            $("#tab_content_1").removeClass("active");
+            $("#tab_content_2").removeClass("active");
+            $("#tab_content_3").addClass("active");
+        });
+        $("#tab_btn_4").click(function(){
+            $("#tab_content_5").removeClass("active");
+            $("#tab_content_6").removeClass("active");
+            $("#tab_content_4").addClass("active");
+            $("#tab_btn_4").addClass("active");
+            $("#tab_btn_5").removeClass("active");
+            $("#tab_btn_6").removeClass("active");
+            
+        });
+        $("#tab_btn_5").click(function(){
+            $("#tab_content_4").removeClass("active");
+            $("#tab_content_6").removeClass("active");
+            $("#tab_content_5").addClass("active");
+            $("#tab_btn_5").addClass("active");
+            $("#tab_btn_4").removeClass("active");
+            $("#tab_btn_6").removeClass("active");
+        });
+        $("#tab_btn_6").click(function(){
+            $("#tab_content_4").removeClass("active");
+            $("#tab_content_5").removeClass("active");
+            $("#tab_content_6").addClass("active");
+            $("#tab_btn_6").addClass("active");
+            $("#tab_btn_4").removeClass("active");
+            $("#tab_btn_5").removeClass("active");
+        });
+    </script>
+</body>
+
+</html>
