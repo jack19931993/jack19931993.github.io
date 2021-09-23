@@ -116,7 +116,7 @@ img{
 }
 @media (max-width: 959px) {
     .frame{
-        width: calc(50% - 45px);
+        width: calc(100% - 45px);
     }
 }
 @media (max-width: 460px) {
