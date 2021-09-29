@@ -291,6 +291,10 @@ img{
 
 
 @media (min-width: 1691px){
+    .banner_title span{
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+    }
     .frame{
         width: calc((100% / 4) - 45px);
     }
@@ -306,6 +310,7 @@ img{
     }
     .btn_top {
         bottom: 25%;
+        right: 3%;
     }
     
     .btn_top a {
@@ -336,6 +341,5 @@ img{
     .banner_title span{
         font-size: 3.5rem;
         line-height: 4rem;
-    }
-   
+    }   
 }
