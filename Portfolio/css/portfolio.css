@@ -145,7 +145,10 @@ img{
       opacity: 0;
     }
   }
-  
+
+#Web_Design{
+    padding: 120px 0 0 0;
+}  
 .frame_area{
     width: 80%;
     margin: 0 auto;
