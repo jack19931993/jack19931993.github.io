@@ -292,6 +292,9 @@ img{
 
 
 @media (min-width: 1691px){
+    .banner_title{
+        top: calc(50% - 5rem);
+    }
     .banner_title span{
         font-size: 6.5rem;
         line-height: 6.5rem;
